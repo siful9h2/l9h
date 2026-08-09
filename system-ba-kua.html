@@ -23,9 +23,9 @@
     .nav-links { display:flex; gap:2.5rem; list-style:none; }
     .nav-links a { font-family:'Cinzel',serif; font-size:.62rem; letter-spacing:.25em; text-transform:uppercase; color:rgba(245,239,228,.6); text-decoration:none; transition:color .3s; }
     .nav-links a:hover, .nav-links a.active { color:var(--gold); }
-    .nav-links li { position:relative; }
-    .nav-links li .dropdown { display:none; position:absolute; top:calc(100% + .8rem); left:50%; transform:translateX(-50%); background:rgba(10,7,5,.97); border:1px solid rgba(201,151,43,.15); min-width:220px; padding:.5rem 0; z-index:200; backdrop-filter:blur(8px); }
-    .nav-links li:hover .dropdown { display:block; }
+    .nav-links li { position:relative; padding-bottom:.8rem; margin-bottom:-.8rem; }
+    .nav-links li .dropdown { visibility:hidden; opacity:0; pointer-events:none; position:absolute; top:100%; left:50%; transform:translateX(-50%); background:rgba(10,7,5,.97); border:1px solid rgba(201,151,43,.15); min-width:220px; padding:.5rem 0; z-index:200; backdrop-filter:blur(8px); transition:opacity .2s ease, visibility 0s linear .35s; }
+    .nav-links li:hover .dropdown { visibility:visible; opacity:1; pointer-events:auto; transition:opacity .2s ease, visibility 0s linear 0s; }
     .nav-links .dropdown a { display:block; padding:.55rem 1.2rem; font-size:.58rem; letter-spacing:.18em; color:rgba(245,239,228,.55); white-space:nowrap; border-left:2px solid transparent; transition:all .2s; }
     .nav-links .dropdown a:hover { color:var(--gold); border-left-color:var(--red); background:rgba(201,151,43,.05); }
     @media(max-width:700px){.nav-links{display:none;}}
@@ -109,6 +109,7 @@
         <div class="dropdown">
           <a href="instructor.html">Ajay Kumra — Instructor</a>
           <a href="lineage.html">The Lineage</a>
+          <a href="teacher-mcneil.html">Master James McNeil</a>
           <a href="teacher-chiao.html">Master Chiao</a>
           <a href="teacher-pan.html">Master Pan</a>
           <a href="teacher-lefiti.html">Master Lefiti</a>

@@ -28,3 +28,5 @@ gradient, so add them whenever you have them:
 sifu-ajay.jpg is reused on instructor.html, so you only need it once.
 Each image appears twice on its page: as a faint hero background and in the
 portrait frame. Landscape or square works; the frame crops to 3:4.
+
+  teacher-mcneil.jpg   (optional) Portrait for Master James McNeil's page.

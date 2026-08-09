@@ -729,11 +729,14 @@
     .nav-links a:hover { color: var(--gold); }
 
     /* Dropdown */
-    .nav-links li { position: relative; }
+    .nav-links li { position: relative; padding-bottom: 0.8rem; margin-bottom: -0.8rem; }
     .nav-links li .dropdown {
-      display: none;
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, visibility 0s linear 0.35s;
       position: absolute;
-      top: calc(100% + 0.8rem);
+      top: 100%;
       left: 50%;
       transform: translateX(-50%);
       background: rgba(10,7,5,0.97);
@@ -743,7 +746,7 @@
       z-index: 200;
       backdrop-filter: blur(8px);
     }
-    .nav-links li:hover .dropdown { display: block; }
+    .nav-links li:hover .dropdown { visibility: visible; opacity: 1; pointer-events: auto; transition: opacity 0.2s ease, visibility 0s linear 0s; }
     .nav-links .dropdown a {
       display: block;
       padding: 0.55rem 1.2rem;
@@ -825,7 +828,7 @@
         <div class="dropdown">
           <a href="instructor.html">Ajay Kumra — Instructor</a>
           <a href="lineage.html">The Lineage</a>
-          <a href="https://littlenineheaven.com/james-mcneil/" target="_blank">Master James McNeil</a>
+          <a href="teacher-mcneil.html">Master James McNeil</a>
           <a href="teacher-chiao.html">Master Chiao Chang-Hung</a>
           <a href="teacher-pan.html">Master Pan Wing-Chow</a>
           <a href="teacher-lefiti.html">Master Haumea Lefiti</a>
