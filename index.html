@@ -68,11 +68,11 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --ink: #0a0705;
-      --parchment: #f5efe4;
-      --red: #8b1a1a;
-      --gold: #c9972b;
-      --gold-light: #e8c56a;
+      --ink: #14110c;
+      --parchment: #f7f3ea;
+      --red: #9e2020;
+      --gold: #d9a83f;
+      --gold-light: #f2d488;
       --smoke: #2a2017;
     }
 
@@ -147,7 +147,7 @@
       height: min(480px, 80vw);
       top: 50%; left: 50%;
       transform: translate(-50%,-50%) rotate(22.5deg);
-      border: 1px solid rgba(201,151,43,0.12);
+      border: 1px solid rgba(201,151,43,0.22);
       clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
       z-index: 1;
     }
@@ -178,7 +178,7 @@
       font-size: clamp(2.2rem, 7vw, 5.5rem);
       line-height: 1.05;
       color: var(--parchment);
-      text-shadow: 0 0 60px rgba(201,151,43,0.25);
+      text-shadow: 0 0 60px rgba(201,151,43,0.38);
       margin-bottom: 0.3em;
     }
 
@@ -191,7 +191,7 @@
       font-family: 'Cinzel', serif;
       font-size: clamp(0.8rem, 2vw, 1rem);
       letter-spacing: 0.25em;
-      color: rgba(245,239,228,0.55);
+      color: rgba(245,239,228,0.77);
       margin-top: 0.6em;
       text-transform: uppercase;
     }
@@ -245,13 +245,13 @@
 
     .btn-ghost {
       background: transparent;
-      border-color: rgba(201,151,43,0.5);
+      border-color: rgba(201,151,43,0.62);
       color: var(--gold-light);
     }
     .btn-ghost:hover {
       border-color: var(--gold);
       color: var(--gold);
-      box-shadow: 0 0 20px rgba(201,151,43,0.15);
+      box-shadow: 0 0 20px rgba(201,151,43,0.26);
     }
 
     /* ── SCROLL INDICATOR ── */
@@ -335,8 +335,8 @@
 
     .about-text p {
       font-size: clamp(1rem, 1.8vw, 1.12rem);
-      line-height: 1.9;
-      color: rgba(245,239,228,0.8);
+      line-height: 1.95;
+      color: rgba(245,239,228,0.93);
       margin-bottom: 1.5rem;
     }
 
@@ -426,7 +426,7 @@
     .art-desc {
       font-size: 0.92rem;
       line-height: 1.8;
-      color: rgba(245,239,228,0.55);
+      color: rgba(245,239,228,0.77);
     }
 
     /* ── PHILOSOPHY BANNER ── */
@@ -483,7 +483,7 @@
     .contact p {
       font-size: clamp(1rem, 2vw, 1.15rem);
       line-height: 1.85;
-      color: rgba(245,239,228,0.7);
+      color: rgba(245,239,228,0.86);
       margin-bottom: 2.5rem;
     }
 
@@ -528,7 +528,7 @@
     .field textarea {
       width: 100%;
       background: rgba(245,239,228,0.03);
-      border: 1px solid rgba(201,151,43,0.22);
+      border: 1px solid rgba(201,151,43,0.34);
       color: var(--parchment);
       font-family: 'EB Garamond', Georgia, serif;
       font-size: 1rem;
@@ -568,13 +568,13 @@
 
     .field input::placeholder,
     .field textarea::placeholder {
-      color: rgba(245,239,228,0.28);
+      color: rgba(245,239,228,0.55);
       font-style: italic;
     }
 
     .form-note {
       font-size: 0.85rem !important;
-      color: rgba(245,239,228,0.4) !important;
+      color: rgba(245,239,228,0.66) !important;
       margin-bottom: 1.6rem !important;
       line-height: 1.6;
     }
@@ -608,7 +608,7 @@
     .photo-frame {
       position: relative;
       overflow: hidden;
-      border: 1px solid rgba(201,151,43,0.2);
+      border: 1px solid rgba(201,151,43,0.32);
       background: #0d0804;
     }
 
@@ -626,7 +626,7 @@
       font-size: 0.58rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: rgba(201,151,43,0.35);
+      color: rgba(201,151,43,0.48);
       background: repeating-linear-gradient(
         45deg,
         rgba(201,151,43,0.03),
@@ -658,7 +658,7 @@
       font-size: 0.58rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: rgba(245,239,228,0.45);
+      color: rgba(245,239,228,0.7);
       margin-top: 0.7rem;
       text-align: center;
     }
@@ -676,7 +676,7 @@
       position: relative;
       width: 100%;
       aspect-ratio: 16 / 9;
-      border: 1px solid rgba(201,151,43,0.2);
+      border: 1px solid rgba(201,151,43,0.32);
       background: #0d0804;
       margin-top: 3rem;
     }
@@ -689,6 +689,98 @@
       height: 100%;
       border: 0;
     }
+
+    /* ── LANGUAGE SELECTOR ── */
+    .lang-select {
+      font-family: 'Cinzel', serif;
+      font-size: 0.58rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(10,7,5,0.9);
+      border: 1px solid rgba(201,151,43,0.48);
+      padding: 0.45em 1.8em 0.45em 0.8em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c9972b' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.6em center;
+      background-size: 9px;
+      border-radius: 0;
+    }
+    .lang-select:hover { border-color: var(--gold); color: var(--gold-light); }
+    .lang-select:focus { outline: none; border-color: var(--gold); }
+    .lang-select option { background: #0d0804; color: var(--parchment); }
+    .nav-links li.lang-item { margin-left: 0.5rem; }
+
+    /* Cinzel carries no CJK, Cyrillic, Arabic or Devanagari glyphs, and its
+       wide tracking is wrong for those scripts, so swap the stack per language. */
+    body.lang-zh, body.lang-zh h1, body.lang-zh h2, body.lang-zh h3,
+    body.lang-zh .nav-links a, body.lang-zh .btn, body.lang-zh .section-label,
+    body.lang-zh .art-name, body.lang-zh .eyebrow, body.lang-zh .field label,
+    body.lang-zh .lang-select, body.lang-zh .art-desc, body.lang-zh footer p {
+      font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC",
+                   "Microsoft YaHei", "PingFang SC", Georgia, serif;
+      letter-spacing: 0.06em;
+    }
+    body.lang-ja, body.lang-ja h1, body.lang-ja h2, body.lang-ja h3,
+    body.lang-ja .nav-links a, body.lang-ja .btn, body.lang-ja .section-label,
+    body.lang-ja .art-name, body.lang-ja .eyebrow, body.lang-ja .field label,
+    body.lang-ja .lang-select, body.lang-ja .art-desc, body.lang-ja footer p {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP",
+                   "Source Han Serif JP", serif;
+      letter-spacing: 0.06em;
+    }
+    body.lang-ru, body.lang-ru h1, body.lang-ru h2, body.lang-ru h3,
+    body.lang-ru .nav-links a, body.lang-ru .btn, body.lang-ru .section-label,
+    body.lang-ru .art-name, body.lang-ru .eyebrow, body.lang-ru .field label,
+    body.lang-ru .lang-select, body.lang-ru footer p {
+      font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+      letter-spacing: 0.08em;
+    }
+    body.lang-ar, body.lang-ar h1, body.lang-ar h2, body.lang-ar h3,
+    body.lang-ar .nav-links a, body.lang-ar .btn, body.lang-ar .section-label,
+    body.lang-ar .art-name, body.lang-ar .eyebrow, body.lang-ar .field label,
+    body.lang-ar .lang-select, body.lang-ar .art-desc, body.lang-ar footer p {
+      font-family: "Noto Naskh Arabic", "Geeza Pro", "Al Bayan",
+                   "Traditional Arabic", "Segoe UI", serif;
+      letter-spacing: 0;
+    }
+    body.lang-hi, body.lang-hi h1, body.lang-hi h2, body.lang-hi h3,
+    body.lang-hi .nav-links a, body.lang-hi .btn, body.lang-hi .section-label,
+    body.lang-hi .art-name, body.lang-hi .eyebrow, body.lang-hi .field label,
+    body.lang-hi .lang-select, body.lang-hi .art-desc, body.lang-hi footer p {
+      font-family: "Noto Serif Devanagari", "Kohinoor Devanagari",
+                   "Mangal", "Nirmala UI", serif;
+      letter-spacing: 0;
+    }
+    body.lang-zh .hero-title, body.lang-ja .hero-title,
+    body.lang-ar .hero-title, body.lang-hi .hero-title { letter-spacing: 0.08em; }
+
+    body.lang-th, body.lang-th h1, body.lang-th h2, body.lang-th h3,
+    body.lang-th .nav-links a, body.lang-th .btn, body.lang-th .section-label,
+    body.lang-th .art-name, body.lang-th .eyebrow, body.lang-th .field label,
+    body.lang-th .lang-select, body.lang-th .art-desc, body.lang-th footer p {
+      font-family: "Noto Serif Thai", "Sarabun", "Thonburi", "Leelawadee UI",
+                   "Tahoma", serif;
+      letter-spacing: 0;
+    }
+    body.lang-th p, body.lang-th .art-desc, body.lang-th li { line-height: 2.05; }
+    body.lang-th .hero-title { letter-spacing: 0.04em; }
+
+    /* Right-to-left */
+    body.rtl { direction: rtl; }
+    body.rtl .nav-links { flex-direction: row-reverse; }
+    body.rtl .gold-line, body.rtl .field label { text-align: right; }
+    body.rtl .field input, body.rtl .field select, body.rtl .field textarea {
+      text-align: right;
+      direction: rtl;
+    }
+    body.rtl .bio-content ul, body.rtl .art-card { text-align: right; }
+    body.rtl .pull { border-left: none; border-right: 2px solid var(--red);
+                     padding: 0.4rem 1.4rem 0.4rem 0; }
 
     /* ── NAV ── */
     nav {
@@ -722,7 +814,7 @@
       font-size: 0.62rem;
       letter-spacing: 0.25em;
       text-transform: uppercase;
-      color: rgba(245,239,228,0.6);
+      color: rgba(245,239,228,0.8);
       text-decoration: none;
       transition: color 0.3s;
     }
@@ -740,7 +832,7 @@
       left: 50%;
       transform: translateX(-50%);
       background: rgba(10,7,5,0.97);
-      border: 1px solid rgba(201,151,43,0.15);
+      border: 1px solid rgba(201,151,43,0.26);
       min-width: 220px;
       padding: 0.5rem 0;
       z-index: 200;
@@ -752,7 +844,7 @@
       padding: 0.55rem 1.2rem;
       font-size: 0.58rem;
       letter-spacing: 0.18em;
-      color: rgba(245,239,228,0.55);
+      color: rgba(245,239,228,0.77);
       white-space: nowrap;
       border-left: 2px solid transparent;
       transition: all 0.2s;
@@ -765,7 +857,7 @@
 
     /* ── FOOTER ── */
     footer {
-      border-top: 1px solid rgba(201,151,43,0.12);
+      border-top: 1px solid rgba(201,151,43,0.22);
       padding: 2rem 1.5rem;
       text-align: center;
       position: relative;
@@ -776,7 +868,7 @@
       font-family: 'Cinzel', serif;
       font-size: 0.58rem;
       letter-spacing: 0.25em;
-      color: rgba(245,239,228,0.25);
+      color: rgba(245,239,228,0.52);
       text-transform: uppercase;
     }
 
@@ -846,6 +938,21 @@
         </div>
       </li>
       <li><a href="#contact">Contact</a></li>
+      <li class="lang-item">
+        <select class="lang-select" id="langSelect" aria-label="Language">
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+          <option value="pt">Português</option>
+          <option value="ru">Русский</option>
+          <option value="ja">日本語</option>
+          <option value="th">ไทย</option>
+          <option value="ar">العربية</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+      </li>
     </ul>
   </nav>
 
@@ -920,7 +1027,7 @@
         <p class="section-label">The Curriculum</p>
         <h2 class="section-title">The Systems</h2>
         <div class="gold-line"></div>
-        <p style="color:rgba(245,239,228,0.55); font-style:italic; font-size:1.05rem; max-width:520px; margin:0 auto; line-height:1.8;">Each system is a world unto itself — a complete path of study connecting movement, breath, intention, and spirit.</p>
+        <p style="color:rgba(245,239,228,0.77); font-style:italic; font-size:1.05rem; max-width:520px; margin:0 auto; line-height:1.8;">Each system is a world unto itself — a complete path of study connecting movement, breath, intention, and spirit.</p>
       </div>
       <div class="arts-grid">
 
@@ -1001,33 +1108,33 @@
         <p class="section-label">The Masters</p>
         <h2 class="section-title">The Lineage</h2>
         <div class="gold-line" style="margin:0 auto 1.5rem;"></div>
-        <p style="color:rgba(245,239,228,0.55); font-style:italic; font-size:1.05rem; max-width:520px; margin:0 auto; line-height:1.8;">These arts were passed down through a living chain of masters. To study with us is to touch that chain.</p>
+        <p style="color:rgba(245,239,228,0.77); font-style:italic; font-size:1.05rem; max-width:520px; margin:0 auto; line-height:1.8;">These arts were passed down through a living chain of masters. To study with us is to touch that chain.</p>
       </div>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1px; background:rgba(201,151,43,0.08); border:1px solid rgba(201,151,43,0.08);">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1px; background:rgba(201,151,43,0.16); border:1px solid rgba(201,151,43,0.16);">
         <a href="teacher-chiao.html" style="background:#0d0804; padding:2rem 1.5rem; text-decoration:none; display:block; transition:background 0.3s;" onmouseover="this.style.background='#130c06'" onmouseout="this.style.background='#0d0804'">
           <p style="font-family:'Cinzel',serif; font-size:0.6rem; letter-spacing:0.3em; color:var(--gold); opacity:0.5; margin-bottom:0.6rem; text-transform:uppercase;">Grandmaster</p>
           <h3 style="font-family:'Cinzel',serif; font-size:0.9rem; color:var(--parchment); margin-bottom:0.5rem;">Chiao Chang-Hung</h3>
-          <p style="font-size:0.82rem; color:rgba(245,239,228,0.4); line-height:1.6; font-style:italic;">Little Nine Heaven · Ba Kua · Advanced Chi-Kung</p>
+          <p style="font-size:0.82rem; color:rgba(245,239,228,0.66); line-height:1.6; font-style:italic;">Little Nine Heaven · Ba Kua · Advanced Chi-Kung</p>
         </a>
         <a href="teacher-pan.html" style="background:#0d0804; padding:2rem 1.5rem; text-decoration:none; display:block; transition:background 0.3s;" onmouseover="this.style.background='#130c06'" onmouseout="this.style.background='#0d0804'">
           <p style="font-family:'Cinzel',serif; font-size:0.6rem; letter-spacing:0.3em; color:var(--gold); opacity:0.5; margin-bottom:0.6rem; text-transform:uppercase;">Master</p>
           <h3 style="font-family:'Cinzel',serif; font-size:0.9rem; color:var(--parchment); margin-bottom:0.5rem;">Pan Wing-Chow</h3>
-          <p style="font-size:0.82rem; color:rgba(245,239,228,0.4); line-height:1.6; font-style:italic;">Original Chen Style Tai-Chi</p>
+          <p style="font-size:0.82rem; color:rgba(245,239,228,0.66); line-height:1.6; font-style:italic;">Original Chen Style Tai-Chi</p>
         </a>
         <a href="teacher-hsu.html" style="background:#0d0804; padding:2rem 1.5rem; text-decoration:none; display:block; transition:background 0.3s;" onmouseover="this.style.background='#130c06'" onmouseout="this.style.background='#0d0804'">
           <p style="font-family:'Cinzel',serif; font-size:0.6rem; letter-spacing:0.3em; color:var(--gold); opacity:0.5; margin-bottom:0.6rem; text-transform:uppercase;">Master</p>
           <h3 style="font-family:'Cinzel',serif; font-size:0.9rem; color:var(--parchment); margin-bottom:0.5rem;">Hsu Hong-Chi</h3>
-          <p style="font-size:0.82rem; color:rgba(245,239,228,0.4); line-height:1.6; font-style:italic;">Hsing-I · Healing Arts · Chi-Kung</p>
+          <p style="font-size:0.82rem; color:rgba(245,239,228,0.66); line-height:1.6; font-style:italic;">Hsing-I · Healing Arts · Chi-Kung</p>
         </a>
         <a href="teacher-lefiti.html" style="background:#0d0804; padding:2rem 1.5rem; text-decoration:none; display:block; transition:background 0.3s;" onmouseover="this.style.background='#130c06'" onmouseout="this.style.background='#0d0804'">
           <p style="font-family:'Cinzel',serif; font-size:0.6rem; letter-spacing:0.3em; color:var(--gold); opacity:0.5; margin-bottom:0.6rem; text-transform:uppercase;">Master</p>
           <h3 style="font-family:'Cinzel',serif; font-size:0.9rem; color:var(--parchment); margin-bottom:0.5rem;">Haumea Lefiti</h3>
-          <p style="font-size:0.82rem; color:rgba(245,239,228,0.4); line-height:1.6; font-style:italic;">Splashing Hands</p>
+          <p style="font-size:0.82rem; color:rgba(245,239,228,0.66); line-height:1.6; font-style:italic;">Splashing Hands</p>
         </a>
         <a href="teacher-chin.html" style="background:#0d0804; padding:2rem 1.5rem; text-decoration:none; display:block; transition:background 0.3s;" onmouseover="this.style.background='#130c06'" onmouseout="this.style.background='#0d0804'">
           <p style="font-family:'Cinzel',serif; font-size:0.6rem; letter-spacing:0.3em; color:var(--gold); opacity:0.5; margin-bottom:0.6rem; text-transform:uppercase;">Sifu</p>
           <h3 style="font-family:'Cinzel',serif; font-size:0.9rem; color:var(--parchment); margin-bottom:0.5rem;">Chin Chen-Yen</h3>
-          <p style="font-size:0.82rem; color:rgba(245,239,228,0.4); line-height:1.6; font-style:italic;">Tzu Men-Chuan · Iron Hand</p>
+          <p style="font-size:0.82rem; color:rgba(245,239,228,0.66); line-height:1.6; font-style:italic;">Tzu Men-Chuan · Iron Hand</p>
         </a>
       </div>
     </div>
@@ -1168,10 +1275,10 @@
   <!-- FOOTER -->
   <footer>
     <div style="display:flex; justify-content:center; gap:2rem; flex-wrap:wrap; margin-bottom:1.2rem;">
-      <a href="https://www.instagram.com/littlenineheaven/" target="_blank" style="font-family:'Cinzel',serif; font-size:0.58rem; letter-spacing:0.2em; color:rgba(245,239,228,0.3); text-decoration:none; text-transform:uppercase; transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(245,239,228,0.3)'">Instagram</a>
-      <a href="https://www.facebook.com/littlenineheaven/" target="_blank" style="font-family:'Cinzel',serif; font-size:0.58rem; letter-spacing:0.2em; color:rgba(245,239,228,0.3); text-decoration:none; text-transform:uppercase; transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(245,239,228,0.3)'">Facebook</a>
-      <a href="https://www.youtube.com/channel/UCPAcAn2ctHu3MokPL0xwl3A" target="_blank" style="font-family:'Cinzel',serif; font-size:0.58rem; letter-spacing:0.2em; color:rgba(245,239,228,0.3); text-decoration:none; text-transform:uppercase; transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(245,239,228,0.3)'">YouTube</a>
-      <a href="https://littlenineheaven.com" target="_blank" style="font-family:'Cinzel',serif; font-size:0.58rem; letter-spacing:0.2em; color:rgba(245,239,228,0.3); text-decoration:none; text-transform:uppercase; transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(245,239,228,0.3)'">littlenineheaven.com</a>
+      <a href="https://www.instagram.com/littlenineheaven/" target="_blank" style="font-family:'Cinzel',serif; font-size:0.58rem; letter-spacing:0.2em; color:rgba(245,239,228,0.58); text-decoration:none; text-transform:uppercase; transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(245,239,228,0.58)'">Instagram</a>
+      <a href="https://www.facebook.com/littlenineheaven/" target="_blank" style="font-family:'Cinzel',serif; font-size:0.58rem; letter-spacing:0.2em; color:rgba(245,239,228,0.58); text-decoration:none; text-transform:uppercase; transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(245,239,228,0.58)'">Facebook</a>
+      <a href="https://www.youtube.com/channel/UCPAcAn2ctHu3MokPL0xwl3A" target="_blank" style="font-family:'Cinzel',serif; font-size:0.58rem; letter-spacing:0.2em; color:rgba(245,239,228,0.58); text-decoration:none; text-transform:uppercase; transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(245,239,228,0.58)'">YouTube</a>
+      <a href="https://littlenineheaven.com" target="_blank" style="font-family:'Cinzel',serif; font-size:0.58rem; letter-spacing:0.2em; color:rgba(245,239,228,0.58); text-decoration:none; text-transform:uppercase; transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(245,239,228,0.58)'">littlenineheaven.com</a>
     </div>
     <p>© 2026 Little Nine Heaven SoCal · Internal Kung-Fu · All Rights Reserved</p>
   </footer>
@@ -1195,5 +1302,1093 @@
       card.style.transitionDelay = `${i * 0.07}s`;
     });
   </script>
+
+  <script>
+  /* Multilingual switcher. Walks text nodes once, caching the English
+     original, then swaps exact matches. Language rides in the URL
+     (?lang=xx) so a translated link can be shared directly. */
+  (function () {
+    const RTL = ["ar"];
+    const TRANSLATIONS = {
+      "th": {
+        "strings": {
+          "Systems ▾": "สายวิชา ▾",
+          "About ▾": "เกี่ยวกับ ▾",
+          "Resources ▾": "แหล่งข้อมูล ▾",
+          "Contact": "ติดต่อเรา",
+          "Iron Hand": "ฝ่ามือเหล็ก",
+          "Taoist Lovemaking": "ศิลปะห้องในแบบเต๋า",
+          "Taoist Meditation": "สมาธิแบบเต๋า",
+          "Ajay Kumra — Instructor": "อเจย์ กุมรา — ผู้สอน",
+          "The Lineage": "สายการสืบทอด",
+          "Master James McNeil": "อาจารย์เจมส์ แมกนีล",
+          "Master Chiao Chang-Hung": "อาจารย์เฉียว ฉางหง",
+          "Master Pan Wing-Chow": "อาจารย์พาน หย่งโจว",
+          "Master Haumea Lefiti": "อาจารย์เฮาเมอา เลฟิติ",
+          "Master Hsu Hong-Chi": "อาจารย์สวี่ หงจี",
+          "Sifu Chin Cheng-Yen": "ซีฟูเฉิน เฉิงเอี๋ยน",
+          "eBooks": "หนังสืออิเล็กทรอนิกส์",
+          "Videos": "วิดีโอ",
+          "Magazine Articles": "บทความในนิตยสาร",
+          "Classes & Events": "ชั้นเรียนและกิจกรรม",
+          "Southern California · Internal Kung-Fu": "แคลิฟอร์เนียใต้ · กังฟูสายใน",
+          "Little Nine": "เก้าสวรรค์",
+          "Heaven": "น้อย",
+          "Wu Tao · The Taoist Way": "อู่เต้า · วิถีแห่งเต๋า",
+          "Ancient internal arts rooted in Taoist wisdom — cultivating mind, body, and spirit since 2698 BC.": "วิชาสายในอันเก่าแก่ ซึ่งหยั่งรากในปัญญาแห่งเต๋า — บ่มเพาะจิต กาย และวิญญาณ ตั้งแต่ 2698 ปีก่อนคริสตกาล",
+          "Begin Your Path": "เริ่มต้นเส้นทางของท่าน",
+          "Explore the Arts": "สำรวจสายวิชา",
+          "Scroll": "เลื่อนลง",
+          "Our Lineage": "สายวิชาของเรา",
+          "A Living Tradition": "ประเพณีที่ยังมีชีวิต",
+          "Little Nine Heaven is the oldest known Taoist system in existence, tracing its origins to 2698 BC. These are not merely martial arts — they are complete systems of self-cultivation, healing, and inner transformation passed down through an unbroken lineage of masters.": "เสี่ยวจิ่วเทียนเป็นระบบวิชาแบบเต๋าที่เก่าแก่ที่สุดเท่าที่ทราบ สืบต้นกำเนิดย้อนไปถึง 2698 ปีก่อนคริสตกาล วิชาเหล่านี้มิใช่เพียงศิลปะการต่อสู้ หากเป็นระบบอันสมบูรณ์แห่งการบ่มเพาะตน การเยียวยา และการเปลี่ยนแปลงภายใน ซึ่งถ่ายทอดผ่านสายอาจารย์ที่ไม่เคยขาดสาย",
+          "In Southern California, we carry this tradition forward. Classes are intimate, instruction is personal, and the depth of what is available to the dedicated student is without parallel in the modern world.": "ณ แคลิฟอร์เนียใต้ เราสืบสานประเพณีนี้ต่อไป ชั้นเรียนมีขนาดเล็ก การสอนเป็นรายบุคคล และความลึกซึ้งที่เปิดให้แก่ศิษย์ผู้ตั้งใจจริงนั้นหาที่เปรียบมิได้ในโลกสมัยใหม่",
+          "Inquire About Classes": "สอบถามเรื่องชั้นเรียน",
+          "The Curriculum": "หลักสูตร",
+          "The Systems": "สายวิชา",
+          "Each system is a world unto itself — a complete path of study connecting movement, breath, intention, and spirit.": "แต่ละสายวิชาเป็นโลกในตัวเอง — เป็นเส้นทางการศึกษาอันสมบูรณ์ที่เชื่อมการเคลื่อนไหว ลมหายใจ เจตนา และจิตวิญญาณเข้าด้วยกัน",
+          "The oldest Taoist system known today, dating to 2698 BC. Three pillars: boxing, swordsmanship, and bone marrow washing. Taught only to personally chosen students of advanced study.": "ระบบวิชาแบบเต๋าที่เก่าแก่ที่สุดเท่าที่รู้จักในปัจจุบัน ย้อนไปถึง 2698 ปีก่อนคริสตกาล มีสามเสาหลัก คือ มวย วิชากระบี่ และการล้างไขกระดูก ถ่ายทอดเฉพาะแก่ศิษย์ชั้นสูงที่คัดเลือกด้วยตนเองเท่านั้น",
+          "An ancient art of fighting and healing. Five elements, twelve animals, tien-gunn, six harmonies, nine essences. Deceptively simple, endlessly deep — easy to learn, hardest to master.": "ศิลปะโบราณแห่งการต่อสู้และการเยียวยา ห้าธาตุ สิบสองสัตว์ เทียนกัง หกความประสาน เก้าแก่นสาร ดูเผินๆ เรียบง่ายแต่ลึกไม่มีที่สิ้นสุด เรียนง่ายแต่ยากที่สุดที่จะเชี่ยวชาญ",
+          "The old 13 postures form with 64 movements. Silk-reeling energy circles the body's meridians, generating extraordinary power through precise, spiraling movement and moving meditation.": "ท่ารำโบราณสิบสามท่วงท่า รวมหกสิบสี่การเคลื่อนไหว พลังสาวไหมหมุนเวียนไปตามเส้นลมปราณของร่างกาย ก่อเกิดพลังอันเหนือธรรมดาด้วยการเคลื่อนไหวเป็นเกลียวอันแม่นยำและสมาธิในความเคลื่อนไหว",
+          "A practical, no-nonsense street art from the early 1700s. Quick footwork, low kicks, explosive strikes. Singular and two-man fighting forms designed for real-world application.": "วิชาต่อสู้ข้างถนนอันใช้ได้จริงและไร้ลวดลาย จากต้นคริสต์ศตวรรษที่ 18 ฝีเท้าฉับไว เตะต่ำ ออกหมัดรุนแรง มีทั้งท่ารำเดี่ยวและคู่ ซึ่งออกแบบมาเพื่อใช้จริง",
+          "The development of hands that carry iron power while retaining a normal appearance. Rooted in the Shaolin Temples. No comparable Iron Hand training exists anywhere else in the world.": "การฝึกมือให้มีพลังดั่งเหล็ก ทว่ารูปลักษณ์ภายนอกยังคงปกติ มีรากมาจากวัดเส้าหลิน ไม่มีการฝึกฝ่ามือเหล็กใดในโลกที่เทียบเคียงได้",
+          "Eight diagrams. Constant circling, constant change. Eight animals, ten exercises, three styles of walking. The ultimate goal: to move, act, and react with total natural freedom.": "แปดทิศยันต์ หมุนวนไม่หยุด เปลี่ยนแปลงไม่สิ้น แปดสัตว์ สิบแบบฝึก สามลีลาการเดิน เป้าหมายสูงสุดคือ เคลื่อนไหว กระทำ และตอบสนองด้วยอิสระตามธรรมชาติอย่างสมบูรณ์",
+          "The classical arts of the bedchamber. Conserving jing, transforming it into chi, and circulating it through the body — sexual energy treated as cultivation rather than expenditure.": "ศิลปะห้องในตามตำราโบราณ การรักษาจิง แปรเปลี่ยนเป็นชี่ และหมุนเวียนไปทั่วร่าง — ถือว่าพลังทางเพศเป็นสิ่งที่ต้องบ่มเพาะ มิใช่สิ่งที่ต้องสูญเปลือง",
+          "Both sitting and standing forms. A structured path toward inner stillness, elevated chi, and access to higher states of awareness — the foundation beneath all the external arts.": "ทั้งแบบนั่งและแบบยืน เป็นเส้นทางที่มีลำดับขั้นสู่ความสงบภายใน การยกระดับชี่ และการเข้าถึงภาวะรู้ตัวขั้นสูง — เป็นรากฐานของวิชาสายนอกทั้งปวง",
+          "Bone marrow washing — the advanced nei-kung of the Little Nine Heaven system. Breathing, strengthening, and energy circulation for vitality and longevity. Open to any dedicated adult.": "การล้างไขกระดูก — เน่ยกงขั้นสูงของระบบเสี่ยวจิ่วเทียน ประกอบด้วยการหายใจ การเสริมความแข็งแรง และการหมุนเวียนพลัง เพื่อความกระปรี้กระเปร่าและอายุยืน เปิดรับผู้ใหญ่ทุกท่านที่ตั้งใจจริง",
+          "Character Gate Fist. A rare soft Shaolin system of eighteen characters held within three forms. Light, fast, fingertip striking — preserved through Sifu Chin Cheng-Yen.": "มวยประตูอักษร ระบบเส้าหลินสายอ่อนอันหายาก สิบแปดอักษรบรรจุอยู่ในสามท่ารำ เบา เร็ว โจมตีด้วยปลายนิ้ว — สืบทอดรักษาไว้โดยซีฟูเฉิน เฉิงเอี๋ยน",
+          "\"The supreme good is like water, which nourishes all things without trying to.\"": "«ความดีสูงสุดเปรียบดั่งน้ำ ซึ่งหล่อเลี้ยงสรรพสิ่งโดยมิได้แก่งแย่ง»",
+          "— Tao Te Ching · Lao Tzu": "— เต้าเต๋อจิง · เล่าจื๊อ",
+          "The Masters": "บรรดาอาจารย์",
+          "These arts were passed down through a living chain of masters. To study with us is to touch that chain.": "วิชาเหล่านี้ถ่ายทอดผ่านสายอาจารย์ที่ยังมีชีวิต การเรียนกับเราคือการได้สัมผัสสายนั้น",
+          "Grandmaster": "ปรมาจารย์",
+          "Master": "อาจารย์",
+          "Sifu": "ซีฟู",
+          "Little Nine Heaven · Ba Kua · Advanced Chi-Kung": "เสี่ยวจิ่วเทียน · ปากั้ว · ชี่กงขั้นสูง",
+          "Original Chen Style Tai-Chi": "ไท่จี๋สกุลเฉินดั้งเดิม",
+          "Hsing-I · Healing Arts · Chi-Kung": "ซิงอี้ · วิชาเยียวยา · ชี่กง",
+          "Tzu Men-Chuan · Iron Hand": "จื้อเหมินฉวน · ฝ่ามือเหล็ก",
+          "The Training": "การฝึก",
+          "In Practice": "ในการฝึกจริง",
+          "Sifu Ajay Kumra": "ซีฟูอเจย์ กุมรา",
+          "Form Practice": "การฝึกท่ารำ",
+          "Partner & Weapons Work": "การฝึกคู่และอาวุธ",
+          "Southern California": "แคลิฟอร์เนียใต้",
+          "Begin Your Journey": "เริ่มการเดินทางของท่าน",
+          "Classes in the internal arts are offered on a personal basis. If you are ready to commit to genuine study of these rare and powerful systems, we invite you to reach out. The door is open to those who seek.": "การสอนวิชาสายในนั้นให้เป็นรายบุคคล หากท่านพร้อมทุ่มเทศึกษาระบบวิชาอันหายากและทรงพลังเหล่านี้อย่างจริงจัง ขอเชิญติดต่อมา ประตูเปิดไว้สำหรับผู้แสวงหา",
+          "Name": "ชื่อ",
+          "Email": "อีเมล",
+          "Phone": "โทรศัพท์",
+          "(optional)": "(ไม่บังคับ)",
+          "Martial Arts Experience": "ประสบการณ์ด้านศิลปะการต่อสู้",
+          "Select one…": "เลือกหนึ่งข้อ…",
+          "Complete beginner": "เริ่มต้นจากศูนย์",
+          "Some experience": "มีประสบการณ์บ้าง",
+          "Several years of training": "ฝึกมาหลายปี",
+          "Long-term practitioner": "ผู้ฝึกมายาวนาน",
+          "Primary Interest": "ความสนใจหลัก",
+          "Health & self-cultivation generally": "สุขภาพและการบ่มเพาะตนโดยทั่วไป",
+          "Not sure yet — open to guidance": "ยังไม่แน่ใจ — ยินดีรับคำแนะนำ",
+          "Tell Us About Yourself": "เล่าเรื่องของท่านให้เราฟัง",
+          "Inquiries are read personally. Please allow a few days for a reply.": "ข้อความทุกฉบับอ่านด้วยตนเอง อาจใช้เวลาสองสามวันในการตอบกลับ",
+          "Send Inquiry": "ส่งข้อความ",
+          "Little Nine Heaven SoCal · Southern California": "Little Nine Heaven SoCal · แคลิฟอร์เนียใต้",
+          "© 2026 Little Nine Heaven SoCal · Internal Kung-Fu · All Rights Reserved": "© 2026 Little Nine Heaven SoCal · กังฟูสายใน · สงวนลิขสิทธิ์"
+},
+        "placeholders": {
+          "Your full name": "ชื่อ-นามสกุลของท่าน",
+          "What draws you to the internal arts? What are you hoping to find in your training?": "อะไรทำให้ท่านสนใจวิชาสายใน และท่านหวังจะพบสิ่งใดจากการฝึก"
+},
+        "title": "Little Nine Heaven SoCal | กังฟูสายในแบบเต๋า · แคลิฟอร์เนียใต้"
+      },
+      "zh": {
+        "strings": {
+      // ── Navigation ──
+      "Systems ▾": "武学体系 ▾",
+      "About ▾": "关于 ▾",
+      "Resources ▾": "资源 ▾",
+      "Contact": "联系我们",
+      "Little Nine Heaven": "小九天",
+      "Hsing-I (Xing Yi Quan)": "形意拳",
+      "Chen Tai-Chi": "陈式太极",
+      "Chen Tai-Chi (Taijiquan)": "陈式太极拳",
+      "Splashing Hands": "泼手",
+      "Iron Hand": "铁掌",
+      "Ba Kua": "八卦掌",
+      "Ba Kua (Baguazhang)": "八卦掌",
+      "Taoist Lovemaking": "道家房中术",
+      "Taoist Meditation": "道家静坐",
+      "Shih Shui": "洗髓功",
+      "Tzu Men Chuan": "字门拳",
+      "Ajay Kumra — Instructor": "Ajay Kumra — 教练",
+      "The Lineage": "传承法脉",
+      "Master James McNeil": "James McNeil 老师",
+      "Master Chiao Chang-Hung": "乔长虹宗师",
+      "Master Pan Wing-Chow": "潘咏周老师",
+      "Master Haumea Lefiti": "Haumea Lefiti 老师",
+      "Master Hsu Hong-Chi": "徐鸿基老师",
+      "Sifu Chin Cheng-Yen": "陈成炎师父",
+      "eBooks": "电子书",
+      "Videos": "教学影片",
+      "Magazine Articles": "杂志文章",
+      "Classes & Events": "课程与活动",
+
+      // ── Hero ──
+      "Southern California · Internal Kung-Fu": "美国南加州 · 内家功夫",
+      "Little Nine": "小九",
+      "Heaven": "天",
+      "Wu Tao · The Taoist Way": "武道 · 道家之路",
+      "Ancient internal arts rooted in Taoist wisdom — cultivating mind, body, and spirit since 2698 BC.":
+        "源自道家智慧的古老内家功夫 —— 自公元前2698年传承至今，修养身心与精神。",
+      "Begin Your Path": "开始您的修行",
+      "Explore the Arts": "了解各门功法",
+      "Scroll": "向下",
+
+      // ── Lineage section ──
+      "Our Lineage": "我们的传承",
+      "A Living Tradition": "活着的传统",
+      "Little Nine Heaven is the oldest known Taoist system in existence, tracing its origins to 2698 BC. These are not merely martial arts — they are complete systems of self-cultivation, healing, and inner transformation passed down through an unbroken lineage of masters.":
+        "小九天是现存最古老的道家体系，其源可追溯至公元前2698年。这些不仅仅是武术 —— 而是完整的修身、疗愈与内在转化之道，由历代宗师一脉相承，从未断绝。",
+      "In Southern California, we carry this tradition forward. Classes are intimate, instruction is personal, and the depth of what is available to the dedicated student is without parallel in the modern world.":
+        "在南加州，我们将这一传统延续下去。班级人数精简，因材施教，凡诚心求学者所能得到的深度，于当今世上实属罕见。",
+      "Inquire About Classes": "咨询课程",
+
+      // ── Systems section ──
+      "The Curriculum": "课程体系",
+      "The Systems": "各门功法",
+      "Each system is a world unto itself — a complete path of study connecting movement, breath, intention, and spirit.":
+        "每一门功法自成一界 —— 皆是贯通形体、呼吸、意念与精神的完整修学之路。",
+      "The oldest Taoist system known today, dating to 2698 BC. Three pillars: boxing, swordsmanship, and bone marrow washing. Taught only to personally chosen students of advanced study.":
+        "现今所知最古老的道家体系，始于公元前2698年。三大支柱：拳法、剑术与洗髓功。仅传授于亲自择定的进阶弟子。",
+      "An ancient art of fighting and healing. Five elements, twelve animals, tien-gunn, six harmonies, nine essences. Deceptively simple, endlessly deep — easy to learn, hardest to master.":
+        "既是技击之术，亦是疗愈之道。五行、十二形、天罡、六合、九要。看似简易，实则深不见底 —— 易学而最难精。",
+      "The old 13 postures form with 64 movements. Silk-reeling energy circles the body's meridians, generating extraordinary power through precise, spiraling movement and moving meditation.":
+        "古传十三势，共六十四式。缠丝劲循行周身经络，以精准的螺旋运动与动中之静，生出超乎寻常的劲力。",
+      "A practical, no-nonsense street art from the early 1700s. Quick footwork, low kicks, explosive strikes. Singular and two-man fighting forms designed for real-world application.":
+        "源自十八世纪初的实战之技，不尚花巧。步法迅捷，腿法低而狠，出手爆烈。单练与对练套路皆为实战而设。",
+      "The development of hands that carry iron power while retaining a normal appearance. Rooted in the Shaolin Temples. No comparable Iron Hand training exists anywhere else in the world.":
+        "练就铁石之力而外表如常人之手。源自少林寺。世上再无可与之相比的铁掌功法。",
+      "Eight diagrams. Constant circling, constant change. Eight animals, ten exercises, three styles of walking. The ultimate goal: to move, act, and react with total natural freedom.":
+        "八卦为象。走圈不息，变化不止。八形、十式、三种走法。终极之境：动静应变，皆出自然，毫无滞碍。",
+      "The classical arts of the bedchamber. Conserving jing, transforming it into chi, and circulating it through the body — sexual energy treated as cultivation rather than expenditure.":
+        "古传房中之术。保精、化精为气、行气周身 —— 视性能量为修炼之资，而非耗散之物。",
+      "Both sitting and standing forms. A structured path toward inner stillness, elevated chi, and access to higher states of awareness — the foundation beneath all the external arts.":
+        "静坐与站桩并修。循序渐进，以求内在之静、气机之升，进而通达更高的觉知境界 —— 此为一切外在功夫的根基。",
+      "Bone marrow washing — the advanced nei-kung of the Little Nine Heaven system. Breathing, strengthening, and energy circulation for vitality and longevity. Open to any dedicated adult.":
+        "洗髓功 —— 小九天体系中的高阶内功。以呼吸、筋骨锻炼与行气之法，养精蓄锐，延年益寿。凡诚心之成年人皆可修习。",
+      "Character Gate Fist. A rare soft Shaolin system of eighteen characters held within three forms. Light, fast, fingertip striking — preserved through Sifu Chin Cheng-Yen.":
+        "字门拳。少林软门中的稀有一脉，十八字诀寓于三套拳中。轻灵迅捷，以指尖发力 —— 由陈成炎师父传承至今。",
+
+      // ── Quote ──
+      "\"The supreme good is like water, which nourishes all things without trying to.\"":
+        "「上善若水，水善利万物而不争。」",
+      "— Tao Te Ching · Lao Tzu": "—— 《道德经》· 老子",
+
+      // ── Masters ──
+      "The Masters": "历代宗师",
+      "These arts were passed down through a living chain of masters. To study with us is to touch that chain.":
+        "这些功法由历代宗师亲手相传，一脉不绝。从学于此，即是接续此脉。",
+      "Grandmaster": "宗师",
+      "Master": "老师",
+      "Sifu": "师父",
+      "Chiao Chang-Hung": "乔长虹",
+      "Pan Wing-Chow": "潘咏周",
+      "Hsu Hong-Chi": "徐鸿基",
+      "Haumea Lefiti": "Haumea Lefiti",
+      "Chin Chen-Yen": "陈成炎",
+      "Little Nine Heaven · Ba Kua · Advanced Chi-Kung": "小九天 · 八卦掌 · 高阶气功",
+      "Original Chen Style Tai-Chi": "陈式太极原传",
+      "Hsing-I · Healing Arts · Chi-Kung": "形意拳 · 疗愈之术 · 气功",
+      "Tzu Men-Chuan · Iron Hand": "字门拳 · 铁掌",
+
+      // ── Gallery ──
+      "The Training": "训练实况",
+      "In Practice": "习练之中",
+      "Sifu Ajay Kumra": "Ajay Kumra 老师",
+      "Form Practice": "套路习练",
+      "Partner & Weapons Work": "对练与器械",
+
+      // ── Contact ──
+      "Southern California": "美国南加州",
+      "Begin Your Journey": "开始您的旅程",
+      "Classes in the internal arts are offered on a personal basis. If you are ready to commit to genuine study of these rare and powerful systems, we invite you to reach out. The door is open to those who seek.":
+        "内家功夫的教学皆因人而授。若您已准备好真心投入这些稀有而精深的功法，欢迎来信联系。门为求道者而开。",
+      "Name": "姓名",
+      "Email": "电子邮箱",
+      "Phone": "电话",
+      "(optional)": "（选填）",
+      "Martial Arts Experience": "武术基础",
+      "Select one…": "请选择…",
+      "Complete beginner": "完全零基础",
+      "Some experience": "略有基础",
+      "Several years of training": "已练数年",
+      "Long-term practitioner": "长期修习者",
+      "Primary Interest": "主要兴趣",
+      "Health & self-cultivation generally": "养生与自我修养",
+      "Not sure yet — open to guidance": "尚未确定 —— 愿听指点",
+      "Tell Us About Yourself": "请介绍一下您自己",
+      "Inquiries are read personally. Please allow a few days for a reply.":
+        "来信由本人亲自阅读，回复或需数日，敬请见谅。",
+      "Send Inquiry": "提交咨询",
+      "Little Nine Heaven SoCal · Southern California": "小九天南加州 · 美国南加州",
+
+      // ── Footer ──
+      "Instagram": "Instagram",
+      "Facebook": "Facebook",
+      "YouTube": "YouTube",
+      "littlenineheaven.com": "littlenineheaven.com",
+      "© 2026 Little Nine Heaven SoCal · Internal Kung-Fu · All Rights Reserved":
+        "© 2026 小九天南加州 · 内家功夫 · 版权所有"
+    },
+        "placeholders": {
+      "Your full name": "您的姓名",
+      "you@example.com": "you@example.com",
+      "(000) 000-0000": "000-0000-0000",
+      "What draws you to the internal arts? What are you hoping to find in your training?":
+        "是什么吸引您来学习内家功夫？您希望在修习中得到什么？"
+    },
+        "title": "小九天南加州 | 道家内家功夫 · 美国南加州"
+      },
+      "es": {
+        "strings": {
+          "Systems ▾": "Sistemas ▾",
+          "About ▾": "Acerca de ▾",
+          "Resources ▾": "Recursos ▾",
+          "Contact": "Contacto",
+          "Iron Hand": "Mano de Hierro",
+          "Taoist Lovemaking": "Artes amatorias taoístas",
+          "Taoist Meditation": "Meditación taoísta",
+          "Ajay Kumra — Instructor": "Ajay Kumra — Instructor",
+          "The Lineage": "El linaje",
+          "Master James McNeil": "Maestro James McNeil",
+          "Master Chiao Chang-Hung": "Maestro Chiao Chang-Hung",
+          "Master Pan Wing-Chow": "Maestro Pan Wing-Chow",
+          "Master Haumea Lefiti": "Maestro Haumea Lefiti",
+          "Master Hsu Hong-Chi": "Maestro Hsu Hong-Chi",
+          "Sifu Chin Cheng-Yen": "Sifu Chin Cheng-Yen",
+          "eBooks": "Libros electrónicos",
+          "Videos": "Vídeos",
+          "Magazine Articles": "Artículos de revista",
+          "Classes & Events": "Clases y eventos",
+          "Southern California · Internal Kung-Fu": "Sur de California · Kung-Fu interno",
+          "Little Nine": "Pequeño Noveno",
+          "Heaven": "Cielo",
+          "Wu Tao · The Taoist Way": "Wu Tao · La vía taoísta",
+          "Ancient internal arts rooted in Taoist wisdom — cultivating mind, body, and spirit since 2698 BC.": "Antiguas artes internas arraigadas en la sabiduría taoísta — cultivando mente, cuerpo y espíritu desde 2698 a. C.",
+          "Begin Your Path": "Comience su camino",
+          "Explore the Arts": "Explore las artes",
+          "Scroll": "Desplazar",
+          "Our Lineage": "Nuestro linaje",
+          "A Living Tradition": "Una tradición viva",
+          "Little Nine Heaven is the oldest known Taoist system in existence, tracing its origins to 2698 BC. These are not merely martial arts — they are complete systems of self-cultivation, healing, and inner transformation passed down through an unbroken lineage of masters.": "Little Nine Heaven es el sistema taoísta más antiguo que se conoce, con orígenes que se remontan al año 2698 a. C. No son meras artes marciales: son sistemas completos de autocultivo, sanación y transformación interior, transmitidos por un linaje ininterrumpido de maestros.",
+          "In Southern California, we carry this tradition forward. Classes are intimate, instruction is personal, and the depth of what is available to the dedicated student is without parallel in the modern world.": "En el sur de California continuamos esta tradición. Las clases son reducidas, la enseñanza es personal, y la profundidad de lo que se ofrece al alumno dedicado no tiene parangón en el mundo moderno.",
+          "Inquire About Classes": "Consultar sobre las clases",
+          "The Curriculum": "El programa",
+          "The Systems": "Los sistemas",
+          "Each system is a world unto itself — a complete path of study connecting movement, breath, intention, and spirit.": "Cada sistema es un mundo en sí mismo: un camino completo de estudio que une movimiento, respiración, intención y espíritu.",
+          "The oldest Taoist system known today, dating to 2698 BC. Three pillars: boxing, swordsmanship, and bone marrow washing. Taught only to personally chosen students of advanced study.": "El sistema taoísta más antiguo que se conoce, del año 2698 a. C. Tres pilares: el puño, la esgrima y el lavado de la médula ósea. Se enseña solo a alumnos avanzados elegidos personalmente.",
+          "An ancient art of fighting and healing. Five elements, twelve animals, tien-gunn, six harmonies, nine essences. Deceptively simple, endlessly deep — easy to learn, hardest to master.": "Un antiguo arte de combate y de sanación. Cinco elementos, doce animales, tien-gunn, seis armonías, nueve esencias. Engañosamente simple e infinitamente profundo: fácil de aprender, dificilísimo de dominar.",
+          "The old 13 postures form with 64 movements. Silk-reeling energy circles the body's meridians, generating extraordinary power through precise, spiraling movement and moving meditation.": "La antigua forma de las 13 posturas con 64 movimientos. La energía de devanado de seda recorre los meridianos del cuerpo y genera una fuerza extraordinaria mediante un movimiento espiral preciso y meditación en movimiento.",
+          "A practical, no-nonsense street art from the early 1700s. Quick footwork, low kicks, explosive strikes. Singular and two-man fighting forms designed for real-world application.": "Un arte callejero práctico y directo de principios del siglo XVIII. Juego de pies rápido, patadas bajas, golpes explosivos. Formas individuales y por parejas concebidas para su aplicación real.",
+          "The development of hands that carry iron power while retaining a normal appearance. Rooted in the Shaolin Temples. No comparable Iron Hand training exists anywhere else in the world.": "El desarrollo de manos con fuerza de hierro que conservan un aspecto normal. Arraigado en los templos de Shaolin. No existe en el mundo otro entrenamiento de Mano de Hierro comparable.",
+          "Eight diagrams. Constant circling, constant change. Eight animals, ten exercises, three styles of walking. The ultimate goal: to move, act, and react with total natural freedom.": "Ocho trigramas. Giro constante, cambio constante. Ocho animales, diez ejercicios, tres formas de caminar. La meta última: moverse, actuar y reaccionar con total libertad natural.",
+          "The classical arts of the bedchamber. Conserving jing, transforming it into chi, and circulating it through the body — sexual energy treated as cultivation rather than expenditure.": "Las artes clásicas de la alcoba. Conservar el jing, transformarlo en chi y hacerlo circular por el cuerpo: la energía sexual entendida como cultivo y no como gasto.",
+          "Both sitting and standing forms. A structured path toward inner stillness, elevated chi, and access to higher states of awareness — the foundation beneath all the external arts.": "Formas sentadas y de pie. Un camino estructurado hacia la quietud interior, la elevación del chi y estados superiores de conciencia: el cimiento de todas las artes externas.",
+          "Bone marrow washing — the advanced nei-kung of the Little Nine Heaven system. Breathing, strengthening, and energy circulation for vitality and longevity. Open to any dedicated adult.": "Lavado de la médula ósea: el nei-kung avanzado del sistema Little Nine Heaven. Respiración, fortalecimiento y circulación energética para la vitalidad y la longevidad. Abierto a cualquier adulto comprometido.",
+          "Character Gate Fist. A rare soft Shaolin system of eighteen characters held within three forms. Light, fast, fingertip striking — preserved through Sifu Chin Cheng-Yen.": "Puño de la Puerta de los Caracteres. Un raro sistema suave de Shaolin, con dieciocho caracteres contenidos en tres formas. Ligero, rápido, de golpeo con la yema de los dedos, preservado por Sifu Chin Cheng-Yen.",
+          "\"The supreme good is like water, which nourishes all things without trying to.\"": "«La bondad suprema es como el agua, que beneficia a todas las cosas sin disputar con ellas.»",
+          "— Tao Te Ching · Lao Tzu": "— Tao Te Ching · Lao Tse",
+          "The Masters": "Los maestros",
+          "These arts were passed down through a living chain of masters. To study with us is to touch that chain.": "Estas artes se transmitieron a través de una cadena viva de maestros. Estudiar con nosotros es tocar esa cadena.",
+          "Grandmaster": "Gran Maestro",
+          "Master": "Maestro",
+          "Sifu": "Sifu",
+          "Little Nine Heaven · Ba Kua · Advanced Chi-Kung": "Little Nine Heaven · Ba Kua · Chi-Kung avanzado",
+          "Original Chen Style Tai-Chi": "Tai-Chi estilo Chen original",
+          "Hsing-I · Healing Arts · Chi-Kung": "Hsing-I · Artes curativas · Chi-Kung",
+          "Tzu Men-Chuan · Iron Hand": "Tzu Men-Chuan · Mano de Hierro",
+          "The Training": "El entrenamiento",
+          "In Practice": "En la práctica",
+          "Form Practice": "Práctica de formas",
+          "Partner & Weapons Work": "Trabajo con compañero y armas",
+          "Southern California": "Sur de California",
+          "Begin Your Journey": "Comience su viaje",
+          "Classes in the internal arts are offered on a personal basis. If you are ready to commit to genuine study of these rare and powerful systems, we invite you to reach out. The door is open to those who seek.": "Las clases de artes internas se imparten de forma personal. Si está dispuesto a comprometerse con el estudio serio de estos sistemas raros y poderosos, le invitamos a escribirnos. La puerta está abierta a quien busca.",
+          "Name": "Nombre",
+          "Email": "Correo electrónico",
+          "Phone": "Teléfono",
+          "(optional)": "(opcional)",
+          "Martial Arts Experience": "Experiencia en artes marciales",
+          "Select one…": "Seleccione una opción…",
+          "Complete beginner": "Principiante absoluto",
+          "Some experience": "Algo de experiencia",
+          "Several years of training": "Varios años de práctica",
+          "Long-term practitioner": "Practicante de largo recorrido",
+          "Primary Interest": "Interés principal",
+          "Health & self-cultivation generally": "Salud y autocultivo en general",
+          "Not sure yet — open to guidance": "Aún no lo sé — abierto a orientación",
+          "Tell Us About Yourself": "Háblenos de usted",
+          "Inquiries are read personally. Please allow a few days for a reply.": "Las consultas se leen personalmente. La respuesta puede tardar unos días.",
+          "Send Inquiry": "Enviar consulta",
+          "Little Nine Heaven SoCal · Southern California": "Little Nine Heaven SoCal · Sur de California",
+          "© 2026 Little Nine Heaven SoCal · Internal Kung-Fu · All Rights Reserved": "© 2026 Little Nine Heaven SoCal · Kung-Fu interno · Todos los derechos reservados"
+},
+        "placeholders": {
+          "Your full name": "Su nombre completo",
+          "What draws you to the internal arts? What are you hoping to find in your training?": "¿Qué le atrae de las artes internas? ¿Qué espera encontrar en su práctica?"
+},
+        "title": "Little Nine Heaven SoCal | Kung-Fu interno taoísta · Sur de California"
+      },
+      "fr": {
+        "strings": {
+          "Systems ▾": "Systèmes ▾",
+          "About ▾": "À propos ▾",
+          "Resources ▾": "Ressources ▾",
+          "Contact": "Contact",
+          "Iron Hand": "Main de Fer",
+          "Taoist Lovemaking": "Arts taoïstes de la chambre",
+          "Taoist Meditation": "Méditation taoïste",
+          "Ajay Kumra — Instructor": "Ajay Kumra — Enseignant",
+          "The Lineage": "La lignée",
+          "Master James McNeil": "Maître James McNeil",
+          "Master Chiao Chang-Hung": "Maître Chiao Chang-Hung",
+          "Master Pan Wing-Chow": "Maître Pan Wing-Chow",
+          "Master Haumea Lefiti": "Maître Haumea Lefiti",
+          "Master Hsu Hong-Chi": "Maître Hsu Hong-Chi",
+          "Sifu Chin Cheng-Yen": "Sifu Chin Cheng-Yen",
+          "eBooks": "Livres numériques",
+          "Videos": "Vidéos",
+          "Magazine Articles": "Articles de presse",
+          "Classes & Events": "Cours et événements",
+          "Southern California · Internal Kung-Fu": "Californie du Sud · Kung-Fu interne",
+          "Little Nine": "Petit Neuvième",
+          "Heaven": "Ciel",
+          "Wu Tao · The Taoist Way": "Wu Tao · La voie taoïste",
+          "Ancient internal arts rooted in Taoist wisdom — cultivating mind, body, and spirit since 2698 BC.": "Des arts internes anciens enracinés dans la sagesse taoïste — cultiver l'esprit, le corps et l'âme depuis 2698 av. J.-C.",
+          "Begin Your Path": "Commencez votre chemin",
+          "Explore the Arts": "Découvrir les arts",
+          "Scroll": "Défiler",
+          "Our Lineage": "Notre lignée",
+          "A Living Tradition": "Une tradition vivante",
+          "Little Nine Heaven is the oldest known Taoist system in existence, tracing its origins to 2698 BC. These are not merely martial arts — they are complete systems of self-cultivation, healing, and inner transformation passed down through an unbroken lineage of masters.": "Little Nine Heaven est le plus ancien système taoïste connu, dont les origines remontent à 2698 av. J.-C. Ce ne sont pas de simples arts martiaux : ce sont des systèmes complets de culture de soi, de guérison et de transformation intérieure, transmis par une lignée ininterrompue de maîtres.",
+          "In Southern California, we carry this tradition forward. Classes are intimate, instruction is personal, and the depth of what is available to the dedicated student is without parallel in the modern world.": "En Californie du Sud, nous perpétuons cette tradition. Les cours sont restreints, l'enseignement est personnel, et la profondeur offerte à l'élève assidu est sans équivalent dans le monde moderne.",
+          "Inquire About Classes": "Se renseigner sur les cours",
+          "The Curriculum": "Le programme",
+          "The Systems": "Les systèmes",
+          "Each system is a world unto itself — a complete path of study connecting movement, breath, intention, and spirit.": "Chaque système est un monde en soi — une voie d'étude complète reliant le mouvement, le souffle, l'intention et l'esprit.",
+          "The oldest Taoist system known today, dating to 2698 BC. Three pillars: boxing, swordsmanship, and bone marrow washing. Taught only to personally chosen students of advanced study.": "Le plus ancien système taoïste connu à ce jour, datant de 2698 av. J.-C. Trois piliers : la boxe, l'art de l'épée et le lavage de la moelle. Enseigné uniquement à des élèves avancés choisis personnellement.",
+          "An ancient art of fighting and healing. Five elements, twelve animals, tien-gunn, six harmonies, nine essences. Deceptively simple, endlessly deep — easy to learn, hardest to master.": "Un art ancien de combat et de guérison. Cinq éléments, douze animaux, tien-gunn, six harmonies, neuf essences. D'une simplicité trompeuse et d'une profondeur sans fin : facile à apprendre, le plus difficile à maîtriser.",
+          "The old 13 postures form with 64 movements. Silk-reeling energy circles the body's meridians, generating extraordinary power through precise, spiraling movement and moving meditation.": "L'ancienne forme des 13 postures en 64 mouvements. L'énergie du dévidage de la soie parcourt les méridiens du corps et engendre une puissance extraordinaire par un mouvement spiralé précis et une méditation en mouvement.",
+          "A practical, no-nonsense street art from the early 1700s. Quick footwork, low kicks, explosive strikes. Singular and two-man fighting forms designed for real-world application.": "Un art de rue pratique et sans fioritures, du début du XVIIIe siècle. Jeu de jambes rapide, coups de pied bas, frappes explosives. Formes solo et à deux, conçues pour l'application réelle.",
+          "The development of hands that carry iron power while retaining a normal appearance. Rooted in the Shaolin Temples. No comparable Iron Hand training exists anywhere else in the world.": "Le développement de mains dotées d'une force de fer tout en gardant une apparence normale. Enraciné dans les temples de Shaolin. Aucun entraînement de Main de Fer comparable n'existe ailleurs dans le monde.",
+          "Eight diagrams. Constant circling, constant change. Eight animals, ten exercises, three styles of walking. The ultimate goal: to move, act, and react with total natural freedom.": "Huit trigrammes. Rotation constante, changement constant. Huit animaux, dix exercices, trois façons de marcher. Le but ultime : se mouvoir, agir et réagir en toute liberté naturelle.",
+          "The classical arts of the bedchamber. Conserving jing, transforming it into chi, and circulating it through the body — sexual energy treated as cultivation rather than expenditure.": "Les arts classiques de la chambre à coucher. Conserver le jing, le transformer en chi et le faire circuler dans le corps — l'énergie sexuelle envisagée comme culture de soi et non comme dépense.",
+          "Both sitting and standing forms. A structured path toward inner stillness, elevated chi, and access to higher states of awareness — the foundation beneath all the external arts.": "Formes assises et debout. Une voie structurée vers le calme intérieur, l'élévation du chi et l'accès à des états de conscience supérieurs — le fondement de tous les arts externes.",
+          "Bone marrow washing — the advanced nei-kung of the Little Nine Heaven system. Breathing, strengthening, and energy circulation for vitality and longevity. Open to any dedicated adult.": "Le lavage de la moelle osseuse — le nei-kung avancé du système Little Nine Heaven. Respiration, renforcement et circulation de l'énergie pour la vitalité et la longévité. Ouvert à tout adulte assidu.",
+          "Character Gate Fist. A rare soft Shaolin system of eighteen characters held within three forms. Light, fast, fingertip striking — preserved through Sifu Chin Cheng-Yen.": "Poing de la Porte des Caractères. Un rare système souple de Shaolin, dix-huit caractères contenus dans trois formes. Léger, rapide, frappant du bout des doigts — préservé par Sifu Chin Cheng-Yen.",
+          "\"The supreme good is like water, which nourishes all things without trying to.\"": "« La bonté suprême est comme l'eau, qui profite à toutes choses sans lutter. »",
+          "— Tao Te Ching · Lao Tzu": "— Tao Tö King · Lao Tseu",
+          "The Masters": "Les maîtres",
+          "These arts were passed down through a living chain of masters. To study with us is to touch that chain.": "Ces arts ont été transmis par une chaîne vivante de maîtres. Étudier avec nous, c'est toucher cette chaîne.",
+          "Grandmaster": "Grand Maître",
+          "Master": "Maître",
+          "Sifu": "Sifu",
+          "Little Nine Heaven · Ba Kua · Advanced Chi-Kung": "Little Nine Heaven · Ba Kua · Chi-Kung avancé",
+          "Original Chen Style Tai-Chi": "Tai-Chi style Chen originel",
+          "Hsing-I · Healing Arts · Chi-Kung": "Hsing-I · Arts de guérison · Chi-Kung",
+          "Tzu Men-Chuan · Iron Hand": "Tzu Men-Chuan · Main de Fer",
+          "The Training": "L'entraînement",
+          "In Practice": "En pratique",
+          "Form Practice": "Travail des formes",
+          "Partner & Weapons Work": "Travail à deux et aux armes",
+          "Southern California": "Californie du Sud",
+          "Begin Your Journey": "Commencez votre voyage",
+          "Classes in the internal arts are offered on a personal basis. If you are ready to commit to genuine study of these rare and powerful systems, we invite you to reach out. The door is open to those who seek.": "Les cours d'arts internes sont dispensés à titre personnel. Si vous êtes prêt à vous engager dans l'étude sérieuse de ces systèmes rares et puissants, écrivez-nous. La porte est ouverte à qui cherche.",
+          "Name": "Nom",
+          "Email": "Courriel",
+          "Phone": "Téléphone",
+          "(optional)": "(facultatif)",
+          "Martial Arts Experience": "Expérience en arts martiaux",
+          "Select one…": "Choisissez…",
+          "Complete beginner": "Débutant complet",
+          "Some experience": "Quelque expérience",
+          "Several years of training": "Plusieurs années de pratique",
+          "Long-term practitioner": "Pratiquant de longue date",
+          "Primary Interest": "Intérêt principal",
+          "Health & self-cultivation generally": "Santé et culture de soi en général",
+          "Not sure yet — open to guidance": "Encore indécis — ouvert aux conseils",
+          "Tell Us About Yourself": "Parlez-nous de vous",
+          "Inquiries are read personally. Please allow a few days for a reply.": "Les demandes sont lues personnellement. Comptez quelques jours pour une réponse.",
+          "Send Inquiry": "Envoyer la demande",
+          "Little Nine Heaven SoCal · Southern California": "Little Nine Heaven SoCal · Californie du Sud",
+          "© 2026 Little Nine Heaven SoCal · Internal Kung-Fu · All Rights Reserved": "© 2026 Little Nine Heaven SoCal · Kung-Fu interne · Tous droits réservés"
+},
+        "placeholders": {
+          "Your full name": "Votre nom complet",
+          "What draws you to the internal arts? What are you hoping to find in your training?": "Qu'est-ce qui vous attire dans les arts internes ? Que souhaitez-vous y trouver ?"
+},
+        "title": "Little Nine Heaven SoCal | Kung-Fu interne taoïste · Californie du Sud"
+      },
+      "de": {
+        "strings": {
+          "Systems ▾": "Systeme ▾",
+          "About ▾": "Über uns ▾",
+          "Resources ▾": "Ressourcen ▾",
+          "Contact": "Kontakt",
+          "Hsing-I (Xing Yi Quan)": "Hsing-I (Xingyiquan)",
+          "Chen Tai-Chi": "Chen Tai-Chi",
+          "Chen Tai-Chi (Taijiquan)": "Chen Tai-Chi (Taijiquan)",
+          "Splashing Hands": "Splashing Hands",
+          "Iron Hand": "Eiserne Hand",
+          "Ba Kua": "Ba Kua",
+          "Ba Kua (Baguazhang)": "Ba Kua (Baguazhang)",
+          "Taoist Lovemaking": "Taoistische Liebeskunst",
+          "Taoist Meditation": "Taoistische Meditation",
+          "Ajay Kumra — Instructor": "Ajay Kumra — Lehrer",
+          "The Lineage": "Die Überlieferungslinie",
+          "Master James McNeil": "Meister James McNeil",
+          "Master Chiao Chang-Hung": "Meister Chiao Chang-Hung",
+          "Master Pan Wing-Chow": "Meister Pan Wing-Chow",
+          "Master Haumea Lefiti": "Meister Haumea Lefiti",
+          "Master Hsu Hong-Chi": "Meister Hsu Hong-Chi",
+          "Sifu Chin Cheng-Yen": "Sifu Chin Cheng-Yen",
+          "eBooks": "E-Books",
+          "Videos": "Videos",
+          "Magazine Articles": "Zeitschriftenartikel",
+          "Classes & Events": "Kurse & Veranstaltungen",
+          "Southern California · Internal Kung-Fu": "Südkalifornien · Inneres Kung-Fu",
+          "Little Nine": "Kleiner Neunter",
+          "Heaven": "Himmel",
+          "Wu Tao · The Taoist Way": "Wu Tao · Der taoistische Weg",
+          "Ancient internal arts rooted in Taoist wisdom — cultivating mind, body, and spirit since 2698 BC.": "Uralte innere Künste, verwurzelt in taoistischer Weisheit — Geist, Körper und Seele kultivieren seit 2698 v. Chr.",
+          "Begin Your Path": "Beginnen Sie Ihren Weg",
+          "Explore the Arts": "Die Künste entdecken",
+          "Scroll": "Scrollen",
+          "Our Lineage": "Unsere Linie",
+          "A Living Tradition": "Eine lebendige Tradition",
+          "Little Nine Heaven is the oldest known Taoist system in existence, tracing its origins to 2698 BC. These are not merely martial arts — they are complete systems of self-cultivation, healing, and inner transformation passed down through an unbroken lineage of masters.": "Little Nine Heaven ist das älteste bekannte taoistische System, dessen Ursprünge bis 2698 v. Chr. zurückreichen. Dies sind nicht bloß Kampfkünste — es sind vollständige Systeme der Selbstkultivierung, Heilung und inneren Wandlung, überliefert durch eine ungebrochene Linie von Meistern.",
+          "In Southern California, we carry this tradition forward. Classes are intimate, instruction is personal, and the depth of what is available to the dedicated student is without parallel in the modern world.": "In Südkalifornien führen wir diese Tradition fort. Die Gruppen sind klein, der Unterricht persönlich, und die Tiefe dessen, was dem ernsthaften Schüler offensteht, ist in der modernen Welt ohne Beispiel.",
+          "Inquire About Classes": "Nach Kursen fragen",
+          "The Curriculum": "Der Lehrplan",
+          "The Systems": "Die Systeme",
+          "Each system is a world unto itself — a complete path of study connecting movement, breath, intention, and spirit.": "Jedes System ist eine Welt für sich — ein vollständiger Übungsweg, der Bewegung, Atem, Absicht und Geist verbindet.",
+          "The oldest Taoist system known today, dating to 2698 BC. Three pillars: boxing, swordsmanship, and bone marrow washing. Taught only to personally chosen students of advanced study.": "Das älteste heute bekannte taoistische System, aus dem Jahr 2698 v. Chr. Drei Säulen: Faustkampf, Schwertkunst und Knochenmarkwaschung. Nur an persönlich ausgewählte fortgeschrittene Schüler weitergegeben.",
+          "An ancient art of fighting and healing. Five elements, twelve animals, tien-gunn, six harmonies, nine essences. Deceptively simple, endlessly deep — easy to learn, hardest to master.": "Eine alte Kunst des Kämpfens und Heilens. Fünf Elemente, zwölf Tiere, Tien-Gunn, sechs Harmonien, neun Essenzen. Täuschend einfach, unendlich tief — leicht zu lernen, am schwersten zu meistern.",
+          "The old 13 postures form with 64 movements. Silk-reeling energy circles the body's meridians, generating extraordinary power through precise, spiraling movement and moving meditation.": "Die alte Form der 13 Haltungen mit 64 Bewegungen. Seidenspinnende Energie kreist durch die Meridiane des Körpers und erzeugt außergewöhnliche Kraft durch präzise, spiralförmige Bewegung und Meditation in Bewegung.",
+          "A practical, no-nonsense street art from the early 1700s. Quick footwork, low kicks, explosive strikes. Singular and two-man fighting forms designed for real-world application.": "Eine praktische, schnörkellose Straßenkunst aus dem frühen 18. Jahrhundert. Schnelle Fußarbeit, tiefe Tritte, explosive Schläge. Einzel- und Partnerformen, für den Ernstfall entworfen.",
+          "The development of hands that carry iron power while retaining a normal appearance. Rooted in the Shaolin Temples. No comparable Iron Hand training exists anywhere else in the world.": "Die Entwicklung von Händen mit eiserner Kraft bei völlig normalem Aussehen. Verwurzelt in den Shaolin-Tempeln. Ein vergleichbares Eiserne-Hand-Training gibt es sonst nirgends auf der Welt.",
+          "Eight diagrams. Constant circling, constant change. Eight animals, ten exercises, three styles of walking. The ultimate goal: to move, act, and react with total natural freedom.": "Acht Trigramme. Ständiges Kreisen, ständiger Wandel. Acht Tiere, zehn Übungen, drei Gehweisen. Das höchste Ziel: sich mit völliger natürlicher Freiheit zu bewegen, zu handeln und zu reagieren.",
+          "The classical arts of the bedchamber. Conserving jing, transforming it into chi, and circulating it through the body — sexual energy treated as cultivation rather than expenditure.": "Die klassischen Künste des Schlafgemachs. Jing bewahren, in Chi verwandeln und durch den Körper leiten — sexuelle Energie als Kultivierung statt als Verausgabung.",
+          "Both sitting and standing forms. A structured path toward inner stillness, elevated chi, and access to higher states of awareness — the foundation beneath all the external arts.": "Sitzende und stehende Formen. Ein strukturierter Weg zu innerer Stille, erhöhtem Chi und höheren Bewusstseinszuständen — das Fundament unter allen äußeren Künsten.",
+          "Bone marrow washing — the advanced nei-kung of the Little Nine Heaven system. Breathing, strengthening, and energy circulation for vitality and longevity. Open to any dedicated adult.": "Knochenmarkwaschung — das fortgeschrittene Nei-Kung des Little-Nine-Heaven-Systems. Atmung, Kräftigung und Energiezirkulation für Vitalität und ein langes Leben. Offen für jeden ernsthaften Erwachsenen.",
+          "Character Gate Fist. A rare soft Shaolin system of eighteen characters held within three forms. Light, fast, fingertip striking — preserved through Sifu Chin Cheng-Yen.": "Faust des Schriftzeichen-Tors. Ein seltenes weiches Shaolin-System aus achtzehn Schriftzeichen, enthalten in drei Formen. Leicht, schnell, mit Fingerspitzenschlägen — bewahrt durch Sifu Chin Cheng-Yen.",
+          "\"The supreme good is like water, which nourishes all things without trying to.\"": "„Das höchste Gute gleicht dem Wasser, das allen Dingen nützt, ohne zu streiten.“",
+          "— Tao Te Ching · Lao Tzu": "— Tao Te King · Laotse",
+          "The Masters": "Die Meister",
+          "These arts were passed down through a living chain of masters. To study with us is to touch that chain.": "Diese Künste wurden durch eine lebendige Kette von Meistern weitergegeben. Bei uns zu lernen heißt, diese Kette zu berühren.",
+          "Grandmaster": "Großmeister",
+          "Master": "Meister",
+          "Sifu": "Sifu",
+          "Little Nine Heaven · Ba Kua · Advanced Chi-Kung": "Little Nine Heaven · Ba Kua · Fortgeschrittenes Chi-Kung",
+          "Original Chen Style Tai-Chi": "Ursprüngliches Chen-Stil-Tai-Chi",
+          "Hsing-I · Healing Arts · Chi-Kung": "Hsing-I · Heilkünste · Chi-Kung",
+          "Tzu Men-Chuan · Iron Hand": "Tzu Men-Chuan · Eiserne Hand",
+          "The Training": "Das Training",
+          "In Practice": "In der Praxis",
+          "Sifu Ajay Kumra": "Sifu Ajay Kumra",
+          "Form Practice": "Formenübung",
+          "Partner & Weapons Work": "Partner- & Waffenarbeit",
+          "Southern California": "Südkalifornien",
+          "Begin Your Journey": "Beginnen Sie Ihre Reise",
+          "Classes in the internal arts are offered on a personal basis. If you are ready to commit to genuine study of these rare and powerful systems, we invite you to reach out. The door is open to those who seek.": "Der Unterricht in den inneren Künsten erfolgt auf persönlicher Grundlage. Wenn Sie bereit sind, sich dem ernsthaften Studium dieser seltenen und kraftvollen Systeme zu widmen, schreiben Sie uns. Die Tür steht denen offen, die suchen.",
+          "Name": "Name",
+          "Email": "E-Mail",
+          "Phone": "Telefon",
+          "(optional)": "(optional)",
+          "Martial Arts Experience": "Kampfkunst-Erfahrung",
+          "Select one…": "Bitte wählen…",
+          "Complete beginner": "Völliger Anfänger",
+          "Some experience": "Etwas Erfahrung",
+          "Several years of training": "Mehrere Jahre Training",
+          "Long-term practitioner": "Langjährig Übender",
+          "Primary Interest": "Hauptinteresse",
+          "Health & self-cultivation generally": "Gesundheit & Selbstkultivierung allgemein",
+          "Not sure yet — open to guidance": "Noch unentschlossen — offen für Rat",
+          "Tell Us About Yourself": "Erzählen Sie uns von sich",
+          "Inquiries are read personally. Please allow a few days for a reply.": "Anfragen werden persönlich gelesen. Bitte rechnen Sie mit einigen Tagen bis zur Antwort.",
+          "Send Inquiry": "Anfrage senden",
+          "Little Nine Heaven SoCal · Southern California": "Little Nine Heaven SoCal · Südkalifornien",
+          "© 2026 Little Nine Heaven SoCal · Internal Kung-Fu · All Rights Reserved": "© 2026 Little Nine Heaven SoCal · Inneres Kung-Fu · Alle Rechte vorbehalten"
+},
+        "placeholders": {
+          "Your full name": "Ihr vollständiger Name",
+          "What draws you to the internal arts? What are you hoping to find in your training?": "Was zieht Sie zu den inneren Künsten? Was erhoffen Sie sich vom Training?"
+},
+        "title": "Little Nine Heaven SoCal | Taoistisches inneres Kung-Fu · Südkalifornien"
+      },
+      "pt": {
+        "strings": {
+          "Systems ▾": "Sistemas ▾",
+          "About ▾": "Sobre ▾",
+          "Resources ▾": "Recursos ▾",
+          "Contact": "Contacto",
+          "Iron Hand": "Mão de Ferro",
+          "Taoist Lovemaking": "Artes taoistas da alcova",
+          "Taoist Meditation": "Meditação taoista",
+          "Ajay Kumra — Instructor": "Ajay Kumra — Instrutor",
+          "The Lineage": "A linhagem",
+          "Master James McNeil": "Mestre James McNeil",
+          "Master Chiao Chang-Hung": "Mestre Chiao Chang-Hung",
+          "Master Pan Wing-Chow": "Mestre Pan Wing-Chow",
+          "Master Haumea Lefiti": "Mestre Haumea Lefiti",
+          "Master Hsu Hong-Chi": "Mestre Hsu Hong-Chi",
+          "Sifu Chin Cheng-Yen": "Sifu Chin Cheng-Yen",
+          "eBooks": "Livros digitais",
+          "Videos": "Vídeos",
+          "Magazine Articles": "Artigos de revista",
+          "Classes & Events": "Aulas e eventos",
+          "Southern California · Internal Kung-Fu": "Sul da Califórnia · Kung-Fu interno",
+          "Little Nine": "Pequeno Nono",
+          "Heaven": "Céu",
+          "Wu Tao · The Taoist Way": "Wu Tao · O caminho taoista",
+          "Ancient internal arts rooted in Taoist wisdom — cultivating mind, body, and spirit since 2698 BC.": "Antigas artes internas enraizadas na sabedoria taoista — cultivando mente, corpo e espírito desde 2698 a.C.",
+          "Begin Your Path": "Comece o seu caminho",
+          "Explore the Arts": "Explorar as artes",
+          "Scroll": "Descer",
+          "Our Lineage": "A nossa linhagem",
+          "A Living Tradition": "Uma tradição viva",
+          "Little Nine Heaven is the oldest known Taoist system in existence, tracing its origins to 2698 BC. These are not merely martial arts — they are complete systems of self-cultivation, healing, and inner transformation passed down through an unbroken lineage of masters.": "Little Nine Heaven é o mais antigo sistema taoista conhecido, com origens que remontam a 2698 a.C. Não são meras artes marciais: são sistemas completos de autocultivo, cura e transformação interior, transmitidos por uma linhagem ininterrupta de mestres.",
+          "In Southern California, we carry this tradition forward. Classes are intimate, instruction is personal, and the depth of what is available to the dedicated student is without parallel in the modern world.": "No sul da Califórnia damos continuidade a esta tradição. As aulas são reduzidas, o ensino é pessoal, e a profundidade oferecida ao aluno dedicado não tem paralelo no mundo moderno.",
+          "Inquire About Classes": "Informar-se sobre as aulas",
+          "The Curriculum": "O programa",
+          "The Systems": "Os sistemas",
+          "Each system is a world unto itself — a complete path of study connecting movement, breath, intention, and spirit.": "Cada sistema é um mundo em si — um caminho completo de estudo que liga movimento, respiração, intenção e espírito.",
+          "The oldest Taoist system known today, dating to 2698 BC. Three pillars: boxing, swordsmanship, and bone marrow washing. Taught only to personally chosen students of advanced study.": "O mais antigo sistema taoista hoje conhecido, datado de 2698 a.C. Três pilares: o punho, a esgrima e a lavagem da medula óssea. Ensinado apenas a alunos avançados escolhidos pessoalmente.",
+          "An ancient art of fighting and healing. Five elements, twelve animals, tien-gunn, six harmonies, nine essences. Deceptively simple, endlessly deep — easy to learn, hardest to master.": "Uma antiga arte de combate e de cura. Cinco elementos, doze animais, tien-gunn, seis harmonias, nove essências. Enganosamente simples e infinitamente profunda: fácil de aprender, dificílima de dominar.",
+          "The old 13 postures form with 64 movements. Silk-reeling energy circles the body's meridians, generating extraordinary power through precise, spiraling movement and moving meditation.": "A antiga forma das 13 posturas com 64 movimentos. A energia do enrolar da seda percorre os meridianos do corpo, gerando uma força extraordinária através de movimento espiralado preciso e meditação em movimento.",
+          "A practical, no-nonsense street art from the early 1700s. Quick footwork, low kicks, explosive strikes. Singular and two-man fighting forms designed for real-world application.": "Uma arte de rua prática e directa, do início do século XVIII. Trabalho de pés rápido, pontapés baixos, golpes explosivos. Formas individuais e a dois, concebidas para aplicação real.",
+          "The development of hands that carry iron power while retaining a normal appearance. Rooted in the Shaolin Temples. No comparable Iron Hand training exists anywhere else in the world.": "O desenvolvimento de mãos com força de ferro mantendo uma aparência normal. Enraizado nos templos de Shaolin. Não existe no mundo outro treino de Mão de Ferro comparável.",
+          "Eight diagrams. Constant circling, constant change. Eight animals, ten exercises, three styles of walking. The ultimate goal: to move, act, and react with total natural freedom.": "Oito trigramas. Rotação constante, mudança constante. Oito animais, dez exercícios, três formas de caminhar. O objectivo último: mover-se, agir e reagir com total liberdade natural.",
+          "The classical arts of the bedchamber. Conserving jing, transforming it into chi, and circulating it through the body — sexual energy treated as cultivation rather than expenditure.": "As artes clássicas da alcova. Conservar o jing, transformá-lo em chi e fazê-lo circular pelo corpo — a energia sexual entendida como cultivo e não como desperdício.",
+          "Both sitting and standing forms. A structured path toward inner stillness, elevated chi, and access to higher states of awareness — the foundation beneath all the external arts.": "Formas sentadas e de pé. Um caminho estruturado para a quietude interior, a elevação do chi e o acesso a estados superiores de consciência — o alicerce de todas as artes externas.",
+          "Bone marrow washing — the advanced nei-kung of the Little Nine Heaven system. Breathing, strengthening, and energy circulation for vitality and longevity. Open to any dedicated adult.": "Lavagem da medula óssea — o nei-kung avançado do sistema Little Nine Heaven. Respiração, fortalecimento e circulação de energia para vitalidade e longevidade. Aberto a qualquer adulto dedicado.",
+          "Character Gate Fist. A rare soft Shaolin system of eighteen characters held within three forms. Light, fast, fingertip striking — preserved through Sifu Chin Cheng-Yen.": "Punho do Portão dos Caracteres. Um raro sistema suave de Shaolin, dezoito caracteres contidos em três formas. Leve, rápido, golpeando com a ponta dos dedos — preservado por Sifu Chin Cheng-Yen.",
+          "\"The supreme good is like water, which nourishes all things without trying to.\"": "«O bem supremo é como a água, que beneficia todas as coisas sem com elas disputar.»",
+          "— Tao Te Ching · Lao Tzu": "— Tao Te Ching · Lao Tsé",
+          "The Masters": "Os mestres",
+          "These arts were passed down through a living chain of masters. To study with us is to touch that chain.": "Estas artes foram transmitidas por uma corrente viva de mestres. Estudar connosco é tocar essa corrente.",
+          "Grandmaster": "Grão-Mestre",
+          "Master": "Mestre",
+          "Sifu": "Sifu",
+          "Little Nine Heaven · Ba Kua · Advanced Chi-Kung": "Little Nine Heaven · Ba Kua · Chi-Kung avançado",
+          "Original Chen Style Tai-Chi": "Tai-Chi estilo Chen original",
+          "Hsing-I · Healing Arts · Chi-Kung": "Hsing-I · Artes de cura · Chi-Kung",
+          "Tzu Men-Chuan · Iron Hand": "Tzu Men-Chuan · Mão de Ferro",
+          "The Training": "O treino",
+          "In Practice": "Na prática",
+          "Form Practice": "Prática de formas",
+          "Partner & Weapons Work": "Trabalho a dois e com armas",
+          "Southern California": "Sul da Califórnia",
+          "Begin Your Journey": "Comece a sua jornada",
+          "Classes in the internal arts are offered on a personal basis. If you are ready to commit to genuine study of these rare and powerful systems, we invite you to reach out. The door is open to those who seek.": "As aulas de artes internas são dadas a título pessoal. Se está disposto a comprometer-se com o estudo sério destes sistemas raros e poderosos, escreva-nos. A porta está aberta a quem procura.",
+          "Name": "Nome",
+          "Email": "Correio electrónico",
+          "Phone": "Telefone",
+          "(optional)": "(opcional)",
+          "Martial Arts Experience": "Experiência em artes marciais",
+          "Select one…": "Seleccione…",
+          "Complete beginner": "Principiante absoluto",
+          "Some experience": "Alguma experiência",
+          "Several years of training": "Vários anos de treino",
+          "Long-term practitioner": "Praticante de longa data",
+          "Primary Interest": "Interesse principal",
+          "Health & self-cultivation generally": "Saúde e autocultivo em geral",
+          "Not sure yet — open to guidance": "Ainda indeciso — aberto a orientação",
+          "Tell Us About Yourself": "Fale-nos de si",
+          "Inquiries are read personally. Please allow a few days for a reply.": "As mensagens são lidas pessoalmente. A resposta poderá demorar alguns dias.",
+          "Send Inquiry": "Enviar mensagem",
+          "Little Nine Heaven SoCal · Southern California": "Little Nine Heaven SoCal · Sul da Califórnia",
+          "© 2026 Little Nine Heaven SoCal · Internal Kung-Fu · All Rights Reserved": "© 2026 Little Nine Heaven SoCal · Kung-Fu interno · Todos os direitos reservados"
+},
+        "placeholders": {
+          "Your full name": "O seu nome completo",
+          "What draws you to the internal arts? What are you hoping to find in your training?": "O que o atrai nas artes internas? O que espera encontrar na sua prática?"
+},
+        "title": "Little Nine Heaven SoCal | Kung-Fu interno taoista · Sul da Califórnia"
+      },
+      "ru": {
+        "strings": {
+          "Systems ▾": "Системы ▾",
+          "About ▾": "О школе ▾",
+          "Resources ▾": "Материалы ▾",
+          "Contact": "Контакты",
+          "Little Nine Heaven": "Сяо Цзю Тянь",
+          "Hsing-I (Xing Yi Quan)": "Синъи-цюань",
+          "Chen Tai-Chi": "Тайцзи стиля Чэнь",
+          "Chen Tai-Chi (Taijiquan)": "Тайцзицюань стиля Чэнь",
+          "Splashing Hands": "Плещущие руки",
+          "Iron Hand": "Железная ладонь",
+          "Ba Kua": "Багуачжан",
+          "Ba Kua (Baguazhang)": "Багуачжан",
+          "Taoist Lovemaking": "Даосское искусство спальни",
+          "Taoist Meditation": "Даосская медитация",
+          "Shih Shui": "Ши Шуй",
+          "Tzu Men Chuan": "Цзымэнь-цюань",
+          "Ajay Kumra — Instructor": "Аджай Кумра — преподаватель",
+          "The Lineage": "Линия преемственности",
+          "Master James McNeil": "Мастер Джеймс Макнил",
+          "Master Chiao Chang-Hung": "Мастер Цяо Чанхун",
+          "Master Pan Wing-Chow": "Мастер Пань Юнчжоу",
+          "Master Haumea Lefiti": "Мастер Хаумеа Лефити",
+          "Master Hsu Hong-Chi": "Мастер Сюй Хунцзи",
+          "Sifu Chin Cheng-Yen": "Сифу Чэнь Чэнъянь",
+          "eBooks": "Электронные книги",
+          "Videos": "Видео",
+          "Magazine Articles": "Статьи в журналах",
+          "Classes & Events": "Занятия и события",
+          "Southern California · Internal Kung-Fu": "Южная Калифорния · Внутреннее кунг-фу",
+          "Little Nine": "Малое Девятое",
+          "Heaven": "Небо",
+          "Wu Tao · The Taoist Way": "У Дао · Даосский путь",
+          "Ancient internal arts rooted in Taoist wisdom — cultivating mind, body, and spirit since 2698 BC.": "Древние внутренние искусства, укоренённые в даосской мудрости, — воспитание ума, тела и духа с 2698 года до н. э.",
+          "Begin Your Path": "Начните свой путь",
+          "Explore the Arts": "Изучить искусства",
+          "Scroll": "Вниз",
+          "Our Lineage": "Наша линия",
+          "A Living Tradition": "Живая традиция",
+          "Little Nine Heaven is the oldest known Taoist system in existence, tracing its origins to 2698 BC. These are not merely martial arts — they are complete systems of self-cultivation, healing, and inner transformation passed down through an unbroken lineage of masters.": "Сяо Цзю Тянь — древнейшая из известных даосских систем, восходящая к 2698 году до н. э. Это не просто боевые искусства: это целостные системы самосовершенствования, исцеления и внутреннего преображения, переданные через непрерывную линию мастеров.",
+          "In Southern California, we carry this tradition forward. Classes are intimate, instruction is personal, and the depth of what is available to the dedicated student is without parallel in the modern world.": "В Южной Калифорнии мы продолжаем эту традицию. Группы небольшие, обучение — личное, а глубина того, что доступно преданному ученику, не имеет равных в современном мире.",
+          "Inquire About Classes": "Узнать о занятиях",
+          "The Curriculum": "Программа обучения",
+          "The Systems": "Системы",
+          "Each system is a world unto itself — a complete path of study connecting movement, breath, intention, and spirit.": "Каждая система — целый мир: полный путь обучения, связывающий движение, дыхание, намерение и дух.",
+          "The oldest Taoist system known today, dating to 2698 BC. Three pillars: boxing, swordsmanship, and bone marrow washing. Taught only to personally chosen students of advanced study.": "Древнейшая известная сегодня даосская система, датируемая 2698 годом до н. э. Три опоры: кулачное искусство, работа с мечом и промывание костного мозга. Передаётся лишь лично избранным ученикам продвинутого уровня.",
+          "An ancient art of fighting and healing. Five elements, twelve animals, tien-gunn, six harmonies, nine essences. Deceptively simple, endlessly deep — easy to learn, hardest to master.": "Древнее искусство боя и исцеления. Пять первоэлементов, двенадцать животных, тянь-гань, шесть гармоний, девять сущностей. Обманчиво простое и бесконечно глубокое: легко выучить, труднее всего освоить.",
+          "The old 13 postures form with 64 movements. Silk-reeling energy circles the body's meridians, generating extraordinary power through precise, spiraling movement and moving meditation.": "Старинная форма из 13 позиций и 64 движений. Энергия наматывания шёлковой нити обходит меридианы тела, порождая необычайную силу через точное спиральное движение и медитацию в движении.",
+          "A practical, no-nonsense street art from the early 1700s. Quick footwork, low kicks, explosive strikes. Singular and two-man fighting forms designed for real-world application.": "Практичное уличное искусство начала XVIII века, без излишеств. Быстрая работа ног, низкие удары ногами, взрывные удары руками. Одиночные и парные боевые формы, созданные для реального применения.",
+          "The development of hands that carry iron power while retaining a normal appearance. Rooted in the Shaolin Temples. No comparable Iron Hand training exists anywhere else in the world.": "Развитие рук, обладающих железной силой при совершенно обычном виде. Уходит корнями в шаолиньские монастыри. Сопоставимой подготовки Железной ладони нет более нигде в мире.",
+          "Eight diagrams. Constant circling, constant change. Eight animals, ten exercises, three styles of walking. The ultimate goal: to move, act, and react with total natural freedom.": "Восемь триграмм. Непрерывное кружение, непрерывное изменение. Восемь животных, десять упражнений, три способа хождения. Высшая цель — двигаться, действовать и отвечать с полной естественной свободой.",
+          "The classical arts of the bedchamber. Conserving jing, transforming it into chi, and circulating it through the body — sexual energy treated as cultivation rather than expenditure.": "Классические искусства спальных покоев. Сбережение цзин, превращение её в ци и обращение по телу — сексуальная энергия как предмет взращивания, а не расходования.",
+          "Both sitting and standing forms. A structured path toward inner stillness, elevated chi, and access to higher states of awareness — the foundation beneath all the external arts.": "Сидячие и стоячие формы. Выстроенный путь к внутренней тишине, подъёму ци и высшим состояниям осознанности — основание под всеми внешними искусствами.",
+          "Bone marrow washing — the advanced nei-kung of the Little Nine Heaven system. Breathing, strengthening, and energy circulation for vitality and longevity. Open to any dedicated adult.": "Промывание костного мозга — продвинутое нэй-гун системы Сяо Цзю Тянь. Дыхание, укрепление и обращение энергии ради жизненной силы и долголетия. Доступно любому преданному делу взрослому.",
+          "Character Gate Fist. A rare soft Shaolin system of eighteen characters held within three forms. Light, fast, fingertip striking — preserved through Sifu Chin Cheng-Yen.": "Кулак Врат Иероглифов. Редкая мягкая шаолиньская система: восемнадцать иероглифов, заключённых в трёх формах. Лёгкая, быстрая, с ударами кончиками пальцев — сохранена сифу Чэнь Чэнъянем.",
+          "\"The supreme good is like water, which nourishes all things without trying to.\"": "«Высшая добродетель подобна воде: она приносит пользу всему сущему и не борется».",
+          "— Tao Te Ching · Lao Tzu": "— «Дао дэ цзин» · Лао-цзы",
+          "The Masters": "Мастера",
+          "These arts were passed down through a living chain of masters. To study with us is to touch that chain.": "Эти искусства передавались по живой цепи мастеров. Учиться у нас — значит прикоснуться к этой цепи.",
+          "Grandmaster": "Великий мастер",
+          "Master": "Мастер",
+          "Sifu": "Сифу",
+          "Chiao Chang-Hung": "Цяо Чанхун",
+          "Pan Wing-Chow": "Пань Юнчжоу",
+          "Hsu Hong-Chi": "Сюй Хунцзи",
+          "Haumea Lefiti": "Хаумеа Лефити",
+          "Chin Chen-Yen": "Чэнь Чэнъянь",
+          "Little Nine Heaven · Ba Kua · Advanced Chi-Kung": "Сяо Цзю Тянь · Багуачжан · Продвинутое цигун",
+          "Original Chen Style Tai-Chi": "Изначальный тайцзи стиля Чэнь",
+          "Hsing-I · Healing Arts · Chi-Kung": "Синъи · Искусства исцеления · Цигун",
+          "Tzu Men-Chuan · Iron Hand": "Цзымэнь-цюань · Железная ладонь",
+          "The Training": "Занятия",
+          "In Practice": "На практике",
+          "Sifu Ajay Kumra": "Сифу Аджай Кумра",
+          "Form Practice": "Отработка форм",
+          "Partner & Weapons Work": "Парная работа и оружие",
+          "Southern California": "Южная Калифорния",
+          "Begin Your Journey": "Начните свой путь",
+          "Classes in the internal arts are offered on a personal basis. If you are ready to commit to genuine study of these rare and powerful systems, we invite you to reach out. The door is open to those who seek.": "Обучение внутренним искусствам ведётся в личном порядке. Если вы готовы всерьёз посвятить себя изучению этих редких и мощных систем, напишите нам. Дверь открыта для ищущего.",
+          "Name": "Имя",
+          "Email": "Электронная почта",
+          "Phone": "Телефон",
+          "(optional)": "(необязательно)",
+          "Martial Arts Experience": "Опыт в боевых искусствах",
+          "Select one…": "Выберите…",
+          "Complete beginner": "Полный новичок",
+          "Some experience": "Некоторый опыт",
+          "Several years of training": "Несколько лет занятий",
+          "Long-term practitioner": "Практикую много лет",
+          "Primary Interest": "Основной интерес",
+          "Health & self-cultivation generally": "Здоровье и самосовершенствование в целом",
+          "Not sure yet — open to guidance": "Пока не решил — готов выслушать совет",
+          "Tell Us About Yourself": "Расскажите о себе",
+          "Inquiries are read personally. Please allow a few days for a reply.": "Письма читаются лично. На ответ может потребоваться несколько дней.",
+          "Send Inquiry": "Отправить запрос",
+          "Little Nine Heaven SoCal · Southern California": "Little Nine Heaven SoCal · Южная Калифорния",
+          "© 2026 Little Nine Heaven SoCal · Internal Kung-Fu · All Rights Reserved": "© 2026 Little Nine Heaven SoCal · Внутреннее кунг-фу · Все права защищены"
+},
+        "placeholders": {
+          "Your full name": "Ваше полное имя",
+          "What draws you to the internal arts? What are you hoping to find in your training?": "Что влечёт вас к внутренним искусствам? Что вы надеетесь обрести в занятиях?"
+},
+        "title": "Little Nine Heaven SoCal | Даосское внутреннее кунг-фу · Южная Калифорния"
+      },
+      "ja": {
+        "strings": {
+          "Systems ▾": "武術体系 ▾",
+          "About ▾": "当校について ▾",
+          "Resources ▾": "資料 ▾",
+          "Contact": "お問い合わせ",
+          "Little Nine Heaven": "小九天",
+          "Hsing-I (Xing Yi Quan)": "形意拳",
+          "Chen Tai-Chi": "陳式太極拳",
+          "Chen Tai-Chi (Taijiquan)": "陳式太極拳",
+          "Splashing Hands": "潑手",
+          "Iron Hand": "鉄掌",
+          "Ba Kua": "八卦掌",
+          "Ba Kua (Baguazhang)": "八卦掌",
+          "Taoist Lovemaking": "道家房中術",
+          "Taoist Meditation": "道家静坐",
+          "Shih Shui": "洗髄功",
+          "Tzu Men Chuan": "字門拳",
+          "Ajay Kumra — Instructor": "アジェイ・クムラ — 指導者",
+          "The Lineage": "伝承の系譜",
+          "Master James McNeil": "ジェームズ・マクニール老師",
+          "Master Chiao Chang-Hung": "喬長虹宗師",
+          "Master Pan Wing-Chow": "潘詠周老師",
+          "Master Haumea Lefiti": "ハウメア・レフィティ老師",
+          "Master Hsu Hong-Chi": "徐鴻基老師",
+          "Sifu Chin Cheng-Yen": "陳成炎師父",
+          "eBooks": "電子書籍",
+          "Videos": "動画",
+          "Magazine Articles": "雑誌掲載記事",
+          "Classes & Events": "稽古と行事",
+          "Southern California · Internal Kung-Fu": "南カリフォルニア · 内家功夫",
+          "Little Nine": "小九",
+          "Heaven": "天",
+          "Wu Tao · The Taoist Way": "武道 · 道家の道",
+          "Ancient internal arts rooted in Taoist wisdom — cultivating mind, body, and spirit since 2698 BC.": "道家の智慧に根ざした古代の内家武術 —— 紀元前2698年より心・身・霊を養う。",
+          "Begin Your Path": "修行を始める",
+          "Explore the Arts": "各門を見る",
+          "Scroll": "下へ",
+          "Our Lineage": "当校の系譜",
+          "A Living Tradition": "生きた伝統",
+          "Little Nine Heaven is the oldest known Taoist system in existence, tracing its origins to 2698 BC. These are not merely martial arts — they are complete systems of self-cultivation, healing, and inner transformation passed down through an unbroken lineage of masters.": "小九天は現存する最古の道家体系であり、その源は紀元前2698年に遡ります。これらは単なる武術ではなく、修身・治癒・内的変容の完全な体系であり、途切れることのない歴代宗師の系譜によって受け継がれてきました。",
+          "In Southern California, we carry this tradition forward. Classes are intimate, instruction is personal, and the depth of what is available to the dedicated student is without parallel in the modern world.": "南カリフォルニアにて、この伝統を受け継いでおります。稽古は少人数、指導は個別。真摯な門人に開かれるその深さは、現代において類を見ません。",
+          "Inquire About Classes": "稽古について問い合わせる",
+          "The Curriculum": "修学の内容",
+          "The Systems": "武術体系",
+          "Each system is a world unto itself — a complete path of study connecting movement, breath, intention, and spirit.": "一門一門がそれ自体で一つの世界 —— 動き・呼吸・意・神を貫く完全な修学の道です。",
+          "The oldest Taoist system known today, dating to 2698 BC. Three pillars: boxing, swordsmanship, and bone marrow washing. Taught only to personally chosen students of advanced study.": "今日知られる最古の道家体系、紀元前2698年に始まる。三本の柱は拳法・剣術・洗髄功。自ら選んだ上級の門人にのみ伝授される。",
+          "An ancient art of fighting and healing. Five elements, twelve animals, tien-gunn, six harmonies, nine essences. Deceptively simple, endlessly deep — easy to learn, hardest to master.": "闘いと癒しの古法。五行、十二形、天罡、六合、九要。見かけは単純にして底知れず深く、学ぶは易く、極めるは最も難し。",
+          "The old 13 postures form with 64 movements. Silk-reeling energy circles the body's meridians, generating extraordinary power through precise, spiraling movement and moving meditation.": "古伝十三勢、六十四動の套路。纏絲勁が経絡を巡り、精緻な螺旋の動きと動中の静坐によって並外れた力を生む。",
+          "A practical, no-nonsense street art from the early 1700s. Quick footwork, low kicks, explosive strikes. Singular and two-man fighting forms designed for real-world application.": "十八世紀初頭に発する実戦本位の技法。素早い歩法、低い蹴り、爆発的な打撃。単練と対打の套路はいずれも実用のために組まれている。",
+          "The development of hands that carry iron power while retaining a normal appearance. Rooted in the Shaolin Temples. No comparable Iron Hand training exists anywhere else in the world.": "外見は常人のままに、鉄の力を宿す手を練り上げる。少林寺に源を発する。これに比肩する鉄掌の鍛錬は世界のどこにも存在しない。",
+          "Eight diagrams. Constant circling, constant change. Eight animals, ten exercises, three styles of walking. The ultimate goal: to move, act, and react with total natural freedom.": "八卦の象。円を巡って止まず、変化して已まず。八形、十式、三種の走法。究極の目標は、動き・働き・応じるすべてが自然のままに自在であること。",
+          "The classical arts of the bedchamber. Conserving jing, transforming it into chi, and circulating it through the body — sexual energy treated as cultivation rather than expenditure.": "古典の房中の術。精を保ち、気に化し、周身に巡らせる —— 性のエネルギーを消耗ではなく修練の資とする。",
+          "Both sitting and standing forms. A structured path toward inner stillness, elevated chi, and access to higher states of awareness — the foundation beneath all the external arts.": "静坐と站樁の両法。内なる静寂、気の高まり、より高次の意識へと至る体系立てられた道 —— 外家の技すべての土台となるもの。",
+          "Bone marrow washing — the advanced nei-kung of the Little Nine Heaven system. Breathing, strengthening, and energy circulation for vitality and longevity. Open to any dedicated adult.": "洗髄功 —— 小九天体系における高度な内功。呼吸・鍛錬・行気により活力と長寿を養う。真摯な成人であれば誰にでも開かれている。",
+          "Character Gate Fist. A rare soft Shaolin system of eighteen characters held within three forms. Light, fast, fingertip striking — preserved through Sifu Chin Cheng-Yen.": "字門拳。十八の字訣を三套の拳に納めた、稀少な少林軟門の一脈。軽く、速く、指先で打つ —— 陳成炎師父によって今に伝えられた。",
+          "\"The supreme good is like water, which nourishes all things without trying to.\"": "「上善は水の如し。水は善く万物を利して争わず。」",
+          "— Tao Te Ching · Lao Tzu": "——『道徳経』· 老子",
+          "The Masters": "歴代の師",
+          "These arts were passed down through a living chain of masters. To study with us is to touch that chain.": "これらの武術は、生きた師の連なりによって受け継がれてきました。当校に学ぶとは、その連なりに触れることです。",
+          "Grandmaster": "宗師",
+          "Master": "老師",
+          "Sifu": "師父",
+          "Chiao Chang-Hung": "喬長虹",
+          "Pan Wing-Chow": "潘詠周",
+          "Hsu Hong-Chi": "徐鴻基",
+          "Haumea Lefiti": "ハウメア・レフィティ",
+          "Chin Chen-Yen": "陳成炎",
+          "Little Nine Heaven · Ba Kua · Advanced Chi-Kung": "小九天 · 八卦掌 · 高等気功",
+          "Original Chen Style Tai-Chi": "陳式太極拳原伝",
+          "Hsing-I · Healing Arts · Chi-Kung": "形意拳 · 治癒の術 · 気功",
+          "Tzu Men-Chuan · Iron Hand": "字門拳 · 鉄掌",
+          "The Training": "稽古",
+          "In Practice": "稽古の風景",
+          "Sifu Ajay Kumra": "アジェイ・クムラ師父",
+          "Form Practice": "套路の稽古",
+          "Partner & Weapons Work": "対練と武器術",
+          "Southern California": "南カリフォルニア",
+          "Begin Your Journey": "旅の始まりに",
+          "Classes in the internal arts are offered on a personal basis. If you are ready to commit to genuine study of these rare and powerful systems, we invite you to reach out. The door is open to those who seek.": "内家武術の指導は、一人ひとりに応じて行っております。この稀有にして強力な体系を真摯に学ぶ覚悟がおありでしたら、ぜひご連絡ください。門は求める者に開かれています。",
+          "Name": "お名前",
+          "Email": "メールアドレス",
+          "Phone": "電話番号",
+          "(optional)": "（任意）",
+          "Martial Arts Experience": "武術経験",
+          "Select one…": "選択してください…",
+          "Complete beginner": "まったくの初心者",
+          "Some experience": "多少の経験あり",
+          "Several years of training": "数年の修練歴",
+          "Long-term practitioner": "長年の修練者",
+          "Primary Interest": "主な関心",
+          "Health & self-cultivation generally": "健康と修身全般",
+          "Not sure yet — open to guidance": "まだ決めていない — 助言を仰ぎたい",
+          "Tell Us About Yourself": "ご自身についてお聞かせください",
+          "Inquiries are read personally. Please allow a few days for a reply.": "お問い合わせは本人が直接拝読しております。ご返信まで数日いただくことがございます。",
+          "Send Inquiry": "問い合わせを送る",
+          "Little Nine Heaven SoCal · Southern California": "Little Nine Heaven SoCal · 南カリフォルニア",
+          "© 2026 Little Nine Heaven SoCal · Internal Kung-Fu · All Rights Reserved": "© 2026 Little Nine Heaven SoCal · 内家功夫 · 無断転載を禁じます"
+},
+        "placeholders": {
+          "Your full name": "お名前（フルネーム）",
+          "What draws you to the internal arts? What are you hoping to find in your training?": "内家武術のどこに惹かれましたか。稽古を通じて何を得たいとお考えですか。"
+},
+        "title": "Little Nine Heaven SoCal | 道家内家功夫 · 南カリフォルニア"
+      },
+      "ar": {
+        "strings": {
+          "Systems ▾": "الأنظمة ▾",
+          "About ▾": "عن المدرسة ▾",
+          "Resources ▾": "مصادر ▾",
+          "Contact": "اتصل بنا",
+          "Iron Hand": "اليد الحديدية",
+          "Taoist Lovemaking": "فنون الحجرة الطاوية",
+          "Taoist Meditation": "التأمل الطاوي",
+          "Ajay Kumra — Instructor": "أجاي كومرا — المدرّب",
+          "The Lineage": "سلسلة النسب",
+          "Master James McNeil": "المعلّم جيمس ماكنيل",
+          "Master Chiao Chang-Hung": "المعلّم تشياو تشانغ-هونغ",
+          "Master Pan Wing-Chow": "المعلّم بان وينغ-تشاو",
+          "Master Haumea Lefiti": "المعلّم هاوميا ليفيتي",
+          "Master Hsu Hong-Chi": "المعلّم شو هونغ-تشي",
+          "Sifu Chin Cheng-Yen": "السيفو تشين تشينغ-يان",
+          "eBooks": "كتب إلكترونية",
+          "Videos": "مقاطع مصوّرة",
+          "Magazine Articles": "مقالات المجلات",
+          "Classes & Events": "الدروس والفعاليات",
+          "Southern California · Internal Kung-Fu": "جنوب كاليفورنيا · الكونغ فو الداخلي",
+          "Little Nine": "التسعة",
+          "Heaven": "الصغرى",
+          "Wu Tao · The Taoist Way": "وو تاو · الطريق الطاوي",
+          "Ancient internal arts rooted in Taoist wisdom — cultivating mind, body, and spirit since 2698 BC.": "فنون داخلية عريقة متجذّرة في الحكمة الطاوية — تهذيب العقل والجسد والروح منذ عام 2698 قبل الميلاد.",
+          "Begin Your Path": "ابدأ طريقك",
+          "Explore the Arts": "استكشف الفنون",
+          "Scroll": "انزل",
+          "Our Lineage": "سلسلتنا",
+          "A Living Tradition": "تقليد حيّ",
+          "Little Nine Heaven is the oldest known Taoist system in existence, tracing its origins to 2698 BC. These are not merely martial arts — they are complete systems of self-cultivation, healing, and inner transformation passed down through an unbroken lineage of masters.": "«السماء التاسعة الصغرى» أقدم نظام طاوي معروف، تعود أصوله إلى عام 2698 قبل الميلاد. وهي ليست فنون قتال فحسب، بل أنظمة متكاملة لتهذيب النفس والشفاء والتحوّل الداخلي، انتقلت عبر سلسلة متّصلة من المعلّمين.",
+          "In Southern California, we carry this tradition forward. Classes are intimate, instruction is personal, and the depth of what is available to the dedicated student is without parallel in the modern world.": "في جنوب كاليفورنيا نواصل حمل هذا التقليد. الدروس محدودة العدد، والتعليم شخصي، وما يُتاح للطالب المخلص من عمق لا نظير له في العالم الحديث.",
+          "Inquire About Classes": "استفسر عن الدروس",
+          "The Curriculum": "المنهج",
+          "The Systems": "الأنظمة",
+          "Each system is a world unto itself — a complete path of study connecting movement, breath, intention, and spirit.": "كل نظام عالم قائم بذاته — طريق دراسة متكامل يربط الحركة والنفَس والنية والروح.",
+          "The oldest Taoist system known today, dating to 2698 BC. Three pillars: boxing, swordsmanship, and bone marrow washing. Taught only to personally chosen students of advanced study.": "أقدم نظام طاوي معروف اليوم، يعود إلى عام 2698 قبل الميلاد. ثلاثة أركان: الملاكمة، وفن السيف، وغسل نخاع العظم. لا يُلقَّن إلا لطلاب متقدّمين يُختارون شخصياً.",
+          "An ancient art of fighting and healing. Five elements, twelve animals, tien-gunn, six harmonies, nine essences. Deceptively simple, endlessly deep — easy to learn, hardest to master.": "فن قديم للقتال والشفاء. خمسة عناصر، واثنا عشر حيواناً، وتيين-غون، وستّ توافقات، وتسع جواهر. بسيط في ظاهره، لا قرار لعمقه — سهل التعلّم، أصعب ما يكون إتقانه.",
+          "The old 13 postures form with 64 movements. Silk-reeling energy circles the body's meridians, generating extraordinary power through precise, spiraling movement and moving meditation.": "الشكل القديم ذو الوضعيات الثلاث عشرة في أربع وستّين حركة. طاقة لفّ الحرير تدور في مسارات الجسد، فتولّد قوة استثنائية عبر حركة حلزونية دقيقة وتأمّل في الحركة.",
+          "A practical, no-nonsense street art from the early 1700s. Quick footwork, low kicks, explosive strikes. Singular and two-man fighting forms designed for real-world application.": "فن شارع عملي بلا زخرف، من مطلع القرن الثامن عشر. حركة قدمين سريعة، وركلات منخفضة، وضربات متفجّرة. أشكال فردية وثنائية وُضعت للتطبيق الحقيقي.",
+          "The development of hands that carry iron power while retaining a normal appearance. Rooted in the Shaolin Temples. No comparable Iron Hand training exists anywhere else in the world.": "تنمية يدين تحملان قوة الحديد مع بقاء مظهرهما طبيعياً. أصله في معابد شاولين. لا يوجد في العالم تدريب لليد الحديدية يضاهيه.",
+          "Eight diagrams. Constant circling, constant change. Eight animals, ten exercises, three styles of walking. The ultimate goal: to move, act, and react with total natural freedom.": "ثمانية رسوم. دوران دائم وتغيّر دائم. ثمانية حيوانات، وعشرة تمارين، وثلاثة أنماط للمشي. والغاية القصوى: أن تتحرّك وتفعل وتستجيب بحرية طبيعية تامة.",
+          "The classical arts of the bedchamber. Conserving jing, transforming it into chi, and circulating it through the body — sexual energy treated as cultivation rather than expenditure.": "فنون الحجرة الكلاسيكية. حفظ «الجينغ» وتحويله إلى «تشي» وإدارته في الجسد — فالطاقة الجنسية تُعامَل بوصفها تهذيباً لا استنزافاً.",
+          "Both sitting and standing forms. A structured path toward inner stillness, elevated chi, and access to higher states of awareness — the foundation beneath all the external arts.": "أشكال الجلوس والوقوف معاً. طريق منظّم نحو السكون الداخلي، وارتفاع التشي، وبلوغ حالات أرقى من الوعي — وهو الأساس الذي تقوم عليه الفنون الخارجية كلها.",
+          "Bone marrow washing — the advanced nei-kung of the Little Nine Heaven system. Breathing, strengthening, and energy circulation for vitality and longevity. Open to any dedicated adult.": "غسل نخاع العظم — النَّي-كونغ المتقدّم في نظام السماء التاسعة الصغرى. تنفّس وتقوية وإدارة للطاقة من أجل الحيوية وطول العمر. متاح لكل بالغ مخلص.",
+          "Character Gate Fist. A rare soft Shaolin system of eighteen characters held within three forms. Light, fast, fingertip striking — preserved through Sifu Chin Cheng-Yen.": "«قبضة باب الحروف». نظام شاولين ليّن نادر، ثمانية عشر حرفاً منطوية في ثلاثة أشكال. خفيف سريع، يضرب بأطراف الأصابع — حُفظ عن طريق السيفو تشين تشينغ-يان.",
+          "\"The supreme good is like water, which nourishes all things without trying to.\"": "«الخير الأسمى كالماء، ينفع كل شيء ولا يزاحم».",
+          "— Tao Te Ching · Lao Tzu": "— تاو تي تشينغ · لاوتسي",
+          "The Masters": "المعلّمون",
+          "These arts were passed down through a living chain of masters. To study with us is to touch that chain.": "انتقلت هذه الفنون عبر سلسلة حيّة من المعلّمين. وأن تتعلّم عندنا يعني أن تلمس تلك السلسلة.",
+          "Grandmaster": "المعلّم الأكبر",
+          "Master": "المعلّم",
+          "Sifu": "السيفو",
+          "Little Nine Heaven · Ba Kua · Advanced Chi-Kung": "السماء التاسعة الصغرى · با كوا · تشي كونغ متقدّم",
+          "Original Chen Style Tai-Chi": "تاي تشي أسلوب تشين الأصلي",
+          "Hsing-I · Healing Arts · Chi-Kung": "شينغ-إي · فنون الشفاء · تشي كونغ",
+          "Tzu Men-Chuan · Iron Hand": "تزو مين-تشوان · اليد الحديدية",
+          "The Training": "التدريب",
+          "In Practice": "في الممارسة",
+          "Sifu Ajay Kumra": "السيفو أجاي كومرا",
+          "Form Practice": "تدريب الأشكال",
+          "Partner & Weapons Work": "العمل الثنائي والأسلحة",
+          "Southern California": "جنوب كاليفورنيا",
+          "Begin Your Journey": "ابدأ رحلتك",
+          "Classes in the internal arts are offered on a personal basis. If you are ready to commit to genuine study of these rare and powerful systems, we invite you to reach out. The door is open to those who seek.": "تُعطى دروس الفنون الداخلية على أساس شخصي. فإن كنت مستعداً للالتزام بدراسة جادّة لهذه الأنظمة النادرة القوية، فندعوك للتواصل معنا. الباب مفتوح لمن يطلب.",
+          "Name": "الاسم",
+          "Email": "البريد الإلكتروني",
+          "Phone": "الهاتف",
+          "(optional)": "(اختياري)",
+          "Martial Arts Experience": "الخبرة في فنون القتال",
+          "Select one…": "اختر…",
+          "Complete beginner": "مبتدئ تماماً",
+          "Some experience": "بعض الخبرة",
+          "Several years of training": "عدة سنوات من التدريب",
+          "Long-term practitioner": "ممارس منذ سنوات طويلة",
+          "Primary Interest": "الاهتمام الأساسي",
+          "Health & self-cultivation generally": "الصحة وتهذيب النفس عموماً",
+          "Not sure yet — open to guidance": "لم أقرّر بعد — أرحّب بالإرشاد",
+          "Tell Us About Yourself": "حدّثنا عن نفسك",
+          "Inquiries are read personally. Please allow a few days for a reply.": "تُقرأ الرسائل شخصياً. يرجى إتاحة بضعة أيام للردّ.",
+          "Send Inquiry": "إرسال الاستفسار",
+          "Little Nine Heaven SoCal · Southern California": "Little Nine Heaven SoCal · جنوب كاليفورنيا",
+          "© 2026 Little Nine Heaven SoCal · Internal Kung-Fu · All Rights Reserved": "© 2026 Little Nine Heaven SoCal · الكونغ فو الداخلي · جميع الحقوق محفوظة"
+},
+        "placeholders": {
+          "Your full name": "اسمك الكامل",
+          "What draws you to the internal arts? What are you hoping to find in your training?": "ما الذي يجذبك إلى الفنون الداخلية؟ وما الذي تأمل أن تجده في تدريبك؟"
+},
+        "title": "Little Nine Heaven SoCal | الكونغ فو الداخلي الطاوي · جنوب كاليفورنيا"
+      },
+      "hi": {
+        "strings": {
+          "Systems ▾": "प्रणालियाँ ▾",
+          "About ▾": "परिचय ▾",
+          "Resources ▾": "संसाधन ▾",
+          "Contact": "संपर्क",
+          "Iron Hand": "लौह हस्त",
+          "Taoist Lovemaking": "ताओ रति-विद्या",
+          "Taoist Meditation": "ताओ ध्यान",
+          "Ajay Kumra — Instructor": "अजय कुमरा — प्रशिक्षक",
+          "The Lineage": "गुरु-परंपरा",
+          "Master James McNeil": "गुरु जेम्स मैक्नील",
+          "Master Chiao Chang-Hung": "गुरु चियाओ चांग-हुंग",
+          "Master Pan Wing-Chow": "गुरु पान विंग-चाउ",
+          "Master Haumea Lefiti": "गुरु हाउमिया लेफ़िती",
+          "Master Hsu Hong-Chi": "गुरु स्यू हुंग-ची",
+          "Sifu Chin Cheng-Yen": "सिफ़ू चिन चेंग-येन",
+          "eBooks": "ई-पुस्तकें",
+          "Videos": "वीडियो",
+          "Magazine Articles": "पत्रिका लेख",
+          "Classes & Events": "कक्षाएँ और आयोजन",
+          "Southern California · Internal Kung-Fu": "दक्षिणी कैलिफ़ोर्निया · आंतरिक कुंग-फ़ू",
+          "Little Nine": "लघु नवम",
+          "Heaven": "स्वर्ग",
+          "Wu Tao · The Taoist Way": "वू ताओ · ताओ मार्ग",
+          "Ancient internal arts rooted in Taoist wisdom — cultivating mind, body, and spirit since 2698 BC.": "ताओ ज्ञान में निहित प्राचीन आंतरिक विद्याएँ — 2698 ईसा पूर्व से मन, शरीर और आत्मा का संवर्धन।",
+          "Begin Your Path": "अपना मार्ग आरंभ करें",
+          "Explore the Arts": "विद्याएँ देखें",
+          "Scroll": "नीचे",
+          "Our Lineage": "हमारी परंपरा",
+          "A Living Tradition": "एक जीवंत परंपरा",
+          "Little Nine Heaven is the oldest known Taoist system in existence, tracing its origins to 2698 BC. These are not merely martial arts — they are complete systems of self-cultivation, healing, and inner transformation passed down through an unbroken lineage of masters.": "लिटिल नाइन हेवन आज ज्ञात सबसे प्राचीन ताओ प्रणाली है, जिसका उद्गम 2698 ईसा पूर्व तक जाता है। ये केवल युद्धकलाएँ नहीं हैं — ये आत्म-संवर्धन, आरोग्य और आंतरिक रूपांतरण की संपूर्ण पद्धतियाँ हैं, जो गुरुओं की अटूट परंपरा से चली आ रही हैं।",
+          "In Southern California, we carry this tradition forward. Classes are intimate, instruction is personal, and the depth of what is available to the dedicated student is without parallel in the modern world.": "दक्षिणी कैलिफ़ोर्निया में हम इस परंपरा को आगे बढ़ा रहे हैं। कक्षाएँ छोटी हैं, शिक्षण व्यक्तिगत है, और निष्ठावान शिष्य के लिए उपलब्ध गहराई आधुनिक जगत में अद्वितीय है।",
+          "Inquire About Classes": "कक्षाओं के विषय में पूछें",
+          "The Curriculum": "पाठ्यक्रम",
+          "The Systems": "प्रणालियाँ",
+          "Each system is a world unto itself — a complete path of study connecting movement, breath, intention, and spirit.": "प्रत्येक प्रणाली अपने आप में एक संसार है — गति, श्वास, संकल्प और आत्मा को जोड़ता हुआ संपूर्ण अध्ययन-मार्ग।",
+          "The oldest Taoist system known today, dating to 2698 BC. Three pillars: boxing, swordsmanship, and bone marrow washing. Taught only to personally chosen students of advanced study.": "आज ज्ञात सबसे प्राचीन ताओ प्रणाली, 2698 ईसा पूर्व की। तीन स्तंभ: मुष्टियुद्ध, खड्ग-विद्या और अस्थि-मज्जा प्रक्षालन। केवल स्वयं चुने गए उन्नत शिष्यों को ही सिखाई जाती है।",
+          "An ancient art of fighting and healing. Five elements, twelve animals, tien-gunn, six harmonies, nine essences. Deceptively simple, endlessly deep — easy to learn, hardest to master.": "युद्ध और आरोग्य की एक प्राचीन विद्या। पाँच तत्व, बारह पशु, तिएन-गुन, छह सामंजस्य, नौ सार। देखने में सरल, पर अथाह गहरी — सीखने में सुगम, सिद्ध करने में कठिनतम।",
+          "The old 13 postures form with 64 movements. Silk-reeling energy circles the body's meridians, generating extraordinary power through precise, spiraling movement and moving meditation.": "तेरह मुद्राओं वाला प्राचीन रूप, चौंसठ गतियों में। रेशम-कताई ऊर्जा शरीर की नाड़ियों में परिक्रमा करती है और सूक्ष्म सर्पिल गति तथा गतिशील ध्यान से असाधारण शक्ति उत्पन्न करती है।",
+          "A practical, no-nonsense street art from the early 1700s. Quick footwork, low kicks, explosive strikes. Singular and two-man fighting forms designed for real-world application.": "अठारहवीं सदी के आरंभ की एक व्यावहारिक, निरलंकार गली-विद्या। तीव्र पदचाप, नीची लातें, विस्फोटक प्रहार। एकल और युगल युद्ध-रूप, वास्तविक प्रयोग के लिए रचे गए।",
+          "The development of hands that carry iron power while retaining a normal appearance. Rooted in the Shaolin Temples. No comparable Iron Hand training exists anywhere else in the world.": "ऐसे हाथों का विकास जिनमें लोहे का बल हो, फिर भी रूप सामान्य बना रहे। शाओलिन मठों में इसकी जड़ें हैं। इसके समकक्ष लौह-हस्त साधना संसार में अन्यत्र कहीं नहीं है।",
+          "Eight diagrams. Constant circling, constant change. Eight animals, ten exercises, three styles of walking. The ultimate goal: to move, act, and react with total natural freedom.": "आठ त्रिग्राम। निरंतर परिक्रमा, निरंतर परिवर्तन। आठ पशु, दस अभ्यास, चलने की तीन शैलियाँ। परम लक्ष्य: पूर्ण स्वाभाविक स्वतंत्रता से चलना, करना और प्रत्युत्तर देना।",
+          "The classical arts of the bedchamber. Conserving jing, transforming it into chi, and circulating it through the body — sexual energy treated as cultivation rather than expenditure.": "शयनकक्ष की शास्त्रीय विद्याएँ। जिंग का संरक्षण, उसका ची में रूपांतरण और शरीर में उसका संचरण — कामऊर्जा को क्षय नहीं, साधना का साधन माना जाता है।",
+          "Both sitting and standing forms. A structured path toward inner stillness, elevated chi, and access to higher states of awareness — the foundation beneath all the external arts.": "आसीन और स्थित, दोनों रूप। आंतरिक स्थिरता, ची के उत्थान और चेतना की उच्चतर अवस्थाओं की ओर एक क्रमबद्ध मार्ग — समस्त बाह्य विद्याओं का आधार।",
+          "Bone marrow washing — the advanced nei-kung of the Little Nine Heaven system. Breathing, strengthening, and energy circulation for vitality and longevity. Open to any dedicated adult.": "अस्थि-मज्जा प्रक्षालन — लिटिल नाइन हेवन प्रणाली का उन्नत नेई-कुंग। ओज और दीर्घायु हेतु श्वास, बल-संवर्धन और ऊर्जा-संचरण। किसी भी निष्ठावान वयस्क के लिए खुला।",
+          "Character Gate Fist. A rare soft Shaolin system of eighteen characters held within three forms. Light, fast, fingertip striking — preserved through Sifu Chin Cheng-Yen.": "अक्षर-द्वार मुष्टि। अठारह अक्षरों वाली एक दुर्लभ कोमल शाओलिन प्रणाली, जो तीन रूपों में निहित है। हल्की, तीव्र, अंगुलियों के अग्रभाग से प्रहार — सिफ़ू चिन चेंग-येन द्वारा सुरक्षित।",
+          "\"The supreme good is like water, which nourishes all things without trying to.\"": "«परम कल्याण जल के समान है, जो बिना संघर्ष किए सब का पोषण करता है।»",
+          "— Tao Te Ching · Lao Tzu": "— ताओ ते चिंग · लाओत्से",
+          "The Masters": "गुरुजन",
+          "These arts were passed down through a living chain of masters. To study with us is to touch that chain.": "ये विद्याएँ गुरुओं की एक जीवंत शृंखला से चली आई हैं। हमारे यहाँ सीखना उस शृंखला का स्पर्श करना है।",
+          "Grandmaster": "महागुरु",
+          "Master": "गुरु",
+          "Sifu": "सिफ़ू",
+          "Little Nine Heaven · Ba Kua · Advanced Chi-Kung": "लिटिल नाइन हेवन · बा क्वा · उन्नत ची-कुंग",
+          "Original Chen Style Tai-Chi": "मूल चेन शैली ताई-ची",
+          "Hsing-I · Healing Arts · Chi-Kung": "शिंग-ई · आरोग्य विद्याएँ · ची-कुंग",
+          "Tzu Men-Chuan · Iron Hand": "त्ज़ु मेन-चुआन · लौह हस्त",
+          "The Training": "प्रशिक्षण",
+          "In Practice": "अभ्यास में",
+          "Sifu Ajay Kumra": "सिफ़ू अजय कुमरा",
+          "Form Practice": "रूप-अभ्यास",
+          "Partner & Weapons Work": "युगल एवं शस्त्र अभ्यास",
+          "Southern California": "दक्षिणी कैलिफ़ोर्निया",
+          "Begin Your Journey": "अपनी यात्रा आरंभ करें",
+          "Classes in the internal arts are offered on a personal basis. If you are ready to commit to genuine study of these rare and powerful systems, we invite you to reach out. The door is open to those who seek.": "आंतरिक विद्याओं का शिक्षण व्यक्तिगत आधार पर दिया जाता है। यदि आप इन दुर्लभ और सामर्थ्यवान पद्धतियों के सच्चे अध्ययन हेतु तत्पर हैं, तो हमें लिखें। द्वार उनके लिए खुला है जो खोजते हैं।",
+          "Name": "नाम",
+          "Email": "ईमेल",
+          "Phone": "दूरभाष",
+          "(optional)": "(वैकल्पिक)",
+          "Martial Arts Experience": "युद्धकला का अनुभव",
+          "Select one…": "चुनें…",
+          "Complete beginner": "पूर्णतः नवसिखुआ",
+          "Some experience": "कुछ अनुभव",
+          "Several years of training": "कई वर्षों का अभ्यास",
+          "Long-term practitioner": "दीर्घकालिक साधक",
+          "Primary Interest": "मुख्य रुचि",
+          "Health & self-cultivation generally": "स्वास्थ्य एवं आत्म-संवर्धन सामान्यतः",
+          "Not sure yet — open to guidance": "अभी निश्चित नहीं — मार्गदर्शन का स्वागत है",
+          "Tell Us About Yourself": "अपने विषय में बताइए",
+          "Inquiries are read personally. Please allow a few days for a reply.": "संदेश स्वयं पढ़े जाते हैं। उत्तर में कुछ दिन लग सकते हैं।",
+          "Send Inquiry": "संदेश भेजें",
+          "Little Nine Heaven SoCal · Southern California": "Little Nine Heaven SoCal · दक्षिणी कैलिफ़ोर्निया",
+          "© 2026 Little Nine Heaven SoCal · Internal Kung-Fu · All Rights Reserved": "© 2026 Little Nine Heaven SoCal · आंतरिक कुंग-फ़ू · सर्वाधिकार सुरक्षित"
+},
+        "placeholders": {
+          "Your full name": "आपका पूरा नाम",
+          "What draws you to the internal arts? What are you hoping to find in your training?": "आंतरिक विद्याओं की ओर आपको क्या खींचता है? अभ्यास में आप क्या पाना चाहते हैं?"
+},
+        "title": "Little Nine Heaven SoCal | ताओ आंतरिक कुंग-फ़ू · दक्षिणी कैलिफ़ोर्निया"
+      }
+    };
+
+    let current = "en";
+    const englishTitle = document.title;
+
+    const nodes = [];
+    (function collect(root) {
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+        acceptNode(n) {
+          const p = n.parentNode;
+          if (!p) return NodeFilter.FILTER_REJECT;
+          const tag = p.nodeName;
+          if (tag === "SCRIPT" || tag === "STYLE" || tag === "OPTION" &&
+              p.parentNode && p.parentNode.id === "langSelect") {
+            return NodeFilter.FILTER_REJECT;
+          }
+          return n.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+        }
+      });
+      let n;
+      while ((n = walker.nextNode())) nodes.push({ node: n, en: n.nodeValue });
+    })(document.body);
+
+    function apply(lang) {
+      const pack = TRANSLATIONS[lang];
+      const strings = pack ? pack.strings : null;
+
+      nodes.forEach(function (rec) {
+        const key = rec.en.trim();
+        if (strings && strings[key]) {
+          rec.node.nodeValue = rec.en.replace(key, strings[key]);
+        } else {
+          rec.node.nodeValue = rec.en;
+        }
+      });
+
+      document.querySelectorAll("[placeholder]").forEach(function (el) {
+        if (!el.dataset.phEn) el.dataset.phEn = el.getAttribute("placeholder");
+        const en = el.dataset.phEn;
+        const t = pack && pack.placeholders ? pack.placeholders[en] : null;
+        el.setAttribute("placeholder", t || en);
+      });
+
+      document.documentElement.lang = lang;
+      document.documentElement.dir = RTL.indexOf(lang) > -1 ? "rtl" : "ltr";
+      document.title = pack && pack.title ? pack.title : englishTitle;
+
+      document.body.className = document.body.className
+        .replace(/\blang-\S+/g, "").replace(/\brtl\b/g, "").trim();
+      if (lang !== "en") document.body.classList.add("lang-" + lang);
+      if (RTL.indexOf(lang) > -1) document.body.classList.add("rtl");
+
+      const sel = document.getElementById("langSelect");
+      if (sel) sel.value = lang;
+      current = lang;
+    }
+
+    /* ?lang=xx wins; otherwise fall back to the browser's preference. */
+    const param = new URLSearchParams(location.search).get("lang");
+    if (param && (param === "en" || TRANSLATIONS[param])) {
+      apply(param);
+    } else if (!param) {
+      const nav = (navigator.language || "").toLowerCase();
+      const base = nav.split("-")[0];
+      if (TRANSLATIONS[base]) apply(base);
+    }
+
+    const sel = document.getElementById("langSelect");
+    if (sel) {
+      sel.value = current;
+      sel.addEventListener("change", function () {
+        const next = sel.value;
+        apply(next);
+        const url = new URL(location.href);
+        if (next === "en") url.searchParams.delete("lang");
+        else url.searchParams.set("lang", next);
+        history.replaceState(null, "", url);
+      });
+    }
+  })();
+  </script>
+
 </body>
 </html>
