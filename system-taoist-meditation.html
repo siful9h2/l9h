@@ -234,5 +234,21 @@
     const slug = document.body.dataset.slug;
     document.querySelectorAll('[data-slug]').forEach(a=>{if(a.dataset.slug===slug)a.classList.add('current');});
   </script>
+  <script>
+  /* The still and the video are both semi-transparent, so leaving the still
+     in place shows it through the video. Hide it once the video really plays.
+     Reduced-motion users keep the still, since the video is hidden for them. */
+  (function () {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    document.querySelectorAll(".page-hero-video, .hero-video").forEach(function (v) {
+      function hideStill() {
+        var still = v.parentNode.querySelector(".page-hero-photo, .hero-photo");
+        if (still) still.style.display = "none";
+      }
+      v.addEventListener("playing", hideStill);
+      v.addEventListener("loadeddata", function () { if (v.readyState >= 2) hideStill(); });
+    });
+  })();
+  </script>
 </body>
 </html>
