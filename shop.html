@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Splashing Hands Kung-Fu | Little Nine Heaven SoCal</title>
-  <meta name="description" content="Splashing Hands in Southern California — a fast, practical street-fighting system from the early 1700s. Explosive hand combinations, low kicks, aggressive footwork."/>
+  <title>Shop | Little Nine Heaven SoCal</title>
+  <meta name="description" content="Books, instructional videos, and training materials from Little Nine Heaven SoCal."/>
   <meta name="robots" content="index,follow"/>
-  <link rel="canonical" href="https://www.l9hkungfu.com/system-splashing-hands.html"/>
+  <link rel="canonical" href="https://www.l9hkungfu.com/shop.html"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:title" content="Splashing Hands Kung-Fu | Little Nine Heaven SoCal"/>
-  <meta property="og:description" content="Splashing Hands in Southern California — a fast, practical street-fighting system from the early 1700s. Explosive hand combinations, low kicks, aggressive footwork."/>
-  <meta property="og:url" content="https://www.l9hkungfu.com/system-splashing-hands.html"/>
+  <meta property="og:title" content="Shop | Little Nine Heaven SoCal"/>
+  <meta property="og:description" content="Books, instructional videos, and training materials from Little Nine Heaven SoCal."/>
+  <meta property="og:url" content="https://www.l9hkungfu.com/shop.html"/>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -29,6 +29,92 @@
     .nav-links .dropdown a { display:block; padding:.55rem 1.2rem; font-size:.58rem; letter-spacing:.18em; color:rgba(245,239,228,.77); white-space:nowrap; border-left:2px solid transparent; transition:all .2s; }
     .nav-links .dropdown a:hover { color:var(--gold); border-left-color:var(--red); background:rgba(201,151,43,.05); }
     @media(max-width:700px){.nav-links{display:none;}}
+
+    /* ── SHOP ── */
+    .shop-note {
+      max-width: 640px; margin: 0 auto 3.5rem; text-align: center;
+      font-size: 1.05rem; line-height: 1.95; color: rgba(247,243,234,.72);
+    }
+    .shop-grid {
+      max-width: 1080px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    @media(max-width:700px){ .shop-grid { grid-template-columns: 1fr; } }
+
+    .product {
+      background: #1a150e;
+      border: 1px solid rgba(201,151,43,.22);
+      display: flex; flex-direction: column;
+      transition: border-color .3s ease, transform .3s ease;
+    }
+    .product:hover { border-color: rgba(201,151,43,.5); transform: translateY(-3px); }
+
+    .product-img {
+      position: relative; width: 100%; aspect-ratio: 4/3;
+      background: linear-gradient(135deg,#1f1810,#2e2416);
+      overflow: hidden; flex-shrink: 0;
+    }
+    .product-img img {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; z-index: 1;
+    }
+    .product-img::after {
+      content: attr(data-placeholder);
+      position: absolute; inset: 0; display: flex;
+      align-items: center; justify-content: center; text-align: center; padding: 1rem;
+      font-family: 'Cinzel', serif; font-size: .58rem; letter-spacing: .2em;
+      text-transform: uppercase; color: rgba(217,168,63,.4); z-index: 0;
+    }
+
+    .product-body { padding: 1.6rem 1.5rem 1.5rem; display: flex; flex-direction: column; flex: 1; }
+    .product-cat {
+      font-family: 'Cinzel', serif; font-size: .55rem; letter-spacing: .25em;
+      text-transform: uppercase; color: var(--gold); opacity: .8; margin-bottom: .6rem;
+    }
+    .product-name {
+      font-family: 'Cinzel', serif; font-size: 1.05rem; letter-spacing: .04em;
+      color: var(--parchment); margin-bottom: .7rem; line-height: 1.35;
+    }
+    .product-desc {
+      font-size: .95rem; line-height: 1.8; color: rgba(247,243,234,.7);
+      margin-bottom: 1.3rem; flex: 1;
+    }
+    .product-foot {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap;
+    }
+    .product-price {
+      font-family: 'Cinzel', serif; font-size: 1.15rem; color: var(--gold-light);
+      letter-spacing: .05em;
+    }
+    .product-buy {
+      font-family: 'Cinzel', serif; font-size: .62rem; letter-spacing: .18em;
+      text-transform: uppercase; padding: .7em 1.5em;
+      border: 1px solid rgba(201,151,43,.5); background: transparent;
+      color: var(--gold-light); text-decoration: none; cursor: pointer;
+      transition: all .3s ease; white-space: nowrap;
+    }
+    .product-buy:hover { background: rgba(201,151,43,.12); border-color: var(--gold); }
+    .product-buy.soon {
+      opacity: .45; cursor: default; pointer-events: none;
+      border-color: rgba(201,151,43,.25);
+    }
+
+    .shop-empty {
+      max-width: 620px; margin: 0 auto; text-align: center;
+      padding: 3.5rem 2rem; border: 1px solid rgba(201,151,43,.2); background: #1a150e;
+    }
+    .shop-empty p { color: rgba(247,243,234,.7); line-height: 1.95; margin-bottom: 1.5rem; }
+
+    .shop-trust {
+      max-width: 720px; margin: 4rem auto 0; padding-top: 2.5rem;
+      border-top: 1px solid rgba(201,151,43,.16); text-align: center;
+    }
+    .shop-trust p {
+      font-size: .9rem; color: rgba(247,243,234,.6); line-height: 1.9; margin-bottom: .5rem;
+    }
+
     .page-hero { position:relative; padding:10rem 1.5rem 5rem; text-align:center; overflow:hidden; }
     .page-hero-bg { position:absolute; inset:0; background:radial-gradient(ellipse 60% 80% at 50% 0%,#2a140a 0%,transparent 70%),var(--ink); z-index:0; }
     .page-hero-photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.18; z-index:0; filter:grayscale(40%); }
@@ -94,7 +180,7 @@
     .reveal.visible { opacity:1; transform:translateY(0); }
 </style>
 </head>
-<body data-slug="splashing-hands">
+<body data-slug="shop">
 
   <nav>
     <a href="index.html" class="nav-logo">L9H · SoCal</a>
@@ -143,82 +229,109 @@
 
   <div class="page-hero">
     <div class="page-hero-bg"></div>
-    <img class="page-hero-photo" src="images/system-splashing-hands.jpg" alt="Splashing Hands training" onerror="this.style.display='none'"/>
-    <!-- Optional looping video. Drop images/system-splashing-hands.mp4 in place and it
+    <img class="page-hero-photo" src="images/shop.jpg" alt="" onerror="this.style.display='none'"/>
+    <!-- Optional looping video. Drop images/shop.mp4 in place and it
          plays over the still above; absent, the still shows instead. -->
     <video class="page-hero-video" autoplay loop muted playsinline aria-hidden="true">
-      <source src="images/system-splashing-hands.mp4" type="video/mp4" onerror="this.parentNode.style.display='none'">
+      <source src="images/shop.mp4" type="video/mp4" onerror="this.parentNode.style.display='none'">
     </video>
     <div class="page-hero-content">
-      <p class="eyebrow">The Systems · External</p>
-      <h1>Splashing Hands</h1>
-      <p class="subtitle">Practical Combat · No Ornament</p>
+      <p class="eyebrow">Little Nine Heaven SoCal</p>
+      <h1>Shop</h1>
+      <p class="subtitle">Books · Instruction · Training Materials</p>
       <div class="hero-divider"></div>
     </div>
   </div>
 
   <section class="bio-section">
-    <div class="bio-grid">
-      <div class="reveal">
-        <div class="portrait-frame">
-          <img src="images/system-splashing-hands.jpg" alt="Splashing Hands training" onerror="this.style.display='none'"/>
-          <div class="portrait-placeholder">☯</div>
-          <p class="portrait-placeholder-text">Photo</p>
+    <p class="shop-note">
+      Materials to support your practice. Instructional resources are meant to
+      accompany personal instruction rather than replace it — the internal arts
+      cannot be transmitted by video alone, but a reference you can return to
+      between sessions is worth having.
+    </p>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         TO ADD A PRODUCT:
+         1. Create a Payment Link in your Stripe dashboard.
+         2. Copy the <article class="product"> block below.
+         3. Paste your Stripe URL into the href.
+         4. Drop an image into images/ and update the src.
+
+         For a product that isn't ready yet, leave the href as "#" and
+         add class="soon" to the button — it renders greyed out and
+         non-clickable.
+         ══════════════════════════════════════════════════════════════ -->
+
+    <div class="shop-grid">
+
+      <article class="product">
+        <div class="product-img" data-placeholder="Product photo">
+          <img src="images/shop-product-1.jpg" alt="" onerror="this.style.display='none'"/>
         </div>
-        <div class="portrait-caption">
-          <strong>Splashing Hands</strong>
-          <span>Fast hands · Low kicks · Forward pressure</span>
+        <div class="product-body">
+          <p class="product-cat">Instructional Video</p>
+          <h3 class="product-name">Product Name</h3>
+          <p class="product-desc">
+            A short description of what this is and who it is for. Two or three
+            lines reads best — enough to explain the value without becoming a page
+            of its own.
+          </p>
+          <div class="product-foot">
+            <span class="product-price">$00</span>
+            <a href="#" class="product-buy soon">Coming Soon</a>
+          </div>
         </div>
-      </div>
-      <div class="bio-content reveal">
-        <p class="section-label">The Systems · External</p>
-        <h2>Splashing Hands</h2>
-        <div class="gold-line"></div>
-        <div class="facts-grid"><div class="fact"><div class="dot"></div><strong>Origin</strong><span>Early 1700s, northern China</span></div><div class="fact"><div class="dot"></div><strong>Character</strong><span>Fast, close, relentlessly forward</span></div><div class="fact"><div class="dot"></div><strong>Kicks</strong><span>Low — knee height and below</span></div><div class="fact"><div class="dot"></div><strong>Lineage Here</strong><span>Through Master Haumea Lefiti</span></div></div>
-        <p>Splashing Hands is the least decorative art we teach. There is no performance version of it. Everything in the system exists because it settles a fight quickly, and anything that did not serve that purpose was discarded somewhere in the last three hundred years.</p>
+      </article>
 
-        <p>The name describes the hands: strikes arrive in continuous overlapping waves rather than as single committed blows, each one setting up the next, none of them waiting for the last to finish. Against an opponent expecting a punch-and-reset rhythm, the effect is of being caught under something that keeps coming.</p>
+      <article class="product">
+        <div class="product-img" data-placeholder="Product photo">
+          <img src="images/shop-product-2.jpg" alt="" onerror="this.style.display='none'"/>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">eBook</p>
+          <h3 class="product-name">Product Name</h3>
+          <p class="product-desc">
+            Replace this text with your own. Delete any product block you do not
+            need — the grid reflows on its own.
+          </p>
+          <div class="product-foot">
+            <span class="product-price">$00</span>
+            <a href="#" class="product-buy soon">Coming Soon</a>
+          </div>
+        </div>
+      </article>
 
-        <h3>How It Fights</h3>
-        <ul>
-          <li><strong>Forward pressure.</strong> Splashing Hands does not wait, circle, or trade at range. It closes and stays closed.</li>
-          <li><strong>Low kicks only.</strong> Shins, knees, thighs, groin. Nothing above the waist, because nothing above the waist is reliable when the ground is uneven and the situation is real.</li>
-          <li><strong>Shuffling footwork.</strong> Feet stay under the body and near the floor, which keeps the base intact while the hands work.</li>
-          <li><strong>Hand combinations over single strikes.</strong> The system assumes the first strike will not end it.</li>
-        </ul>
+      <article class="product">
+        <div class="product-img" data-placeholder="Product photo">
+          <img src="images/shop-product-3.jpg" alt="" onerror="this.style.display='none'"/>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Training Materials</p>
+          <h3 class="product-name">Product Name</h3>
+          <p class="product-desc">
+            When a product is live, swap the href for your Stripe Payment Link and
+            change the button text to "Purchase".
+          </p>
+          <div class="product-foot">
+            <span class="product-price">$00</span>
+            <a href="#" class="product-buy soon">Coming Soon</a>
+          </div>
+        </div>
+      </article>
 
-        <div class="pull">Master Lefiti taught this art to people who needed it. That inheritance shapes how it is still taught — plainly, without mystique, and with attention to what actually happens under pressure.</div>
+    </div>
 
-        <h3>Forms and Two-Man Sets</h3>
-        <p>The curriculum includes both solo forms and two-man fighting sets. The two-man work is where the art is really learned: timing, distance, and the willingness to keep moving forward are not things a solo form can teach you.</p>
-
-        <h3>Who It Suits</h3>
-        <p>Students who want self-defence they can use within a reasonable timeframe usually start here. It also pairs unusually well with the internal systems — the footwork and hand mechanics share more with Tzu Men Chuan than either art's reputation would suggest.</p>
-      </div>
+    <div class="shop-trust">
+      <p>Payments are processed securely by Stripe. Card details never touch this site.</p>
+      <p>Questions about an order, or looking for something not listed here?
+         <a href="index.html#contact" style="color:var(--gold-light)">Get in touch.</a></p>
     </div>
   </section>
 
-  <div class="teachers-nav">
-    <div class="teachers-nav-inner">
-      <p class="teachers-nav-label">The Systems</p>
-      <div class="teachers-nav-grid">
-        <a href="system-little-nine-heaven.html" data-slug="little-nine-heaven">Little Nine Heaven</a>
-        <a href="system-hsing-i.html" data-slug="hsing-i">Hsing-I (Xing Yi Quan)</a>
-        <a href="system-chen-tai-chi.html" data-slug="chen-tai-chi">Chen Tai-Chi</a>
-        <a href="system-splashing-hands.html" data-slug="splashing-hands">Splashing Hands</a>
-        <a href="system-iron-hand.html" data-slug="iron-hand">Iron Hand</a>
-        <a href="system-ba-kua.html" data-slug="ba-kua">Ba Kua</a>
-        <a href="system-taoist-lovemaking.html" data-slug="taoist-lovemaking">Taoist Lovemaking</a>
-        <a href="system-taoist-meditation.html" data-slug="taoist-meditation">Taoist Meditation</a>
-        <a href="system-shih-shui.html" data-slug="shih-shui">Shih Shui</a>
-        <a href="system-tzu-men-chuan.html" data-slug="tzu-men-chuan">Tzu Men Chuan</a>
-      </div>
-    </div>
-  </div>
-
   <div class="cta-bar">
-    <h2>Practical From the First Class</h2>
-    <p>Splashing Hands is taught as it was meant to be used, with two-man work from early on.</p>
+    <h2>Instruction Comes First</h2>
+    <p>Materials support your practice, but the arts are transmitted in person. Reach out about training.</p>
     <a href="index.html#contact" class="btn btn-light">Begin Your Path</a>
   </div>
 

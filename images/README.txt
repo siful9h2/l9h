@@ -30,3 +30,26 @@ Each image appears twice on its page: as a faint hero background and in the
 portrait frame. Landscape or square works; the frame crops to 3:4.
 
   teacher-mcneil.jpg   (optional) Portrait for Master James McNeil's page.
+
+── SHOP PAGE ──
+  shop.jpg             (optional) faint banner behind the Shop title
+  shop-product-1.jpg   product photos, 4:3 landscape, ~1200x900px
+  shop-product-2.jpg
+  shop-product-3.jpg
+Add more as shop-product-4.jpg etc. when you add product blocks.
+
+── OPTIONAL HERO VIDEOS ──
+Any hero can play a silent looping video instead of a still. Use the same
+filename as the image, with .mp4:
+
+  hero.mp4                     homepage
+  system-chen-tai-chi.mp4      Chen Tai-Chi page
+  system-hsing-i.mp4           ...and so on for every system page
+  teacher-mcneil.mp4, lineage.mp4, shop.mp4
+
+Rules:
+- Keep each file under ~3MB. These autoplay, so weight matters.
+- No audio track. Mobile browsers block autoplay on anything with sound.
+- 1080p is plenty; the hero sits at low opacity behind the title text.
+- The matching .jpg still acts as the fallback, so keep it in place.
+- Visitors who set "reduce motion" in their OS see the still instead.

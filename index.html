@@ -604,6 +604,15 @@
       z-index: 0;
       filter: grayscale(35%) contrast(1.1);
     }
+    .hero-video {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; opacity: 0.22; z-index: 0;
+      filter: grayscale(35%) contrast(1.1); pointer-events: none;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-video { display: none !important; }
+    }
+
 
     .photo-frame {
       position: relative;
@@ -937,6 +946,7 @@
           <a href="https://littlenineheaven.com/upcoming-classes/" target="_blank">Classes &amp; Events</a>
         </div>
       </li>
+      <li><a href="shop.html">Shop</a></li>
       <li><a href="#contact">Contact</a></li>
       <li class="lang-item">
         <select class="lang-select" id="langSelect" aria-label="Language">
@@ -968,6 +978,12 @@
       alt="Internal kung-fu training in Southern California"
       onerror="this.style.display='none'"
     />
+
+    <!-- Optional looping video. Drop images/hero.mp4 in place and it plays
+         over the still above; absent, the still shows instead. -->
+    <video class="hero-video" autoplay loop muted playsinline aria-hidden="true">
+      <source src="images/hero.mp4" type="video/mp4" onerror="this.parentNode.style.display='none'">
+    </video>
 
     <div class="trigram-ring"></div>
     <div class="octagon"></div>
@@ -1312,6 +1328,7 @@
     const TRANSLATIONS = {
       "th": {
         "strings": {
+          "Shop": "ร้านค้า",
           "Systems ▾": "สายวิชา ▾",
           "About ▾": "เกี่ยวกับ ▾",
           "Resources ▾": "แหล่งข้อมูล ▾",
@@ -1403,6 +1420,7 @@
       },
       "zh": {
         "strings": {
+          "Shop": "商店",
       // ── Navigation ──
       "Systems ▾": "武学体系 ▾",
       "About ▾": "关于 ▾",
@@ -1551,6 +1569,7 @@
       },
       "es": {
         "strings": {
+          "Shop": "Tienda",
           "Systems ▾": "Sistemas ▾",
           "About ▾": "Acerca de ▾",
           "Resources ▾": "Recursos ▾",
@@ -1641,6 +1660,7 @@
       },
       "fr": {
         "strings": {
+          "Shop": "Boutique",
           "Systems ▾": "Systèmes ▾",
           "About ▾": "À propos ▾",
           "Resources ▾": "Ressources ▾",
@@ -1731,6 +1751,7 @@
       },
       "de": {
         "strings": {
+          "Shop": "Shop",
           "Systems ▾": "Systeme ▾",
           "About ▾": "Über uns ▾",
           "Resources ▾": "Ressourcen ▾",
@@ -1828,6 +1849,7 @@
       },
       "pt": {
         "strings": {
+          "Shop": "Loja",
           "Systems ▾": "Sistemas ▾",
           "About ▾": "Sobre ▾",
           "Resources ▾": "Recursos ▾",
@@ -1918,6 +1940,7 @@
       },
       "ru": {
         "strings": {
+          "Shop": "Магазин",
           "Systems ▾": "Системы ▾",
           "About ▾": "О школе ▾",
           "Resources ▾": "Материалы ▾",
@@ -2023,6 +2046,7 @@
       },
       "ja": {
         "strings": {
+          "Shop": "販売",
           "Systems ▾": "武術体系 ▾",
           "About ▾": "当校について ▾",
           "Resources ▾": "資料 ▾",
@@ -2128,6 +2152,7 @@
       },
       "ar": {
         "strings": {
+          "Shop": "المتجر",
           "Systems ▾": "الأنظمة ▾",
           "About ▾": "عن المدرسة ▾",
           "Resources ▾": "مصادر ▾",
@@ -2219,6 +2244,7 @@
       },
       "hi": {
         "strings": {
+          "Shop": "दुकान",
           "Systems ▾": "प्रणालियाँ ▾",
           "About ▾": "परिचय ▾",
           "Resources ▾": "संसाधन ▾",
