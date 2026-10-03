@@ -19,3 +19,10 @@
 
 ## 2026-10-03 (mobile)
 - Owner approved the mobile proposal: phones now get a tap-to-open menu and a light parchment reading theme (desktop unchanged). Files: mobile.css, mobile-menu.js, linked from every page.
+
+## 2026-10-03 (SEO run)
+- No blog post due (next: Hsing-I Part 3 on Thu Oct 8).
+- All 11 system pages and the instructor page now name Santee, CA (San Diego County) in their titles, search descriptions and social previews, using the spellings people search for (Tai Chi, Xing Yi Quan, Baguazhang, Qigong). Why: these pages only said "Southern California", and local searches use the town/county.
+- Added search markup (Course for each system page, Person for the instructor page) linking them to the Santee school.
+- Each system page's closing "Begin Your Path" box now says classes are in Santee, by appointment, with a free first class; instructor page labels say Santee instead of Southern California.
+- Question for owner: Hsing-I, Ba Kua and instructor pages mention "small classes/small groups"; confirmed facts say classes are private. Left as is pending an answer.
