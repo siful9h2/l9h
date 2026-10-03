@@ -18,6 +18,14 @@ Pushing to `main` publishes the live site automatically. There is no build step.
 - Writings by Sifu James W. McNeil (the owner's teacher) may be adapted into articles with credit to him.
   Articles drawn from his writings count as history/lineage content: always send them as a proposal PR.
 
+## Blog (once blog.html exists on main)
+- Posts are flat files named `blog-<short-slug>.html`, built from an existing post as the template.
+- Each post needs: BlogPosting JSON-LD (author, datePublished), a card at the top of the list in blog.html,
+  a link in the "From the Blog" box on every post, an entry in sitemap.xml, and the mobile.css /
+  mobile-menu.js lines in <head>.
+- Posts from Sifu McNeil's newsletters credit him as author and name the issue they first appeared in.
+  They are history/lineage content: always send new ones as a proposal PR.
+
 ## School facts (confirmed by the owner)
 - Location: Santee, California (San Diego County). No street address is published; do not add one.
 - Classes are private and by appointment only. There is no public class schedule.
