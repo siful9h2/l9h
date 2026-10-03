@@ -90,3 +90,45 @@
   .section-label, .eyebrow { font-size: .72rem !important; }
   .teachers-nav-grid a { font-size: .7rem !important; }
 }
+
+/* ---------- Tap-to-open menu (phones) ---------- */
+.menu-toggle { display: none; }
+@media (max-width: 760px) {
+  nav { padding: 1rem 1.25rem !important; }
+  .menu-toggle {
+    display: flex; flex-direction: column; justify-content: center; gap: 5px;
+    width: 44px; height: 44px; margin: -6px -10px -6px 0; padding: 10px;
+    background: none; border: 0; cursor: pointer; position: relative; z-index: 2;
+  }
+  .menu-toggle span { display: block; height: 2px; background: #f2d488; transition: transform .25s, opacity .25s; }
+  nav.menu-open .menu-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  nav.menu-open .menu-toggle span:nth-child(2) { opacity: 0; }
+  nav.menu-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  nav.menu-open { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; transform: none !important; filter: none !important; }
+  nav .nav-links { display: none !important; }
+  nav.menu-open .nav-links {
+    display: flex !important; flex-direction: column; gap: 0 !important;
+    position: fixed; top: 64px; left: 0; right: 0; bottom: 0;
+    overflow-y: auto; -webkit-overflow-scrolling: touch;
+    background: #120d08; padding: .5rem 1.5rem 3rem; margin: 0; z-index: 150;
+    border-top: 1px solid rgba(201,151,43,.3);
+  }
+  nav.menu-open .nav-links li { padding: 0 !important; margin: 0 !important; border-bottom: 1px solid rgba(201,151,43,.16); }
+  nav.menu-open .nav-links > li > a {
+    display: block; padding: 1rem 0; font-size: .82rem !important; letter-spacing: .2em;
+    color: #f7f3ea !important;
+  }
+  nav.menu-open .nav-links li .dropdown {
+    visibility: visible !important; opacity: 1 !important; pointer-events: auto !important;
+    position: static !important; transform: none !important; background: none !important;
+    border: 0 !important; min-width: 0 !important; padding: 0 0 .9rem .9rem !important;
+  }
+  nav.menu-open .nav-links .dropdown a {
+    padding: .6rem 0 !important; font-size: .74rem !important; white-space: normal !important;
+    color: rgba(247,243,234,.82) !important; border-left: 0 !important;
+  }
+  nav.menu-open .nav-links li.lang-item { border-bottom: 0; padding: 1.2rem 0 !important; }
+  nav.menu-open .lang-select { font-size: 1rem; padding: .5rem .8rem; }
+  body.menu-lock { overflow: hidden; }
+}
