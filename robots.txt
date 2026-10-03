@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://l9hkungfu.com/sitemap.xml
