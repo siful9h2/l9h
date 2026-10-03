@@ -1,0 +1,29 @@
+{
+  "note": "Blog release calendar. Drafts live on the drafts/blog branch. Release with: python3 tools/blog.py release <slug> <YYYY-MM-DD>",
+  "posts": [
+    {
+      "slug": "blog-hsing-i-part-1-origins-and-eight-fundamentals",
+      "release": "2026-10-03",
+      "status": "published",
+      "topic": "Hsing-I history, Yue Fei, Eight Fundamentals / San Ti"
+    },
+    {
+      "slug": "blog-hsing-i-part-3-body-power-and-touch-go-kiss",
+      "release": "2026-10-08",
+      "status": "scheduled",
+      "topic": "Hsing-I body mechanics, seven stars, touch-go-kiss"
+    },
+    {
+      "slug": "blog-hsing-i-part-4-five-elements-and-horse-form",
+      "release": "2026-10-15",
+      "status": "scheduled",
+      "topic": "Hsing-I five elements, Horse form"
+    },
+    {
+      "slug": "blog-taiwan-thailand-trip-2015",
+      "release": "2026-10-22",
+      "status": "scheduled",
+      "topic": "Training trip, Taiwan & Thailand"
+    }
+  ]
+}

@@ -18,13 +18,30 @@ Pushing to `main` publishes the live site automatically. There is no build step.
 - Writings by Sifu James W. McNeil (the owner's teacher) may be adapted into articles with credit to him.
   Articles drawn from his writings count as history/lineage content: always send them as a proposal PR.
 
-## Blog (once blog.html exists on main)
-- Posts are flat files named `blog-<short-slug>.html`, built from an existing post as the template.
-- Each post needs: BlogPosting JSON-LD (author, datePublished), a card at the top of the list in blog.html,
-  a link in the "From the Blog" box on every post, an entry in sitemap.xml, and the mobile.css /
-  mobile-menu.js lines in <head>.
-- Posts from Sifu McNeil's newsletters credit him as author and name the issue they first appeared in.
-  They are history/lineage content: always send new ones as a proposal PR.
+## Blog and release calendar
+- The blog is live at /blog. Unreleased drafts live on the `drafts/blog` branch, never on main
+  (anything on main is public). The schedule is in blog-calendar.json.
+- Posts in blog-calendar.json were approved by the owner, along with their release dates. On their date,
+  release them straight to main. No PR is needed for these, only for new posts or changes to their content.
+- Release procedure, every time:
+  1. `git fetch origin drafts/blog:refs/remotes/origin/drafts/blog`
+  2. `python3 tools/blog.py due` lists posts due today (Pacific time) or earlier.
+  3. For each: `python3 tools/blog.py release <slug> <today's date>`. It copies the draft, sets the
+     publish date, rebuilds the blog list, the "From the Blog" boxes and the sitemap, then runs QA.
+  4. If QA fails, fix the problem (or skip the post and tell the owner). Never push a failing build.
+  5. Commit, push, wait ~2 minutes, then fetch the live post and /blog and confirm they show the post
+     with the right title. Log it in CHANGELOG.md.
+  6. About 7 days after a release, web-search `site:l9hkungfu.com <post slug or title>` to see whether
+     Google has indexed it, and include that in the owner summary. If a post isn't indexed after
+     14 days, check it for problems and tell the owner.
+- Run `python3 tools/blog.py check` before any push that touches HTML; it catches broken links,
+  bad JSON-LD, missing sitemap entries, and title/description lengths on blog pages.
+- New posts: build from an existing post in drafts/blog (same template), keep the title under 60
+  characters and the description between 70 and 160, use RELEASE_DATE as the datePublished placeholder,
+  add a card to drafts/blog's blog.html, and add a link to the "From the Blog" box. Propose new posts
+  and their dates to the owner as a PR against drafts/blog, and add them to the calendar once approved.
+  Posts from Sifu McNeil's writings credit him as author and name the newsletter issue they first appeared in.
+- Cadence: one post a week, on Thursdays. Don't bunch releases together; a steady cadence matters more than volume.
 
 ## School facts (confirmed by the owner)
 - Location: Santee, California (San Diego County). No street address is published; do not add one.

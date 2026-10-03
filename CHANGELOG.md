@@ -11,5 +11,8 @@
 - Homepage title, description, social preview text and search markup updated to name Santee and the free intro class.
 - Agent rules: history and lineage content now needs the owner's approval; added confirmed school facts.
 
-## Pending approval (proposal/blog)
-- New blog at /blog with four posts adapted from Sifu McNeil's 2015 newsletters (Hsing-I Parts 1, 3 and 4, and the Taiwan/Thailand trip). "Blog" added to the menu on every page (translated on the homepage), linked from the Hsing-I page, added to the sitemap.
+## 2026-10-03 (blog launch)
+- Launched the blog (/blog) with post #1: "The Devastating Style of Hsing-I, Part 1: Origins and the Eight Fundamentals" by Sifu James W. McNeil (from his September 2015 newsletter).
+- Corrected the Yue Fei dates in that post to Yue Fei (1103-1142), Sung dynasty (960-1279), as the owner asked.
+- "Blog" added to the menu on every page (translated on the homepage); the Hsing-I page links to the series.
+- Added blog-calendar.json (release schedule) and tools/blog.py (release + QA checks). Remaining posts are scheduled weekly on Thursdays.
