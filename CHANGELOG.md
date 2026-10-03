@@ -10,3 +10,6 @@
 - Homepage now says where and how classes happen: private instruction in Santee, CA (San Diego County), by appointment, with a free first class. Added in all 11 languages.
 - Homepage title, description, social preview text and search markup updated to name Santee and the free intro class.
 - Agent rules: history and lineage content now needs the owner's approval; added confirmed school facts.
+
+## Pending approval (proposal/mcneil-hsing-i-article)
+- New article page: "The Devastating Style of Hsing-I" by Sifu James W. McNeil, adapted from his 2015 newsletter series. Linked from the Hsing-I page and added to the sitemap.
