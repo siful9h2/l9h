@@ -14,14 +14,24 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   Chin Cheng-Yen, James McNeil, Ajay Kumra.
 - When you add or remove a page, update sitemap.xml (thank-you.html stays out: it is noindex).
 
+## School facts (confirmed by the owner)
+- Location: Santee, California (San Diego County). No street address is published; do not add one.
+- Classes are private and by appointment only. There is no public class schedule.
+- The first class is a free introductory class.
+
 ## What the agent may change on its own (commit straight to main)
-Text and SEO only: copy edits, new or expanded written content, new blog/article pages
+Text and SEO only (except history and lineage, see below): copy edits, new or expanded written content, new blog/article pages
 that reuse an existing page's template unchanged, titles, meta descriptions, headings, alt text,
 structured data (JSON-LD), canonical tags, sitemap.xml, robots.txt, fixing broken links and typos.
 
 ## What needs the owner's approval first (open a pull request, never push to main)
 Anything visual: layout, CSS/styles, colors, fonts, images or video, adding/removing/reordering
 menu items or homepage sections/cards, new page templates or design elements.
+Also any content about history or lineage, even text-only: the lineage page, the teacher-*.html pages,
+the instructor page's training background, the homepage "Living Tradition" and "Lineage" sections,
+origin dates and history passages on the system pages, and any new article about history or lineage.
+Pure SEO tags on those pages (title, meta description, canonical, JSON-LD) and obvious typo fixes
+may still go straight to main, as long as they don't change any historical or lineage claim.
 Put these on a branch named `proposal/<short-name>`, open a PR describing the change in plain
 language, and wait. The owner approves by merging.
 
