@@ -16,3 +16,6 @@
 - Corrected the Yue Fei dates in that post to Yue Fei (1103-1142), Sung dynasty (960-1279), as the owner asked.
 - "Blog" added to the menu on every page (translated on the homepage); the Hsing-I page links to the series.
 - Added blog-calendar.json (release schedule) and tools/blog.py (release + QA checks). Remaining posts are scheduled weekly on Thursdays.
+
+## 2026-10-03 (mobile)
+- Owner approved the mobile proposal: phones now get a tap-to-open menu and a light parchment reading theme (desktop unchanged). Files: mobile.css, mobile-menu.js, linked from every page.
