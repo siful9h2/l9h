@@ -1,0 +1,92 @@
+/* Mobile readability: light "parchment" reading theme on phones.
+   Loaded after each page's own styles. Desktop is unchanged.
+   The photo banners at the top of pages, the menu bar and the red call-to-action
+   band stay dark; the reading sections switch to dark text on warm parchment. */
+@media (max-width: 760px) {
+  body { background: #f4eee1; color: #241c13; }
+  body::before { opacity: .12 !important; }
+
+  /* Reading sections become light */
+  .about, .arts, .contact, .bio-section, .teachers-nav, #gallery,
+  section[style*="#0d0804"], .quote, blockquote.quote-section {
+    background: #f4eee1 !important;
+    --parchment: #241c13;
+    --ink: #f4eee1;
+    --gold: #85540f;
+    --gold-light: #7a4a0c;
+    color: #241c13;
+  }
+  section[style*="#0d0804"], .teachers-nav { background: #ece4d2 !important; }
+
+  /* Body text: dark and solid */
+  :is(.about, .arts, .contact, .bio-section, .teachers-nav, #gallery, section[style*="#0d0804"])
+    :is(p, li, blockquote, label, figcaption, em, small, .pull, .art-desc, .fact span,
+        .portrait-caption span, .form-note) {
+    color: #33291d !important;
+  }
+  :is(.about, .arts, .contact, .bio-section, .teachers-nav, #gallery, section[style*="#0d0804"])
+    :is(h1, h2, h3, h4, .section-title, .art-name, .fact strong) {
+    color: #1c150d !important;
+  }
+  .bio-content h3, .art-num, .portrait-caption strong { color: #7a4a0c !important; }
+
+  /* Small gold labels: darker and fully opaque so they can be read */
+  .section-label, .eyebrow, .teachers-nav-label,
+  :is(.about, .arts, .contact, .bio-section, section[style*="#0d0804"]) [style*="opacity:0.5"],
+  :is(.about, .arts, .contact, .bio-section, section[style*="#0d0804"]) [style*="opacity:.5"] {
+    opacity: 1 !important;
+  }
+  :is(.about, .arts, .contact, .bio-section, .teachers-nav, section[style*="#0d0804"])
+    :is(.section-label, .eyebrow, .teachers-nav-label) {
+    color: #85540f !important;
+  }
+
+  /* Lineage teacher cards on the homepage (inline dark backgrounds) */
+  :is(.about, .arts, .contact, section, .bio-section) a[style*="#0d0804"],
+  :is(.about, .arts, .contact, section, .bio-section) div[style*="#0d0804"] {
+    background: #fffaf0 !important;
+  }
+  :is(.about, .arts, .contact, section, .bio-section) a[style*="#0d0804"] h3 { color: #1c150d !important; }
+  :is(.about, .arts, .contact, section, .bio-section) a[style*="#0d0804"] p { color: #4a3a26 !important; }
+  :is(.about, .arts, .contact, section, .bio-section) a[style*="#0d0804"] p:first-child { color: #85540f !important; }
+
+  /* Filled red buttons keep white text */
+  .btn-primary, button[type="submit"] { color: #fff !important; }
+
+  /* Cards and fact boxes */
+  .art-card, .fact, .portrait-frame {
+    background: #fffaf0 !important;
+    border-color: rgba(133, 84, 15, .28) !important;
+  }
+  .facts-grid { background: rgba(133, 84, 15, .2) !important; }
+  .teachers-nav-grid a { color: #4a3a26 !important; border-color: rgba(133, 84, 15, .35) !important; }
+  .teachers-nav-grid a.current { color: #85540f !important; }
+  :is(.about, .arts, .contact, .bio-section) a:not(.btn) { color: #85540f; }
+
+  /* Outline buttons in light sections */
+  :is(.about, .arts, .contact, .bio-section) .btn:not(.btn-light),
+  :is(.about, .arts, .contact) a[class*="btn"] {
+    color: #7a1a1a !important; border-color: #7a1a1a !important;
+  }
+
+  /* Contact form fields */
+  .field input, .field select, .field textarea {
+    background: #fffdf8 !important; color: #241c13 !important;
+    border-color: rgba(60, 45, 25, .35) !important;
+  }
+  .field input::placeholder, .field textarea::placeholder { color: #7b6c58 !important; }
+  .field select option { color: #241c13; background: #fffdf8; }
+
+  /* Dark areas that stay dark: make their text brighter */
+  .hero-sub, .hero-tagline, .page-hero .subtitle { color: rgba(247, 243, 234, .92) !important; }
+  .hero-eyebrow, .page-hero .eyebrow { color: #f2d488 !important; opacity: 1 !important; }
+  .page-hero-photo, .page-hero-video { opacity: .32 !important; }
+  nav { background: rgba(14, 10, 6, .96) !important; }
+  footer { background: #1a140d; }
+  footer p, .footer-links a, footer a { color: rgba(247, 243, 234, .82) !important; }
+
+  /* Slightly larger small text */
+  .footer-links a, footer p { font-size: .68rem !important; }
+  .section-label, .eyebrow { font-size: .72rem !important; }
+  .teachers-nav-grid a { font-size: .7rem !important; }
+}
