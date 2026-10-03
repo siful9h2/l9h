@@ -54,11 +54,14 @@
   .btn-primary, button[type="submit"] { color: #fff !important; }
 
   /* Cards and fact boxes */
-  .art-card, .fact, .portrait-frame {
+  .art-card, .fact, .portrait-frame, .post-card {
     background: #fffaf0 !important;
     border-color: rgba(133, 84, 15, .28) !important;
   }
-  .facts-grid { background: rgba(133, 84, 15, .2) !important; }
+  .facts-grid, .post-list { background: rgba(133, 84, 15, .2) !important; }
+  .post-card h3 { color: #1c150d !important; }
+  .post-card .post-meta { color: #85540f !important; }
+  .post-card .post-more { color: #7a1a1a !important; }
   .teachers-nav-grid a { color: #4a3a26 !important; border-color: rgba(133, 84, 15, .35) !important; }
   .teachers-nav-grid a.current { color: #85540f !important; }
   :is(.about, .arts, .contact, .bio-section) a:not(.btn) { color: #85540f; }
