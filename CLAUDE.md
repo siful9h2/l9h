@@ -13,6 +13,10 @@ Pushing to `main` publishes the live site automatically. There is no build step.
 - Teacher name spellings: Chiao Chang-Hung, Pan Wing-Chow, Hsu Hong-Chi, Haumea Lefiti,
   Chin Cheng-Yen, James McNeil, Ajay Kumra.
 - When you add or remove a page, update sitemap.xml (thank-you.html stays out: it is noindex).
+- If mobile.css exists in the repo, every page must link it just before </head>:
+  `<link rel="stylesheet" href="mobile.css" />` (add it to any page that is missing it).
+- Writings by Sifu James W. McNeil (the owner's teacher) may be adapted into articles with credit to him.
+  Articles drawn from his writings count as history/lineage content: always send them as a proposal PR.
 
 ## School facts (confirmed by the owner)
 - Location: Santee, California (San Diego County). No street address is published; do not add one.
