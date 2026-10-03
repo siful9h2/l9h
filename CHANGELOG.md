@@ -10,3 +10,6 @@
 - Homepage now says where and how classes happen: private instruction in Santee, CA (San Diego County), by appointment, with a free first class. Added in all 11 languages.
 - Homepage title, description, social preview text and search markup updated to name Santee and the free intro class.
 - Agent rules: history and lineage content now needs the owner's approval; added confirmed school facts.
+
+## Pending approval (proposal/blog)
+- New blog at /blog with four posts adapted from Sifu McNeil's 2015 newsletters (Hsing-I Parts 1, 3 and 4, and the Taiwan/Thailand trip). "Blog" added to the menu on every page (translated on the homepage), linked from the Hsing-I page, added to the sitemap.
