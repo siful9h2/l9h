@@ -26,3 +26,4 @@
 - Added search markup (Course for each system page, Person for the instructor page) linking them to the Santee school.
 - Each system page's closing "Begin Your Path" box now says classes are in Santee, by appointment, with a free first class; instructor page labels say Santee instead of Southern California.
 - Question for owner: Hsing-I, Ba Kua and instructor pages mention "small classes/small groups"; confirmed facts say classes are private. Left as is pending an answer.
+- Owner answers: classes are one-on-one or small groups (so the "small classes/groups" wording stays; recorded in CLAUDE.md). Hsing-I Part 2 is on hold until the owner finds it (noted in CLAUDE.md).

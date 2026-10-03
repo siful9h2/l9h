@@ -41,11 +41,12 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   add a card to drafts/blog's blog.html, and add a link to the "From the Blog" box. Propose new posts
   and their dates to the owner as a PR against drafts/blog, and add them to the calendar once approved.
   Posts from Sifu McNeil's writings credit him as author and name the newsletter issue they first appeared in.
+- Hsing-I Part 2 is not in the calendar on purpose: the owner is looking for it. Don't add or ask about it until he provides it.
 - Cadence: one post a week, on Thursdays. Don't bunch releases together; a steady cadence matters more than volume.
 
 ## School facts (confirmed by the owner)
 - Location: Santee, California (San Diego County). No street address is published; do not add one.
-- Classes are private and by appointment only. There is no public class schedule.
+- Classes are private and by appointment only, taught one-on-one or in small groups. There is no public class schedule.
 - The first class is a free introductory class.
 
 ## What the agent may change on its own (commit straight to main)
