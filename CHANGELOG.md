@@ -28,3 +28,6 @@
 - Question for owner: Hsing-I, Ba Kua and instructor pages mention "small classes/small groups"; confirmed facts say classes are private. Left as is pending an answer.
 - Owner answers: classes are one-on-one or small groups (so the "small classes/groups" wording stays; recorded in CLAUDE.md). Hsing-I Part 2 is on hold until the owner finds it (noted in CLAUDE.md).
 - Added Google Search Console verification tag to the homepage.
+
+## 2026-10-04
+- Owner asked to hold the Hsing-I series until Part 2 is found: Parts 3 and 4 (were Oct 8 and Oct 15) are now on hold in blog-calendar.json. Taiwan & Thailand trip post stays on Oct 22.

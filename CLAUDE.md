@@ -42,6 +42,7 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   and their dates to the owner as a PR against drafts/blog, and add them to the calendar once approved.
   Posts from Sifu McNeil's writings credit him as author and name the newsletter issue they first appeared in.
 - Hsing-I Part 2 is not in the calendar on purpose: the owner is looking for it. Don't add or ask about it until he provides it.
+  Parts 3 and 4 are on hold (status "on-hold" in blog-calendar.json) until Part 2 is ready; then ask the owner for new dates.
 - Cadence: one post a week, on Thursdays. Don't bunch releases together; a steady cadence matters more than volume.
 
 ## School facts (confirmed by the owner)

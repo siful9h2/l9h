@@ -10,14 +10,16 @@
     {
       "slug": "blog-hsing-i-part-3-body-power-and-touch-go-kiss",
       "release": "2026-10-08",
-      "status": "scheduled",
-      "topic": "Hsing-I body mechanics, seven stars, touch-go-kiss"
+      "status": "on-hold",
+      "topic": "Hsing-I body mechanics, seven stars, touch-go-kiss",
+      "hold_reason": "Owner: wait until Hsing-I Part 2 is found, so the series runs in order"
     },
     {
       "slug": "blog-hsing-i-part-4-five-elements-and-horse-form",
       "release": "2026-10-15",
-      "status": "scheduled",
-      "topic": "Hsing-I five elements, Horse form"
+      "status": "on-hold",
+      "topic": "Hsing-I five elements, Horse form",
+      "hold_reason": "Owner: wait until Hsing-I Part 2 is found, so the series runs in order"
     },
     {
       "slug": "blog-taiwan-thailand-trip-2015",
