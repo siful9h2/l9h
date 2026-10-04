@@ -4,6 +4,7 @@
   python3 tools/blog.py due [YYYY-MM-DD]        list scheduled posts due on/before the date (default today, PT)
   python3 tools/blog.py release SLUG YYYY-MM-DD  publish a draft from origin/drafts/blog and rebuild indexes
   python3 tools/blog.py check                    pre-release QA over the whole site (exit 1 on problems)
+  python3 tools/blog.py indexnow URL [URL...]     print IndexNow ping links (fetch each one; 200/202 = accepted)
 """
 import json, re, subprocess, sys, os, datetime, html
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -72,6 +73,8 @@ def release(slug, date):
     post['status'] = 'published'; post['release'] = date
     save(c); rebuild(c)
     print(f'released {slug} on {date}')
+    print('After pushing and confirming it is live, ping IndexNow with:')
+    indexnow([slug, 'blog'])
     return check()
 
 def due(date):
@@ -109,10 +112,18 @@ def check():
     print(f'QA passed: {len(files)} pages, {len(pubs)} blog posts published.')
     return 0
 
+INDEXNOW_KEY = '212a9b89e41f158056d6f3102f117957'
+def indexnow(urls):
+    from urllib.parse import quote
+    for u in urls:
+        if not u.startswith('http'): u = f'{SITE}/{u.lstrip("/")}'
+        print(f'https://api.indexnow.org/indexnow?url={quote(u, safe=":/")}&key={INDEXNOW_KEY}')
+
 if __name__ == '__main__':
     a = sys.argv[1:]
     if not a: sys.exit(__doc__)
     if a[0] == 'due': due(a[1] if len(a) > 1 else datetime.date.today().isoformat())
     elif a[0] == 'release': sys.exit(release(a[1], a[2]))
     elif a[0] == 'check': sys.exit(check())
+    elif a[0] == 'indexnow': indexnow(a[1:])
     else: sys.exit(__doc__)

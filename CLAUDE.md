@@ -31,7 +31,13 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   4. If QA fails, fix the problem (or skip the post and tell the owner). Never push a failing build.
   5. Commit, push, wait ~2 minutes, then fetch the live post and /blog and confirm they show the post
      with the right title. Log it in CHANGELOG.md.
-  6. About 7 days after a release, web-search `site:l9hkungfu.com <post slug or title>` to see whether
+  6. Ping IndexNow (Bing, Yandex and other engines; Google doesn't support it) for the new post and /blog:
+     `python3 tools/blog.py indexnow <slug> blog` prints the links. Open each with WebFetch. An empty
+     reply (200/202) means it was accepted. Do the same for any existing page you change substantially.
+     The key file 212a9b89e41f158056d6f3102f117957.txt must stay in the site root.
+     Google can't be pinged. In the owner summary, list each new URL so the owner can paste it
+     into Search Console's URL Inspection and click "Request indexing" (Search Console is verified).
+  7. About 7 days after a release, web-search `site:l9hkungfu.com <post slug or title>` to see whether
      Google has indexed it, and include that in the owner summary. If a post isn't indexed after
      14 days, check it for problems and tell the owner.
 - Run `python3 tools/blog.py check` before any push that touches HTML; it catches broken links,
@@ -41,6 +47,8 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   add a card to drafts/blog's blog.html, and add a link to the "From the Blog" box. Propose new posts
   and their dates to the owner as a PR against drafts/blog, and add them to the calendar once approved.
   Posts from Sifu McNeil's writings credit him as author and name the newsletter issue they first appeared in.
+- Google Search Console is set up (verified via the meta tag in index.html, which must stay). The
+  sitemap was submitted on 2026-10-03.
 - Hsing-I Part 2 is not in the calendar on purpose: the owner is looking for it. Don't add or ask about it until he provides it.
   Parts 3 and 4 are on hold (status "on-hold" in blog-calendar.json) until Part 2 is ready; then ask the owner for new dates.
 - Cadence: one post a week, on Thursdays. Don't bunch releases together; a steady cadence matters more than volume.
