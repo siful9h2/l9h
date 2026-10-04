@@ -1,8 +1,9 @@
-/* Mobile readability: light "parchment" reading theme on phones.
-   Loaded after each page's own styles. Desktop is unchanged.
+/* Readability theme: light "parchment" reading sections on all screen sizes
+   (phones since 2026-10-03; desktop added by owner request).
+   Loaded after each page's own styles.
    The photo banners at the top of pages, the menu bar and the red call-to-action
    band stay dark; the reading sections switch to dark text on warm parchment. */
-@media (max-width: 760px) {
+@media all {
   body { background: #f4eee1; color: #241c13; }
   body::before { opacity: .12 !important; }
 
@@ -59,6 +60,8 @@
     border-color: rgba(133, 84, 15, .28) !important;
   }
   .facts-grid, .post-list { background: rgba(133, 84, 15, .2) !important; }
+  .facts-grid { background: transparent !important; border: 0 !important; gap: 0 !important; }
+  .facts-grid .fact { border: 1px solid rgba(133, 84, 15, .22) !important; margin: 0 -1px -1px 0; }
   .post-card h3 { color: #1c150d !important; }
   .post-card .post-meta { color: #85540f !important; }
   .post-card .post-more { color: #7a1a1a !important; }
@@ -88,7 +91,10 @@
   footer { background: #1a140d; }
   footer p, .footer-links a, footer a { color: rgba(247, 243, 234, .82) !important; }
 
-  /* Slightly larger small text */
+}
+
+/* Slightly larger small text on phones */
+@media (max-width: 760px) {
   .footer-links a, footer p { font-size: .68rem !important; }
   .section-label, .eyebrow { font-size: .72rem !important; }
   .teachers-nav-grid a { font-size: .7rem !important; }
