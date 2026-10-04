@@ -67,8 +67,8 @@
   :is(.about, .arts, .contact, .bio-section) a:not(.btn) { color: #85540f; }
 
   /* Outline buttons in light sections */
-  :is(.about, .arts, .contact, .bio-section) .btn:not(.btn-light),
-  :is(.about, .arts, .contact) a[class*="btn"] {
+  :is(.about, .arts, .contact, .bio-section) .btn:not(.btn-light):not(.btn-primary),
+  :is(.about, .arts, .contact) a[class*="btn"]:not(.btn-primary) {
     color: #7a1a1a !important; border-color: #7a1a1a !important;
   }
 
