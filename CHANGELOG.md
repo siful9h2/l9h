@@ -36,3 +36,4 @@
 - Owner request: "Sifu Chin Cheng-Yen" is now "Master Chin Cheng-Yen" everywhere (his page, the Tzu Men Chuan page, all menus and teacher lists, and all 10 homepage translations), matching the other masters.
 - Proposed a new blog post for the owner to read: "Why the Internal Arts Must Be Taught in Person" (PR #4 against drafts/blog). It is not scheduled until he approves it and picks a date.
 - Fixed: "Send Inquiry" and red "Begin Your Path" buttons had dark text on phones; now white.
+- Owner approved post #4, "Why the Internal Arts Must Be Taught in Person"; merged into drafts and scheduled for Thu Oct 15.
