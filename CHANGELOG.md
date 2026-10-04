@@ -33,3 +33,4 @@
 - Owner asked to hold the Hsing-I series until Part 2 is found: Parts 3 and 4 (were Oct 8 and Oct 15) are now on hold in blog-calendar.json. Taiwan & Thailand trip post stays on Oct 22.
 - Owner moved the Taiwan & Thailand trip post from Oct 22 to Thu Oct 8 to fill the gap.
 - Set up IndexNow (key file in site root) so new and changed pages can be submitted to Bing and other engines; added the ping step to the release procedure.
+- Owner request: "Sifu Chin Cheng-Yen" is now "Master Chin Cheng-Yen" everywhere (his page, the Tzu Men Chuan page, all menus and teacher lists, and all 10 homepage translations), matching the other masters.
