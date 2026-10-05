@@ -15,6 +15,11 @@ Pushing to `main` publishes the live site automatically. There is no build step.
 - When you add or remove a page, update sitemap.xml (thank-you.html stays out: it is noindex).
 - If mobile.css exists in the repo, every page must link it just before </head>:
   `<link rel="stylesheet" href="mobile.css" />` (add it to any page that is missing it).
+- Photos: pages reference files in images/ (see images/README.txt). Tags for files that don't exist yet
+  use `data-pending-src` instead of `src`, so missing photos don't cause 404s. After adding photos,
+  run `python3 tools/blog.py photos` to switch the matching tags back to `src`. Adding photos is a
+  visual change, so send it as a proposal PR (resize to under ~300KB first and write descriptive alt text).
+- _headers holds the security headers (Netlify). Don't remove it.
 - Writings by Sifu James W. McNeil (the owner's teacher) may be adapted into articles with credit to him.
   Articles drawn from his writings count as history/lineage content: always send them as a proposal PR.
 

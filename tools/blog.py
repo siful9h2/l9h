@@ -4,6 +4,7 @@
   python3 tools/blog.py due [YYYY-MM-DD]        list scheduled posts due on/before the date (default today, PT)
   python3 tools/blog.py release SLUG YYYY-MM-DD  publish a draft from origin/drafts/blog and rebuild indexes
   python3 tools/blog.py check                    pre-release QA over the whole site (exit 1 on problems)
+  python3 tools/blog.py photos                   point img/video tags only at photo files that exist (run after adding photos)
   python3 tools/blog.py indexnow URL [URL...]     print IndexNow ping links (fetch each one; 200/202 = accepted)
 """
 import json, re, subprocess, sys, os, datetime, html
@@ -67,6 +68,7 @@ def release(slug, date):
     post = next((p for p in c['posts'] if p['slug'] == slug), None)
     if not post: sys.exit(f'{slug} is not in {CAL}')
     s = draft(slug + '.html').replace('RELEASE_DATE', date)
+    s = re.sub(r'\b(src|data-pending-src)="(images/[^"]+)"', lambda m: f'{"src" if os.path.exists(m.group(2)) else "data-pending-src"}="{m.group(2)}"', s)
     if os.path.exists('mobile.css') and 'mobile.css' not in s:
         s = s.replace('</head>', '  <link rel="stylesheet" href="mobile.css" />\n  <script src="mobile-menu.js" defer></script>\n</head>', 1)
     write(slug + '.html', s)
@@ -94,6 +96,8 @@ def check():
         if 'RELEASE_DATE' in s: problems.append(f'{f}: RELEASE_DATE placeholder left in page')
         for h in re.findall(r'href="([^"#:?]+\.html)', s):
             if not os.path.exists(h): problems.append(f'{f}: broken link to {h}')
+        for h in re.findall(r'(?<![-\w])src="(images/[^"]+)"', s):
+            if not os.path.exists(h): problems.append(f'{f}: {h} does not exist (run tools/blog.py photos)')
         if os.path.exists('mobile.css') and 'href="mobile.css"' not in s: problems.append(f'{f}: missing mobile.css link')
         if f.startswith('blog'):
             t = html.unescape(re.search(r'<title>(.*?)</title>', s).group(1))
@@ -112,6 +116,21 @@ def check():
     print(f'QA passed: {len(files)} pages, {len(pubs)} blog posts published.')
     return 0
 
+def photos():
+    """Missing photo files cause 404s (console errors in PageSpeed). Tags for missing files keep the
+    path in data-pending-src; once the file is added, this restores src."""
+    changed = 0
+    for f in sorted(x for x in os.listdir('.') if x.endswith('.html')):
+        s0 = s = read(f)
+        def fix(m):
+            attr, path = m.group(1), m.group(2)
+            return f'{"src" if os.path.exists(path) else "data-pending-src"}="{path}"'
+        s = re.sub(r'\b(src|data-pending-src)="(images/[^"]+)"', fix, s)
+        if s != s0: write(f, s); changed += 1
+    pending = sorted({p for f in os.listdir('.') if f.endswith('.html') for p in re.findall(r'data-pending-src="(images/[^"]+)"', read(f))})
+    print(f'updated {changed} pages; {len(pending)} photo files still missing:')
+    for p in pending: print('  ', p)
+
 INDEXNOW_KEY = '212a9b89e41f158056d6f3102f117957'
 def indexnow(urls):
     from urllib.parse import quote
@@ -126,4 +145,5 @@ if __name__ == '__main__':
     elif a[0] == 'release': sys.exit(release(a[1], a[2]))
     elif a[0] == 'check': sys.exit(check())
     elif a[0] == 'indexnow': indexnow(a[1:])
+    elif a[0] == 'photos': photos()
     else: sys.exit(__doc__)

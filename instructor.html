@@ -168,11 +168,11 @@
 
   <div class="page-hero">
     <div class="page-hero-bg"></div>
-    <img class="page-hero-photo" src="images/sifu-ajay.jpg" alt="Sifu Ajay Kumra" onerror="this.style.display='none'"/>
+    <img class="page-hero-photo" data-pending-src="images/sifu-ajay.jpg" alt="Sifu Ajay Kumra" onerror="this.style.display='none'"/>
     <!-- Optional looping video. Drop images/sifu-ajay.mp4 in place and it
          plays over the still above; absent, the still shows instead. -->
     <video class="page-hero-video" autoplay loop muted playsinline aria-hidden="true">
-      <source src="images/sifu-ajay.mp4" type="video/mp4" onerror="this.parentNode.style.display='none'">
+      <source data-pending-src="images/sifu-ajay.mp4" type="video/mp4" onerror="this.parentNode.style.display='none'">
     </video>
     <div class="page-hero-content">
       <p class="eyebrow">Instructor · Santee, California</p>
@@ -186,7 +186,7 @@
     <div class="bio-grid">
       <div class="reveal">
         <div class="portrait-frame">
-          <img src="images/sifu-ajay.jpg" alt="Sifu Ajay Kumra" onerror="this.style.display='none'"/>
+          <img data-pending-src="images/sifu-ajay.jpg" alt="Sifu Ajay Kumra" onerror="this.style.display='none'"/>
           <div class="portrait-placeholder">☯</div>
           <p class="portrait-placeholder-text">Photo</p>
         </div>
