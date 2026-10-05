@@ -42,3 +42,4 @@
 - PageSpeed fixes: missing photos no longer requested (no more 404 console errors), higher contrast on the homepage quote credit, security headers added (_headers), new tools/blog.py photos command.
 - Netlify production deploys appear paused (Free plan credit limit, about 20 deploys a month; ~23 pushed since Oct 3). The preconnect and PageSpeed fixes are on GitHub but not live yet. Added netlify.toml so pushes that only touch notes or tools are not deployed, plus a one-push-per-run rule.
 - Owner chose to wait for the Netlify reset (Oct 25) and publish once a week from now on. New staging branch holds all changes; weekly publish on Thursdays starting Oct 29. Blog posts moved: Taiwan & Thailand trip to Oct 29, "Why the Internal Arts Must Be Taught in Person" to Nov 5.
+- Owner request: removed the Taiwan & Thailand trip post from the calendar (draft kept unpublished on drafts/blog); "Why the Internal Arts Must Be Taught in Person" moved up to Thu Oct 29.
