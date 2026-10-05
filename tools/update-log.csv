@@ -1,0 +1,23 @@
+ID,Update,Category,Pages affected,Approved by,Date developed,Date live,Status,Notes
+1,Fixed Google address mix-up (www vs. no-www) on every page,SEO,All pages,Agent (SEO),2026-10-03,2026-10-03,Live,Each page now tells Google one consistent address
+2,Added sitemap.xml and robots.txt,SEO,Site-wide,Agent (SEO),2026-10-03,2026-10-03,Live,Helps Google find all pages
+3,Corrected spelling of Sifu Chin Cheng-Yen's name,Content,"Homepage, Instructor",Agent (typo fix),2026-10-03,2026-10-03,Live,
+4,"Added Santee, CA location, by-appointment classes and free intro class",SEO / Content,Homepage (all 11 languages),Owner (facts provided),2026-10-03,2026-10-03,Live,"Title, description and Google business markup updated too"
+5,Blog launched with Hsing-I Part 1 (Origins & the Eight Fundamentals),Blog,"Blog, menu on all pages",Owner,2026-10-03,2026-10-03,Live,"Yue Fei dates corrected to 1103-1142, Sung dynasty 960-1279"
+6,Phone menu (tap-to-open) and easier-to-read phone colors,Design,All pages (phones),Owner (PR #1),2026-10-03,2026-10-03,Live,
+7,"Named Santee, CA (San Diego County) on system and instructor pages",SEO,"System pages, Instructor",Agent (SEO),2026-10-03,2026-10-03,Live,
+8,Shortened Iron Hand page description for Google,SEO,Iron Hand,Agent (SEO),2026-10-03,2026-10-03,Live,
+9,Google Search Console verification,SEO / Technical,Homepage,Owner,2026-10-03,2026-10-03,Live,Sitemap submitted to Google the same day
+10,"IndexNow set up (instant notice to Bing, Yahoo, DuckDuckGo, Yandex)",SEO / Technical,Site-wide,Agent,2026-10-03,2026-10-03,Live,
+11,Master Chin Cheng-Yen titled 'Master' to match the other masters,Content (lineage),Lineage pages,Owner,2026-10-03,2026-10-03,Live,
+12,Fixed dark text on red buttons on phones,Design (bug fix),All pages (phones),Agent (fix to approved design),2026-10-03,2026-10-03,Live,'Send Inquiry' and 'Begin Your Path' buttons
+13,Easier-to-read colors on desktop (same as phones),Design,All pages (desktop),Owner (PR #5),2026-10-03,2026-10-03,Live,
+14,Speed: fonts start loading sooner,Speed,All pages,Agent,2026-10-04,,Waiting for weekly publish,Goes live Thu Oct 29 (Netlify updates paused until Oct 25)
+15,Speed: missing photos no longer requested (fixes console errors),Speed / Technical,14 pages,Agent (PageSpeed fix),2026-10-04,,Waiting for weekly publish,Goes live Thu Oct 29
+16,Brighter 'Tao Te Ching' quote credit for readability,Accessibility,Homepage,Owner (asked to fix PageSpeed),2026-10-04,,Waiting for weekly publish,Goes live Thu Oct 29
+17,Security headers added,Technical,Site-wide,Agent (PageSpeed fix),2026-10-04,,Waiting for weekly publish,Goes live Thu Oct 29
+18,Weekly publishing set up (one update every Thursday),Process,n/a,Owner,2026-10-04,2026-10-04,Live,Protects Netlify free-plan credits; first weekly publish Oct 29
+19,Blog post: Why the Internal Arts Must Be Taught in Person,Blog,Blog,Owner (PR #4),2026-10-03,,Scheduled,Scheduled Thu Oct 29
+20,"Blog post: Hsing-I Part 3 (Body, Seven Stars, Touch-Go-Kiss)",Blog,Blog,Owner,2026-10-03,,On hold,Waiting until Hsing-I Part 2 is found
+21,Blog post: Hsing-I Part 4 (Five Elements & Horse Form),Blog,Blog,Owner,2026-10-03,,On hold,Waiting until Hsing-I Part 2 is found
+22,"Blog post: Training in Taiwan and Thailand, 2015",Blog,Blog,Owner,2026-10-03,,Removed,"Removed by owner on Oct 4; draft kept, unpublished"

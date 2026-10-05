@@ -108,4 +108,14 @@ language, and wait. The owner approves by merging.
 - Touch littlenineheaven.com links' destinations.
 
 ## Log
-Append each run's changes to CHANGELOG.md (date, what changed, why).
+- Append each run's changes to CHANGELOG.md (date, what changed, why).
+- ALSO keep the owner's update log, tools/update-log.csv, current. It's his running spreadsheet
+  (GitHub shows it as a table: https://github.com/siful9h2/l9h/blob/staging/tools/update-log.csv).
+  Columns: ID, Update, Category, Pages affected, Approved by, Date developed, Date live, Status, Notes.
+  - Add one row per meaningful update when it's developed, written in plain language for the owner
+    (not commit messages). Dates are YYYY-MM-DD, Pacific time.
+  - Status values: Live, Waiting for weekly publish, Scheduled (blog posts with a date), Proposal
+    (waiting for owner approval, with the PR link in Notes), On hold, Removed.
+  - At each weekly publish, once the live site shows the changes, fill in "Date live" and set
+    Status to Live for every row that went out. When a proposal is approved or declined, update its row.
+  - `python3 tools/update_log_xlsx.py out.xlsx` builds a formatted Excel copy if the owner wants one.
