@@ -46,3 +46,9 @@
 - Started the owner's running update log (tools/update-log.csv, plus an Excel export script) with every update since Oct 3.
 - Owner approved homepage banner (Lo Shu grid, option C): images/hero.jpg added, shown at 60% opacity in full colour; alt text updated. Goes live with the Oct 29 publish.
 - Owner-provided candid photo of Ajay training with Master McNeil: cropped, black-and-white with warm tone, added with caption under "Study Under Master McNeil" on the instructor page. Goes live Oct 29.
+
+## 2026-10-05 (Monday SEO run, on staging)
+- Homepage: shorter Google title and description (were 73 and 207 characters, so Google cut them off); now name kung-fu and tai chi classes in Santee within the visible length. Title/description only; page text and translations unchanged.
+- Six teacher pages: each had the same generic Google description; now each has its own title and description built only from facts already on that page (systems taught, years, who they taught), plus social-sharing preview tags. Lineage page title now says "Little Nine Heaven Kung-Fu Lineage". No historical claims changed.
+- No blog post due (next: "Why the Internal Arts Must Be Taught in Person", Thu Oct 29). Site not yet showing in web search results for site:l9hkungfu.com.
+- Questions for owner: shop page shows placeholder products; Hsu page dates (trained 1977-1984 vs. died 1983).
