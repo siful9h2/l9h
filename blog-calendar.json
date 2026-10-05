@@ -1,5 +1,5 @@
 {
-  "note": "Blog release calendar. Drafts live on the drafts/blog branch. Release with: python3 tools/blog.py release <slug> <YYYY-MM-DD>",
+  "note": "Blog release calendar. Drafts live on the drafts/blog branch. Posts are released on the staging branch on their date and go live with that Thursday's weekly publish. Release with: python3 tools/blog.py release <slug> <YYYY-MM-DD>",
   "posts": [
     {
       "slug": "blog-hsing-i-part-1-origins-and-eight-fundamentals",
@@ -23,13 +23,13 @@
     },
     {
       "slug": "blog-taiwan-thailand-trip-2015",
-      "release": "2026-10-08",
+      "release": "2026-10-29",
       "status": "scheduled",
       "topic": "Training trip, Taiwan & Thailand"
     },
     {
       "slug": "blog-why-internal-arts-are-taught-in-person",
-      "release": "2026-10-15",
+      "release": "2026-11-05",
       "status": "scheduled",
       "topic": "Why the internal arts need in-person correction; private lessons in Santee"
     }

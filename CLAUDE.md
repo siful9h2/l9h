@@ -23,15 +23,27 @@ Pushing to `main` publishes the live site automatically. There is no build step.
 - Writings by Sifu James W. McNeil (the owner's teacher) may be adapted into articles with credit to him.
   Articles drawn from his writings count as history/lineage content: always send them as a proposal PR.
 
-## Deploy budget (important)
-- The site is on Netlify's Free plan: 300 credits a month, and each production deploy costs 15 credits,
-  so about 20 deploys a month. If credits run out completely, Netlify takes the whole site offline until
-  the billing cycle resets. In early October 2026, after about 23 deploys, production deploys were paused.
-- So: at most ONE push to main per run. Make all of a run's changes, run QA, then commit and push once.
-  Never push just to fix a typo you could have batched. Netlify skips the deploy (netlify.toml `ignore`)
-  when a push only touches CHANGELOG.md, CLAUDE.md, blog-calendar.json, tools/ or README.md.
-- Before pushing, check the live site actually picked up your last push. If it hasn't after about
-  10 minutes, deploys are probably paused: stop pushing and tell the owner.
+## Weekly publishing (important: read first)
+- The site is on Netlify's Free plan: 300 credits a month, 15 per production deploy, plus credits for
+  bandwidth. If credits run out completely, Netlify takes the whole site offline until the billing
+  cycle resets. In October 2026 deploys were paused after about 23 deploys; the billing cycle runs from
+  the 25th to the 24th, and deploys resume on Oct 25.
+- The owner chose to save up changes and publish ONCE A WEEK. Every push to `main` is a production deploy,
+  so treat `main` as "what's live" and do all work on the `staging` branch:
+  - Every run: `git checkout staging` (create it from origin/staging), make changes there, run QA,
+    commit and push `staging`. Pushing `staging` does not deploy.
+  - Proposal PRs (visual or history/lineage changes) target `staging`, not main. When the owner merges
+    one, it goes live with the next weekly publish.
+  - Weekly publish: on Thursday runs only, starting Thursday 2026-10-29. First release any blog posts due
+    that day on staging (blog procedure below). Then check the live site reflects the last publish. Then
+    merge staging into main (`git checkout main && git merge --no-edit staging`), run QA, and push main
+    once. Confirm the live site updated, then do the IndexNow pings. That is the only push to main all week.
+  - Never push to main on any other day, and never more than once a week, unless the owner explicitly asks.
+  - If a weekly publish doesn't go live within about 10 minutes, deploys are paused: tell the owner and
+    don't push again.
+- Netlify skips a deploy (netlify.toml `ignore`) when a push only touches CHANGELOG.md, CLAUDE.md,
+  blog-calendar.json, tools/ or README.md, but still avoid unneeded pushes to main.
+- In the owner summary, say what's waiting on staging and when it will go live.
 
 ## Blog and release calendar
 - The blog is live at /blog. Unreleased drafts live on the `drafts/blog` branch, never on main
@@ -44,8 +56,8 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   3. For each: `python3 tools/blog.py release <slug> <today's date>`. It copies the draft, sets the
      publish date, rebuilds the blog list, the "From the Blog" boxes and the sitemap, then runs QA.
   4. If QA fails, fix the problem (or skip the post and tell the owner). Never push a failing build.
-  5. Commit, push, wait ~2 minutes, then fetch the live post and /blog and confirm they show the post
-     with the right title. Log it in CHANGELOG.md.
+  5. Commit on staging. The post goes live with the weekly publish that same Thursday; after that
+     publish, fetch the live post and /blog and confirm they show it with the right title. Log it in CHANGELOG.md.
   6. Ping IndexNow (Bing, Yandex and other engines; Google doesn't support it) for the new post and /blog:
      `python3 tools/blog.py indexnow <slug> blog` prints the links. Open each with WebFetch. An empty
      reply (200/202) means it was accepted. Do the same for any existing page you change substantially.
@@ -66,7 +78,7 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   sitemap was submitted on 2026-10-03.
 - Hsing-I Part 2 is not in the calendar on purpose: the owner is looking for it. Don't add or ask about it until he provides it.
   Parts 3 and 4 are on hold (status "on-hold" in blog-calendar.json) until Part 2 is ready; then ask the owner for new dates.
-- Cadence: one post a week, on Thursdays. Don't bunch releases together; a steady cadence matters more than volume.
+- Cadence: one post a week, on Thursdays (the weekly publish day). Don't bunch releases together; a steady cadence matters more than volume.
 
 ## School facts (confirmed by the owner)
 - Location: Santee, California (San Diego County). No street address is published; do not add one.
