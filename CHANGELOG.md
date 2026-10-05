@@ -40,3 +40,4 @@
 - Owner approved: light parchment reading theme now applies on desktop too (same as phones).
 - Speed: added preconnect hints for Google Fonts on every page (PageSpeed mobile score was 88; first paint 3.1s).
 - PageSpeed fixes: missing photos no longer requested (no more 404 console errors), higher contrast on the homepage quote credit, security headers added (_headers), new tools/blog.py photos command.
+- Netlify production deploys appear paused (Free plan credit limit, about 20 deploys a month; ~23 pushed since Oct 3). The preconnect and PageSpeed fixes are on GitHub but not live yet. Added netlify.toml so pushes that only touch notes or tools are not deployed, plus a one-push-per-run rule.

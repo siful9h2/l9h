@@ -23,6 +23,16 @@ Pushing to `main` publishes the live site automatically. There is no build step.
 - Writings by Sifu James W. McNeil (the owner's teacher) may be adapted into articles with credit to him.
   Articles drawn from his writings count as history/lineage content: always send them as a proposal PR.
 
+## Deploy budget (important)
+- The site is on Netlify's Free plan: 300 credits a month, and each production deploy costs 15 credits,
+  so about 20 deploys a month. If credits run out completely, Netlify takes the whole site offline until
+  the billing cycle resets. In early October 2026, after about 23 deploys, production deploys were paused.
+- So: at most ONE push to main per run. Make all of a run's changes, run QA, then commit and push once.
+  Never push just to fix a typo you could have batched. Netlify skips the deploy (netlify.toml `ignore`)
+  when a push only touches CHANGELOG.md, CLAUDE.md, blog-calendar.json, tools/ or README.md.
+- Before pushing, check the live site actually picked up your last push. If it hasn't after about
+  10 minutes, deploys are probably paused: stop pushing and tell the owner.
+
 ## Blog and release calendar
 - The blog is live at /blog. Unreleased drafts live on the `drafts/blog` branch, never on main
   (anything on main is public). The schedule is in blog-calendar.json.
