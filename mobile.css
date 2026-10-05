@@ -144,3 +144,6 @@
 
 /* Accessibility: the quote credit on the red band needs more contrast (PageSpeed) */
 .philosophy cite { color: rgba(255, 255, 255, .9) !important; }
+
+/* Homepage banner (Lo Shu grid image, owner-approved option C): show it brighter, in full colour */
+.hero-photo { opacity: .6 !important; filter: none !important; }

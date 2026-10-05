@@ -44,3 +44,4 @@
 - Owner chose to wait for the Netlify reset (Oct 25) and publish once a week from now on. New staging branch holds all changes; weekly publish on Thursdays starting Oct 29. Blog posts moved: Taiwan & Thailand trip to Oct 29, "Why the Internal Arts Must Be Taught in Person" to Nov 5.
 - Owner request: removed the Taiwan & Thailand trip post from the calendar (draft kept unpublished on drafts/blog); "Why the Internal Arts Must Be Taught in Person" moved up to Thu Oct 29.
 - Started the owner's running update log (tools/update-log.csv, plus an Excel export script) with every update since Oct 3.
+- Owner approved homepage banner (Lo Shu grid, option C): images/hero.jpg added, shown at 60% opacity in full colour; alt text updated. Goes live with the Oct 29 publish.
