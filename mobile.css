@@ -147,3 +147,8 @@
 
 /* Homepage banner (Lo Shu grid image, owner-approved option C): show it brighter, in full colour */
 .hero-photo { opacity: .6 !important; filter: none !important; }
+
+/* Candid photo inside a bio (instructor page) */
+.bio-figure { margin: 2.2rem 0; }
+.bio-figure img { display: block; width: 100%; height: auto; border: 1px solid rgba(133, 84, 15, .35); }
+.bio-figure figcaption { margin-top: .7rem; font-family: 'Cinzel', serif; font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; color: #85540f; }

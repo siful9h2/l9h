@@ -45,3 +45,4 @@
 - Owner request: removed the Taiwan & Thailand trip post from the calendar (draft kept unpublished on drafts/blog); "Why the Internal Arts Must Be Taught in Person" moved up to Thu Oct 29.
 - Started the owner's running update log (tools/update-log.csv, plus an Excel export script) with every update since Oct 3.
 - Owner approved homepage banner (Lo Shu grid, option C): images/hero.jpg added, shown at 60% opacity in full colour; alt text updated. Goes live with the Oct 29 publish.
+- Owner-provided candid photo of Ajay training with Master McNeil: cropped, black-and-white with warm tone, added with caption under "Study Under Master McNeil" on the instructor page. Goes live Oct 29.
