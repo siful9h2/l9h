@@ -38,3 +38,4 @@
 - Fixed: "Send Inquiry" and red "Begin Your Path" buttons had dark text on phones; now white.
 - Owner approved post #4, "Why the Internal Arts Must Be Taught in Person"; merged into drafts and scheduled for Thu Oct 15.
 - Owner approved: light parchment reading theme now applies on desktop too (same as phones).
+- Speed: added preconnect hints for Google Fonts on every page (PageSpeed mobile score was 88; first paint 3.1s).
