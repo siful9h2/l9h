@@ -152,3 +152,96 @@
 .bio-figure { margin: 2.2rem 0; }
 .bio-figure img { display: block; width: 100%; height: auto; border: 1px solid rgba(133, 84, 15, .35); }
 .bio-figure figcaption { margin-top: .7rem; font-family: 'Cinzel', serif; font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; color: #85540f; }
+
+
+/* Language picker and per-language typography (shared by every page; moved from the homepage) */
+.lang-select {
+  font-family: 'Cinzel', serif;
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(10,7,5,0.9);
+  border: 1px solid rgba(201,151,43,0.48);
+  padding: 0.45em 1.8em 0.45em 0.8em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c9972b' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.6em center;
+  background-size: 9px;
+  border-radius: 0;
+}
+.lang-select:hover { border-color: var(--gold); color: var(--gold-light); }
+.lang-select:focus { outline: none; border-color: var(--gold); }
+.lang-select option { background: #0d0804; color: var(--parchment); }
+.nav-links li.lang-item { margin-left: 0.5rem; }
+
+/* Cinzel carries no CJK, Cyrillic, Arabic or Devanagari glyphs, and its
+   wide tracking is wrong for those scripts, so swap the stack per language. */
+body.lang-zh, body.lang-zh h1, body.lang-zh h2, body.lang-zh h3,
+body.lang-zh .nav-links a, body.lang-zh .btn, body.lang-zh .section-label,
+body.lang-zh .art-name, body.lang-zh .eyebrow, body.lang-zh .field label,
+body.lang-zh .lang-select, body.lang-zh .art-desc, body.lang-zh footer p {
+  font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC",
+               "Microsoft YaHei", "PingFang SC", Georgia, serif;
+  letter-spacing: 0.06em;
+}
+body.lang-ja, body.lang-ja h1, body.lang-ja h2, body.lang-ja h3,
+body.lang-ja .nav-links a, body.lang-ja .btn, body.lang-ja .section-label,
+body.lang-ja .art-name, body.lang-ja .eyebrow, body.lang-ja .field label,
+body.lang-ja .lang-select, body.lang-ja .art-desc, body.lang-ja footer p {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP",
+               "Source Han Serif JP", serif;
+  letter-spacing: 0.06em;
+}
+body.lang-ru, body.lang-ru h1, body.lang-ru h2, body.lang-ru h3,
+body.lang-ru .nav-links a, body.lang-ru .btn, body.lang-ru .section-label,
+body.lang-ru .art-name, body.lang-ru .eyebrow, body.lang-ru .field label,
+body.lang-ru .lang-select, body.lang-ru footer p {
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.08em;
+}
+body.lang-ar, body.lang-ar h1, body.lang-ar h2, body.lang-ar h3,
+body.lang-ar .nav-links a, body.lang-ar .btn, body.lang-ar .section-label,
+body.lang-ar .art-name, body.lang-ar .eyebrow, body.lang-ar .field label,
+body.lang-ar .lang-select, body.lang-ar .art-desc, body.lang-ar footer p {
+  font-family: "Noto Naskh Arabic", "Geeza Pro", "Al Bayan",
+               "Traditional Arabic", "Segoe UI", serif;
+  letter-spacing: 0;
+}
+body.lang-hi, body.lang-hi h1, body.lang-hi h2, body.lang-hi h3,
+body.lang-hi .nav-links a, body.lang-hi .btn, body.lang-hi .section-label,
+body.lang-hi .art-name, body.lang-hi .eyebrow, body.lang-hi .field label,
+body.lang-hi .lang-select, body.lang-hi .art-desc, body.lang-hi footer p {
+  font-family: "Noto Serif Devanagari", "Kohinoor Devanagari",
+               "Mangal", "Nirmala UI", serif;
+  letter-spacing: 0;
+}
+body.lang-zh .hero-title, body.lang-ja .hero-title,
+body.lang-ar .hero-title, body.lang-hi .hero-title { letter-spacing: 0.08em; }
+
+body.lang-th, body.lang-th h1, body.lang-th h2, body.lang-th h3,
+body.lang-th .nav-links a, body.lang-th .btn, body.lang-th .section-label,
+body.lang-th .art-name, body.lang-th .eyebrow, body.lang-th .field label,
+body.lang-th .lang-select, body.lang-th .art-desc, body.lang-th footer p {
+  font-family: "Noto Serif Thai", "Sarabun", "Thonburi", "Leelawadee UI",
+               "Tahoma", serif;
+  letter-spacing: 0;
+}
+body.lang-th p, body.lang-th .art-desc, body.lang-th li { line-height: 2.05; }
+body.lang-th .hero-title { letter-spacing: 0.04em; }
+
+/* Right-to-left */
+body.rtl { direction: rtl; }
+body.rtl .nav-links { flex-direction: row-reverse; }
+body.rtl .gold-line, body.rtl .field label { text-align: right; }
+body.rtl .field input, body.rtl .field select, body.rtl .field textarea {
+  text-align: right;
+  direction: rtl;
+}
+body.rtl .bio-content ul, body.rtl .art-card { text-align: right; }
+body.rtl .pull { border-left: none; border-right: 2px solid var(--red);
+                 padding: 0.4rem 1.4rem 0.4rem 0; }

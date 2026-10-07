@@ -7,9 +7,17 @@ Pushing to `main` publishes the live site automatically. There is no build step.
 - Live URLs use the bare domain with no `.html`: `https://l9hkungfu.com/system-hsing-i`.
   Canonical tags, og:url, schema URLs and sitemap.xml must use this form. Never use `www.`.
 - Internal links in the HTML stay as relative `page.html` links (the host rewrites them).
-- index.html has an in-page translation system: dictionaries keyed by the exact English text.
-  If you change English text that has a translation key, update the key in every language block
-  (and the translation itself) so the switcher keeps working.
+- The whole site is translated into 10 languages (zh, es, fr, de, pt, ru, ja, th, ar, hi) by i18n.js,
+  which every page loads before </head> (`<script src="i18n.js"></script>`; tools/blog.py check enforces it).
+  Translations live in lang/<code>.json: "strings" (plain text, titles, placeholders, alt text) and "html"
+  (text blocks containing links/em/strong, keyed by their innerHTML; a translation must keep the same tags in
+  the same order). Keys are the exact English text with whitespace collapsed, so changing English text breaks
+  its translation until the new text is translated.
+  After changing or adding English text (including a newly released blog post), run
+  `python3 tools/i18n_missing.py --out /tmp/missing.json`, translate everything listed into all 10 languages,
+  and add it to every lang/*.json. Names and words that read the same (Little Nine Heaven, Blog) can stay.
+  Untranslated text just shows in English, so it's never a blocker, but don't leave real sentences untranslated.
+  The chosen language is remembered (localStorage) and carried on links as ?lang=xx. Arabic is right-to-left.
 - Teacher name spellings: Chiao Chang-Hung, Pan Wing-Chow, Hsu Hong-Chi, Haumea Lefiti,
   Chin Cheng-Yen, James McNeil, Ajay Kumra.
 - When you add or remove a page, update sitemap.xml (thank-you.html stays out: it is noindex).

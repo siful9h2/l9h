@@ -52,3 +52,10 @@
 - Six teacher pages: each had the same generic Google description; now each has its own title and description built only from facts already on that page (systems taught, years, who they taught), plus social-sharing preview tags. Lineage page title now says "Little Nine Heaven Kung-Fu Lineage". No historical claims changed.
 - No blog post due (next: "Why the Internal Arts Must Be Taught in Person", Thu Oct 29). Site not yet showing in web search results for site:l9hkungfu.com.
 - Questions for owner: shop page shows placeholder products; Hsu page dates (trained 1977-1984 vs. died 1983).
+
+## 2026-10-07 (whole-site translation)
+- Every page can now be read in all 10 languages, not just the homepage: Chinese, Spanish, French, German, Portuguese, Russian, Japanese, Thai, Arabic (right-to-left) and Hindi. The owner asked for this.
+- The language picker is on every page's menu. The chosen language is remembered and carried on every link (?lang=xx), so a visitor who picks a language stays in it as they browse.
+- Moved the homepage translations out of index.html into shared files (i18n.js + lang/*.json). index.html is about 130KB lighter, which helps load speed.
+- Language picker and per-language font styles moved from the homepage into mobile.css so every page shares them.
+- tools/blog.py now adds the translation script to released posts and checks every page has it; new tools/i18n_missing.py lists text that still needs translating.

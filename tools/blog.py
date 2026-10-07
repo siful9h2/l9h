@@ -71,6 +71,8 @@ def release(slug, date):
     s = re.sub(r'\b(src|data-pending-src)="(images/[^"]+)"', lambda m: f'{"src" if os.path.exists(m.group(2)) else "data-pending-src"}="{m.group(2)}"', s)
     if os.path.exists('mobile.css') and 'mobile.css' not in s:
         s = s.replace('</head>', '  <link rel="stylesheet" href="mobile.css" />\n  <script src="mobile-menu.js" defer></script>\n</head>', 1)
+    if os.path.exists('i18n.js') and 'i18n.js' not in s:
+        s = s.replace('</head>', '  <script src="i18n.js"></script>\n</head>', 1)
     write(slug + '.html', s)
     post['status'] = 'published'; post['release'] = date
     save(c); rebuild(c)
@@ -99,6 +101,7 @@ def check():
         for h in re.findall(r'(?<![-\w])src="(images/[^"]+)"', s):
             if not os.path.exists(h): problems.append(f'{f}: {h} does not exist (run tools/blog.py photos)')
         if os.path.exists('mobile.css') and 'href="mobile.css"' not in s: problems.append(f'{f}: missing mobile.css link')
+        if os.path.exists('i18n.js') and 'src="i18n.js"' not in s: problems.append(f'{f}: missing i18n.js (translation) script')
         if f.startswith('blog'):
             t = html.unescape(re.search(r'<title>(.*?)</title>', s).group(1))
             d = re.search(r'name="description" content="([^"]*)"', s).group(1)
