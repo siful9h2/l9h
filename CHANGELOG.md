@@ -59,3 +59,10 @@
 - Moved the homepage translations out of index.html into shared files (i18n.js + lang/*.json). index.html is about 130KB lighter, which helps load speed.
 - Language picker and per-language font styles moved from the homepage into mobile.css so every page shares them.
 - tools/blog.py now adds the translation script to released posts and checks every page has it; new tools/i18n_missing.py lists text that still needs translating.
+
+## 2026-10-08 (Thursday SEO run, on staging; no publish until Oct 29)
+- Added breadcrumb search markup (Home > page, Home > Lineage > teacher, Home > Blog > post) to 22 pages, so Google can show a clean page trail in results and understand how pages fit together. Markup only; nothing visible changes.
+- Homepage contact section label now says "Santee, California" instead of "Southern California" (local search signal); added the translation in all 10 languages. The lineage and McNeil pages keep "Southern California" (history content).
+- Proposal PR #6 (against staging): homepage FAQ section with FAQ search markup, built only from confirmed facts, in all 11 languages.
+- Search check: site:l9hkungfu.com still returns no results in web search. Local searches for "tai chi Santee" are dominated by the City of Santee's senior tai chi listings.
+- No blog post due (next: "Why the Internal Arts Must Be Taught in Person", Thu Oct 29). The live-site check couldn't be done this run (page fetch permission timed out); no main push was needed.
