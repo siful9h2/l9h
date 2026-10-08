@@ -474,6 +474,16 @@
       color: rgba(255,255,255,0.55);
     }
 
+    /* ── FAQ ── */
+    .faq-list { max-width: 720px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid rgba(133,84,15,0.3); padding: 1.1rem 0; }
+    .faq-item summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; font-family: 'Cinzel', serif; color: var(--gold); font-size: 1.2rem; }
+    .faq-item[open] summary::after { content: "\2212"; }
+    .faq-item h3 { font-family: 'Cinzel', serif; font-size: 1rem; letter-spacing: 0.04em; font-weight: 600; margin: 0; }
+    .faq-item p { margin-top: 0.8rem; line-height: 1.8; }
+
     /* ── CONTACT ── */
     .contact {
       background: linear-gradient(180deg, #0d0804 0%, var(--ink) 100%);
@@ -907,6 +917,62 @@
       transform: translateY(0);
     }
   </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where are classes held?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In Santee, California, in San Diego County. Instruction is private and by appointment, so no street address is published. Use the form below to get in touch and arrange a time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a class schedule?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No public schedule. Classes are private and by appointment only, taught one-on-one or in small groups at times arranged with Sifu Ajay Kumra."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the first class free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Your first class is a free introductory class."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can I learn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The internal arts of the Little Nine Heaven tradition, including Hsing-I (Xing Yi Quan), Ba Kua (Baguazhang), Chen Tai Chi, Chi-Kung (Qigong), Taoist meditation, Tzu Men Chuan and Iron Hand training."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I study tai chi for health rather than fighting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Chen Tai Chi is taught as a martial art and a health practice, without separating the two. Students who come for health lose nothing: the mechanics that make the art effective are the same ones that make it good for the body."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who teaches the classes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sifu Ajay Kumra, who trained under Master James McNeil of the Little Nine Heaven lineage."
+      }
+    }
+  ]
+}
+  </script>
   <link rel="stylesheet" href="mobile.css" />
   <script src="mobile-menu.js" defer></script>
   <script src="i18n.js"></script>
@@ -1209,6 +1275,43 @@
         </iframe>
       </div>
       -->
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="background:#0d0804; padding:5rem 1.5rem; position:relative; z-index:1;" id="faq">
+    <div class="container">
+      <div class="arts-header reveal">
+        <p class="section-label">Questions</p>
+        <h2 class="section-title">Frequently Asked</h2>
+        <div class="gold-line" style="margin:0 auto 2rem;"></div>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary><h3>Where are classes held?</h3></summary>
+          <p>In Santee, California, in San Diego County. Instruction is private and by appointment, so no street address is published. Use the form below to get in touch and arrange a time.</p>
+        </details>
+        <details class="faq-item">
+          <summary><h3>Is there a class schedule?</h3></summary>
+          <p>No public schedule. Classes are private and by appointment only, taught one-on-one or in small groups at times arranged with Sifu Ajay Kumra.</p>
+        </details>
+        <details class="faq-item">
+          <summary><h3>Is the first class free?</h3></summary>
+          <p>Yes. Your first class is a free introductory class.</p>
+        </details>
+        <details class="faq-item">
+          <summary><h3>What can I learn?</h3></summary>
+          <p>The internal arts of the Little Nine Heaven tradition, including Hsing-I (Xing Yi Quan), Ba Kua (Baguazhang), Chen Tai Chi, Chi-Kung (Qigong), Taoist meditation, Tzu Men Chuan and Iron Hand training.</p>
+        </details>
+        <details class="faq-item">
+          <summary><h3>Can I study tai chi for health rather than fighting?</h3></summary>
+          <p>Yes. Chen Tai Chi is taught as a martial art and a health practice, without separating the two. Students who come for health lose nothing: the mechanics that make the art effective are the same ones that make it good for the body.</p>
+        </details>
+        <details class="faq-item">
+          <summary><h3>Who teaches the classes?</h3></summary>
+          <p>Sifu Ajay Kumra, who trained under Master James McNeil of the Little Nine Heaven lineage.</p>
+        </details>
+      </div>
     </div>
   </section>
 
