@@ -16,6 +16,11 @@
   <!-- ── OPEN GRAPH (Facebook / Social Sharing) ── -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://l9hkungfu.com/" />
+  <meta property="og:image" content="https://l9hkungfu.com/images/hero.jpg" />
+  <meta property="og:image:width" content="2172" />
+  <meta property="og:image:height" content="724" />
+  <meta property="og:image:alt" content="Gold Lo Shu nine-square diagram glowing on a dark background" />
+  <meta name="twitter:image" content="https://l9hkungfu.com/images/hero.jpg" />
   <meta property="og:title" content="Little Nine Heaven SoCal | Internal Kung-Fu in Santee, CA" />
   <meta property="og:description" content="Study rare Taoist internal martial arts in Santee, CA (San Diego County). Free intro class. Hsing-I, Chen Tai-Chi, Splashing Hands, Iron Hand, Ba Kua and more. Authentic lineage. Personal instruction." />
   <meta property="og:site_name" content="Little Nine Heaven SoCal" />
@@ -32,38 +37,139 @@
 
   <!-- ── SCHEMA MARKUP (Google Structured Data) ── -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MartialArtsSchool",
-    "name": "Little Nine Heaven SoCal",
-    "url": "https://l9hkungfu.com",
-    "description": "Authentic Taoist internal kung-fu school in Santee, California (San Diego County) offering private, by-appointment instruction in Hsing-I, Chen Tai-Chi, Little Nine Heaven, Splashing Hands, Iron Hand, Ba Kua, and Chi-Kung.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Santee",
-      "addressRegion": "CA",
-      "addressCountry": "US"
-    },
-    "areaServed": ["Santee, CA", "San Diego County, CA", "Southern California"],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Internal Kung-Fu Classes",
-      "itemListElement": [
-        { "@type": "Offer", "name": "Free introductory class", "price": "0", "priceCurrency": "USD", "itemOffered": { "@type": "Course", "name": "Introductory internal kung-fu class" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "Hsing-I (Xing Yi Quan)" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "Chen Tai-Chi (Taijiquan)" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "Little Nine Heaven" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "Splashing Hands" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "Iron Hand" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "Ba Kua (Baguazhang)" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "Taoist Lovemaking" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "Taoist Meditation" } }
-      ]
-    },
-    "sameAs": [
-      "https://littlenineheaven.com"
+{
+  "@context": "https://schema.org",
+  "@type": "MartialArtsSchool",
+  "@id": "https://l9hkungfu.com/#school",
+  "name": "Little Nine Heaven SoCal",
+  "url": "https://l9hkungfu.com",
+  "description": "Authentic Taoist internal kung-fu school in Santee, California (San Diego County) offering private, by-appointment instruction in Hsing-I, Chen Tai-Chi, Little Nine Heaven, Splashing Hands, Iron Hand, Ba Kua, and Chi-Kung.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Santee",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Santee, CA",
+    "San Diego County, CA",
+    "Southern California"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Internal Kung-Fu Classes",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Free introductory class",
+        "price": "0",
+        "priceCurrency": "USD",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Introductory internal kung-fu class"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Hsing-I (Xing Yi Quan)",
+          "url": "https://l9hkungfu.com/system-hsing-i"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Chen Tai-Chi (Taijiquan)",
+          "url": "https://l9hkungfu.com/system-chen-tai-chi"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Little Nine Heaven",
+          "url": "https://l9hkungfu.com/system-little-nine-heaven"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Splashing Hands",
+          "url": "https://l9hkungfu.com/system-splashing-hands"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Iron Hand",
+          "url": "https://l9hkungfu.com/system-iron-hand"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Ba Kua (Baguazhang)",
+          "url": "https://l9hkungfu.com/system-ba-kua"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Taoist Lovemaking",
+          "url": "https://l9hkungfu.com/system-taoist-lovemaking"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Taoist Meditation",
+          "url": "https://l9hkungfu.com/system-taoist-meditation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Chi-Kung (Qigong)",
+          "url": "https://l9hkungfu.com/system-chi-kung"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Shih Shui (Bone Marrow Washing)",
+          "url": "https://l9hkungfu.com/system-shih-shui"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Tzu Men Chuan (Zimenquan)",
+          "url": "https://l9hkungfu.com/system-tzu-men-chuan"
+        }
+      }
     ]
+  },
+  "sameAs": [
+    "https://littlenineheaven.com"
+  ],
+  "image": "https://l9hkungfu.com/images/hero.jpg",
+  "founder": {
+    "@type": "Person",
+    "@id": "https://l9hkungfu.com/instructor#person",
+    "name": "Ajay Kumra",
+    "url": "https://l9hkungfu.com/instructor"
   }
+}
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />

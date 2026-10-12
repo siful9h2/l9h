@@ -66,3 +66,10 @@
 - Proposal PR #6 (against staging): homepage FAQ section with FAQ search markup, built only from confirmed facts, in all 11 languages.
 - Search check: site:l9hkungfu.com still returns no results in web search. Local searches for "tai chi Santee" are dominated by the City of Santee's senior tai chi listings.
 - No blog post due (next: "Why the Internal Arts Must Be Taught in Person", Thu Oct 29). The live-site check couldn't be done this run (page fetch permission timed out); no main push was needed.
+
+## 2026-10-12 (Monday SEO run, on staging; no publish until Oct 29)
+- Every public page now has a social-share preview image (og:image + twitter:image), so shared links show a picture. Uses images already on the site: the homepage banner by default; Hsing-I, Chen Tai-Chi, blog and instructor pages use their own photos. tools/blog.py now adds these tags to released posts and QA flags pages without one.
+- Homepage school markup: added an @id, image and founder (Sifu Ajay Kumra), linked each course to its page, and added the three systems that were missing (Chi-Kung, Shih Shui, Tzu Men Chuan). System pages and the instructor page now point to the same school/person @ids so Google ties them together. Markup only.
+- Shop page set to noindex and removed from sitemap.xml while it still shows placeholder products ("Product Name", "$00"); thin placeholder pages can drag down how Google rates a small site. Page and menu link unchanged. Switch back once real products are listed.
+- Index check: site:l9hkungfu.com searches still return nothing, including Hsing-I Part 1 (released Oct 3, 9 days ago). Page has index,follow, a correct canonical and is in the sitemap; owner asked to check Search Console's Pages report and request indexing.
+- No blog post due (next: "Why the Internal Arts Must Be Taught in Person", Thu Oct 29). Live-site fetch not possible this run (fetch permission timed out); no main push needed.

@@ -20,6 +20,26 @@ def read(f): return open(f, encoding='utf-8').read()
 def write(f, s): open(f, 'w', encoding='utf-8').write(s)
 def draft(name): return subprocess.run(['git', 'show', f'{DRAFTS}:{name}'], capture_output=True, text=True, check=True).stdout
 
+# Social-share preview image (og:image / twitter:image). Pages with their own photo use it; others the banner.
+SOCIAL = {'system-hsing-i': ('images/system-hsing-i.jpg', 960, 632, 'Hsing-I Chuan practice'),
+          'system-chen-tai-chi': ('images/system-chen-tai-chi.jpg', 1200, 906, 'Chen style Tai-Chi practice'),
+          'instructor': ('images/training-with-mcneil.jpg', 956, 740, 'Sifu Ajay Kumra training with Master James McNeil'),
+          'blog': ('images/system-hsing-i.jpg', 960, 632, 'Hsing-I Chuan practice')}
+SOCIAL_DEFAULT = ('images/hero.jpg', 2172, 724, 'Gold Lo Shu nine-square diagram glowing on a dark background')
+def add_social_image(s, slug):
+    """Add og:image + twitter image tags after og:url if the page has none."""
+    if 'property="og:image"' in s or 'property="og:url"' not in s: return s
+    img, w, h, alt = SOCIAL.get(slug, SOCIAL.get('blog') if slug.startswith('blog') else None) or SOCIAL_DEFAULT
+    if not os.path.exists(img): img, w, h, alt = SOCIAL_DEFAULT
+    alt = html.escape(alt)
+    tags = (f'\n  <meta property="og:image" content="{SITE}/{img}" />'
+            f'\n  <meta property="og:image:width" content="{w}" />'
+            f'\n  <meta property="og:image:height" content="{h}" />'
+            f'\n  <meta property="og:image:alt" content="{alt}" />')
+    if 'name="twitter:card"' not in s: tags += '\n  <meta name="twitter:card" content="summary_large_image" />'
+    tags += f'\n  <meta name="twitter:image" content="{SITE}/{img}" />'
+    return re.sub(r'(<meta property="og:url"[^>]*>)', lambda m: m.group(1) + tags, s, count=1)
+
 def published(c): return sorted([p for p in c['posts'] if p['status'] == 'published'], key=lambda p: p['release'])
 
 def draft_cards():
@@ -73,6 +93,7 @@ def release(slug, date):
         s = s.replace('</head>', '  <link rel="stylesheet" href="mobile.css" />\n  <script src="mobile-menu.js" defer></script>\n</head>', 1)
     if os.path.exists('i18n.js') and 'i18n.js' not in s:
         s = s.replace('</head>', '  <script src="i18n.js"></script>\n</head>', 1)
+    s = add_social_image(s, slug)
     write(slug + '.html', s)
     post['status'] = 'published'; post['release'] = date
     save(c); rebuild(c)
@@ -102,6 +123,9 @@ def check():
             if not os.path.exists(h): problems.append(f'{f}: {h} does not exist (run tools/blog.py photos)')
         if os.path.exists('mobile.css') and 'href="mobile.css"' not in s: problems.append(f'{f}: missing mobile.css link')
         if os.path.exists('i18n.js') and 'src="i18n.js"' not in s: problems.append(f'{f}: missing i18n.js (translation) script')
+        if 'property="og:url"' in s and 'property="og:image"' not in s: problems.append(f'{f}: no og:image (social preview picture)')
+        for m in re.findall(r'property="og:image" content="' + re.escape(SITE) + r'/([^"]+)"', s):
+            if not os.path.exists(m): problems.append(f'{f}: og:image file {m} does not exist')
         if f.startswith('blog'):
             t = html.unescape(re.search(r'<title>(.*?)</title>', s).group(1))
             d = re.search(r'name="description" content="([^"]*)"', s).group(1)
