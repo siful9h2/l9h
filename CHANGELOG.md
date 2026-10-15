@@ -73,3 +73,9 @@
 - Shop page set to noindex and removed from sitemap.xml while it still shows placeholder products ("Product Name", "$00"); thin placeholder pages can drag down how Google rates a small site. Page and menu link unchanged. Switch back once real products are listed.
 - Index check: site:l9hkungfu.com searches still return nothing, including Hsing-I Part 1 (released Oct 3, 9 days ago). Page has index,follow, a correct canonical and is in the sitemap; owner asked to check Search Console's Pages report and request indexing.
 - No blog post due (next: "Why the Internal Arts Must Be Taught in Person", Thu Oct 29). Live-site fetch not possible this run (fetch permission timed out); no main push needed.
+
+## 2026-10-15 (Thursday SEO run, on staging; no publish until Oct 29)
+- Five system pages now link the teacher they name to that teacher's page, inside the existing sentence (Chen Tai-Chi → Master Pan Wing-Chow, Hsing-I → Master Hsu Hong-Chi, Little Nine Heaven and Shih Shui → Grandmaster Chiao Chang-Hung, Tzu Men Chuan → Master Chin Cheng-Yen). Wording unchanged; links help Google connect each art to its lineage and help visitors explore. Linked versions of the five paragraphs added to all 10 language files.
+- sitemap.xml "last modified" dates updated to when each page actually last changed (were all Oct 3), so Google knows which pages to re-crawl after the Oct 29 publish.
+- Search check: site:l9hkungfu.com still returns nothing in web search. Live-site fetch not possible this run (network permission); no main push needed.
+- No blog post due (next: "Why the Internal Arts Must Be Taught in Person", Thu Oct 29).
