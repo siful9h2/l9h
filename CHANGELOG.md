@@ -79,3 +79,7 @@
 - sitemap.xml "last modified" dates updated to when each page actually last changed (were all Oct 3), so Google knows which pages to re-crawl after the Oct 29 publish.
 - Search check: site:l9hkungfu.com still returns nothing in web search. Live-site fetch not possible this run (network permission); no main push needed.
 - No blog post due (next: "Why the Internal Arts Must Be Taught in Person", Thu Oct 29).
+
+## 2026-10-16 (owner request, on staging)
+- Master Hsu Hong-Chi's page: year of death changed from 1983 to 1984, as the owner confirmed (matches McNeil studying with him 1977-1984). Updated in all 10 language files.
+- Noted for owner: the same sentence says Grandmaster Chiao accepted McNeil "after" Master Hsu's death, while other pages say McNeil trained with Chiao from 1983. Left unchanged pending his answer.
