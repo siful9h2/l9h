@@ -86,3 +86,4 @@
 - Owner then decided to keep 1983 for Master Hsu's death (and 1983 for McNeil starting with Grandmaster Chiao, "after which" wording kept). Hsu page and translations restored to 1983; nothing about this goes out on Oct 29.
 - Owner request: Master Hsu's page now says McNeil studied with him 1977-1983 (was 1977-1984), matching Master Hsu's death in 1983. Fact box and paragraph, all 10 language files.
 - Owner approved PR #6: homepage FAQ section (6 questions, FAQ search markup, all 11 languages) merged into staging. Goes live with the Oct 29 publish.
+- Owner request: added a 7th FAQ question, "Can I learn Shih Shui Gong (Bone Marrow Washing)?", noting it is taught only privately (plus FAQ search markup and all 10 translations). Other details come from the Shih Shui page.
