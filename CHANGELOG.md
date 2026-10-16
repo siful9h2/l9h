@@ -84,3 +84,4 @@
 - Master Hsu Hong-Chi's page: year of death changed from 1983 to 1984, as the owner confirmed (matches McNeil studying with him 1977-1984). Updated in all 10 language files.
 - Noted for owner: the same sentence says Grandmaster Chiao accepted McNeil "after" Master Hsu's death, while other pages say McNeil trained with Chiao from 1983. Left unchanged pending his answer.
 - Owner then decided to keep 1983 for Master Hsu's death (and 1983 for McNeil starting with Grandmaster Chiao, "after which" wording kept). Hsu page and translations restored to 1983; nothing about this goes out on Oct 29.
+- Owner request: Master Hsu's page now says McNeil studied with him 1977-1983 (was 1977-1984), matching Master Hsu's death in 1983. Fact box and paragraph, all 10 language files.
