@@ -87,3 +87,6 @@
 - Owner request: Master Hsu's page now says McNeil studied with him 1977-1983 (was 1977-1984), matching Master Hsu's death in 1983. Fact box and paragraph, all 10 language files.
 - Owner approved PR #6: homepage FAQ section (6 questions, FAQ search markup, all 11 languages) merged into staging. Goes live with the Oct 29 publish.
 - Owner request: added a 7th FAQ question, "Can I learn Shih Shui Gong (Bone Marrow Washing)?", noting it is taught only privately (plus FAQ search markup and all 10 translations). Other details come from the Shih Shui page.
+
+## 2026-10-16 (owner request: earlier publish)
+- Owner approved publishing on Sunday Oct 25, the day Netlify deploys resume, instead of waiting until Thursday Oct 29. The live site still has the Oct 4 version, whose sitemap is missing /blog and the Hsing-I Part 1 post. A one-time scheduled run will do this publish. The regular Thursday Oct 29 publish still goes ahead with that day's blog post.

@@ -46,6 +46,10 @@ Pushing to `main` publishes the live site automatically. There is no build step.
     that day on staging (blog procedure below). Then check the live site reflects the last publish. Then
     merge staging into main (`git checkout main && git merge --no-edit staging`), run QA, and push main
     once. Confirm the live site updated, then do the IndexNow pings. That is the only push to main all week.
+  - One-time exception approved by the owner on 2026-10-16: a publish on Sunday 2026-10-25 (the day deploys
+    resume), done by a separate one-time scheduled run, so the fixed sitemap and SEO work reach Google sooner.
+    The Thursday 2026-10-29 publish still happens as normal (it releases that day's blog post); that week has
+    two deploys (30 of 300 credits). From then on, back to once a week on Thursdays.
   - Never push to main on any other day, and never more than once a week, unless the owner explicitly asks.
   - If a weekly publish doesn't go live within about 10 minutes, deploys are paused: tell the owner and
     don't push again.
