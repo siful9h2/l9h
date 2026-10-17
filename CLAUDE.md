@@ -30,6 +30,8 @@ Pushing to `main` publishes the live site automatically. There is no build step.
 - _headers holds the security headers (Netlify). Don't remove it.
 - Writings by Sifu James W. McNeil (the owner's teacher) may be adapted into articles with credit to him.
   Articles drawn from his writings count as history/lineage content: always send them as a proposal PR.
+  On 2026-10-17 the owner confirmed he has his teacher's explicit permission to use ALL of Master McNeil's
+  material, including in paid offerings (courses, a Skool community, books). Keep crediting McNeil.
 
 ## Weekly publishing (important: read first)
 - The site is on Netlify's Free plan: 300 credits a month, 15 per production deploy, plus credits for
@@ -96,6 +98,9 @@ Pushing to `main` publishes the live site automatically. There is no build step.
 - Location: Santee, California (San Diego County). No street address is published; do not add one.
 - Classes are private and by appointment only, taught one-on-one or in small groups. There is no public class schedule.
 - The first class is a free introductory class.
+- PRIVATE, DO NOT PUBLISH: the owner holds a lineage title (confirmed 2026-10-17) but does NOT want it publicly
+  advertised. Never add it, or any generation-number reference to him, to the website, blog, structured data,
+  social posts, Skool or any other public content, and don't suggest adding it. Only the owner can lift this.
 
 ## What the agent may change on its own (commit straight to main)
 Text and SEO only (except history and lineage, see below): copy edits, new or expanded written content, new blog/article pages
