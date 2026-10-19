@@ -90,3 +90,11 @@
 
 ## 2026-10-16 (owner request: earlier publish)
 - Owner approved publishing on Sunday Oct 25, the day Netlify deploys resume, instead of waiting until Thursday Oct 29. The live site still has the Oct 4 version, whose sitemap is missing /blog and the Hsing-I Part 1 post. A one-time scheduled run will do this publish. The regular Thursday Oct 29 publish still goes ahead with that day's blog post.
+
+## 2026-10-19 (Monday SEO run, on staging; next publish Sun Oct 25)
+- Found that the Chi-Kung (Qigong) page is orphaned: no page links to it (it is missing from the Systems menu, the systems list at the bottom of each system page and the homepage cards), so Google and visitors can barely reach it, even though "qigong" is one of the main local searches.
+- Text/SEO fix on staging: the Shih Shui page's existing word "chi-kung" now links to the Chi-Kung page, and the Chi-Kung page's mention of Hsing-I links to the Hsing-I page. Wording unchanged; linked versions added to all 10 language files. Added the missing "Chi-Kung" label translation (ja, zh, ru, ar, hi, th). Sitemap dates for both pages updated.
+- Proposal PR (against staging): add Chi-Kung to the Systems menu on every page, to the systems list on system pages, as an 11th homepage card, and link it from the homepage FAQ answer.
+- update-log.csv: rows waiting for publish now say they go live Sun Oct 25 (the approved early publish), not Thu Oct 29.
+- Index check (Monday): site:l9hkungfu.com still returns nothing in web search, including Hsing-I Part 1 (released Oct 3, 16 days ago). Checked the post: index,follow, correct canonical, in the sitemap on main. Most likely cause: the live site is still the Oct 4 version and its sitemap/links reach Google only after the Oct 25 publish. Owner told.
+- No blog post due (next: "Why the Internal Arts Must Be Taught in Person", Thu Oct 29). Live-site fetch not possible this run (fetch permission timed out); no main push.
