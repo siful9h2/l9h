@@ -98,3 +98,9 @@
 - update-log.csv: rows waiting for publish now say they go live Sun Oct 25 (the approved early publish), not Thu Oct 29.
 - Index check (Monday): site:l9hkungfu.com still returns nothing in web search, including Hsing-I Part 1 (released Oct 3, 16 days ago). Checked the post: index,follow, correct canonical, in the sitemap on main. Most likely cause: the live site is still the Oct 4 version and its sitemap/links reach Google only after the Oct 25 publish. Owner told.
 - No blog post due (next: "Why the Internal Arts Must Be Taught in Person", Thu Oct 29). Live-site fetch not possible this run (fetch permission timed out); no main push.
+
+## 2026-10-22 (Thursday SEO run, on staging; next publish Sun Oct 25)
+- All 11 system pages: the main section heading (an H2 that repeated the page's H1 word for word) now names the art plus "in Santee", e.g. "Ba Kua Chang in Santee", "Chen Tai-Chi in Santee"; the Chi-Kung page's says "Chi-Kung (Qigong) in Santee", the spelling most people search. Why: duplicate headings carried no extra signal, and local searches pair the art with the town. Translations added for all 10 languages; sitemap dates for the 11 pages updated.
+- Dry-ran next Thursday's release ("Why the Internal Arts Must Be Taught in Person", Oct 29) in a scratch copy: it releases cleanly and QA passes. Nothing committed for it.
+- To do at the Oct 29 release: the blog page's description, social preview and "Writings · Sifu James W. McNeil" eyebrow say all posts are by Sifu McNeil, but the Oct 29 post is by Sifu Ajay Kumra. Update that wording (and its translations) in the same publish, without changing what it says about Sifu McNeil.
+- Search check: site:l9hkungfu.com still returns nothing; the Oct 25 publish (sitemap with /blog and the Hsing-I post) is the next step for indexing. Live-site fetch blocked from this run's network; no main push (not a publish day).
