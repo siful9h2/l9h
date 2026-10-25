@@ -104,3 +104,8 @@
 - Dry-ran next Thursday's release ("Why the Internal Arts Must Be Taught in Person", Oct 29) in a scratch copy: it releases cleanly and QA passes. Nothing committed for it.
 - To do at the Oct 29 release: the blog page's description, social preview and "Writings · Sifu James W. McNeil" eyebrow say all posts are by Sifu McNeil, but the Oct 29 post is by Sifu Ajay Kumra. Update that wording (and its translations) in the same publish, without changing what it says about Sifu McNeil.
 - Search check: site:l9hkungfu.com still returns nothing; the Oct 25 publish (sitemap with /blog and the Hsing-I post) is the next step for indexing. Live-site fetch blocked from this run's network; no main push (not a publish day).
+
+## 2026-10-25 (one-time owner-approved Sunday publish)
+- QA passed on staging; merged staging into main (fast-forward to f032a33) and pushed main once at 17:08 UTC. This publishes everything saved up since Oct 4: full site in 10 languages, homepage FAQ (7 questions), sitemap with /blog and the Hsing-I Part 1 post, social preview images, better Google titles/descriptions, breadcrumb and school markup, Chi-Kung links, "in Santee" headings, Master Hsu date fix, banner and instructor photos, speed and security fixes.
+- No blog post released (next: "Why the Internal Arts Must Be Taught in Person", Thu Oct 29).
+- Live-site check NOT possible: this run's page fetches (sitemap.xml, homepage) were blocked by an unanswered fetch permission, so the deploy could not be confirmed and IndexNow pings could not be sent. update-log.csv rows left as "Waiting for weekly publish" until a run confirms the live site; owner asked to check. Main was not pushed again.
