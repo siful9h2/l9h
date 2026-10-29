@@ -120,3 +120,6 @@
 ## 2026-10-29 (Thursday weekly publish)
 - Released the scheduled blog post "Why the Internal Arts Must Be Taught in Person" (Sifu Ajay Kumra) on staging with tools/blog.py (blog list, "From the Blog" boxes, sitemap rebuilt; QA passed). Post body was already translated; added the blog-card label and summary in all 10 languages.
 - Live-site check of the Oct 25 publish still not possible from this run (page fetches blocked: curl gets a proxy 403, WebFetch permission timed out).
+- QA passed; merged staging into main (fast-forward to 4c4fe93) and pushed main once at 16:13 UTC. This publishes the Oct 29 blog post plus the Oct 26 changes (blog page wording for both authors, homepage description with Xing Yi/Qigong).
+- After waiting, the live check again could not be done (page fetch and IndexNow blocked from this run's network), so the deploy is unconfirmed and IndexNow was not pinged. update-log.csv rows left as "Waiting for weekly publish" until the live site is confirmed; owner asked to check. Main not pushed again.
+- No extra SEO changes this run (publish day; kept the release clean). PR #7 still open.
