@@ -116,3 +116,7 @@
 - Live-site check of the Oct 25 publish still not possible (page fetches blocked from this run's network). Must be confirmed before Thursday's main push.
 - Index check (Monday): site:l9hkungfu.com still returns no results in web search, including Hsing-I Part 1 (released Oct 3, 23 days ago; reached the live sitemap only with the Oct 25 publish). Owner asked to check Search Console.
 - No blog post due today (next: "Why the Internal Arts Must Be Taught in Person", Thu Oct 29). PR #7 (Chi-Kung in menu/homepage) still open.
+
+## 2026-10-29 (Thursday weekly publish)
+- Released the scheduled blog post "Why the Internal Arts Must Be Taught in Person" (Sifu Ajay Kumra) on staging with tools/blog.py (blog list, "From the Blog" boxes, sitemap rebuilt; QA passed). Post body was already translated; added the blog-card label and summary in all 10 languages.
+- Live-site check of the Oct 25 publish still not possible from this run (page fetches blocked: curl gets a proxy 403, WebFetch permission timed out).
