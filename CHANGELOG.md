@@ -123,3 +123,7 @@
 - QA passed; merged staging into main (fast-forward to 4c4fe93) and pushed main once at 16:13 UTC. This publishes the Oct 29 blog post plus the Oct 26 changes (blog page wording for both authors, homepage description with Xing Yi/Qigong).
 - After waiting, the live check again could not be done (page fetch and IndexNow blocked from this run's network), so the deploy is unconfirmed and IndexNow was not pinged. update-log.csv rows left as "Waiting for weekly publish" until the live site is confirmed; owner asked to check. Main not pushed again.
 - No extra SEO changes this run (publish day; kept the release clean). PR #7 still open.
+
+## 2026-10-30 (owner asked for a status update)
+- Live check (homepage fetched from outside): the live site is still the Oct 3-4 version. Old title "Internal Kung-Fu & Tai Chi Classes in Santee, CA", old meta description, no homepage FAQ, no "From the Blog" box. So neither the Oct 25 push (f032a33) nor the Oct 29 push (4c4fe93) has gone live, although both are on main.
+- GitHub shows no deploy status for these commits (Netlify doesn't report back to this repo), so the cause can't be seen from here. Most likely Netlify deploys are still paused or a deploy failed. Owner asked to check the Netlify Deploys tab. Per the rules, main is not pushed again; update-log rows stay "Waiting for weekly publish".
