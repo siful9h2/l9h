@@ -94,6 +94,12 @@ def release(slug, date):
     if os.path.exists('i18n.js') and 'i18n.js' not in s:
         s = s.replace('</head>', '  <script src="i18n.js"></script>\n</head>', 1)
     s = add_social_image(s, slug)
+    # The Systems menu gained Chi-Kung (PR #7); drafts made before that lack it.
+    menu_ba_kua = '<a href="system-ba-kua.html">Ba Kua</a>\n'
+    if 'href="system-chi-kung.html">Chi-Kung</a>' not in s and menu_ba_kua in s:
+        i = s.index(menu_ba_kua)
+        indent = s[s.rfind('\n', 0, i) + 1:i]
+        s = s.replace(menu_ba_kua, menu_ba_kua + indent + '<a href="system-chi-kung.html">Chi-Kung</a>\n', 1)
     write(slug + '.html', s)
     post['status'] = 'published'; post['release'] = date
     save(c); rebuild(c)
@@ -122,6 +128,7 @@ def check():
         for h in re.findall(r'(?<![-\w])src="(images/[^"]+)"', s):
             if not os.path.exists(h): problems.append(f'{f}: {h} does not exist (run tools/blog.py photos)')
         if os.path.exists('mobile.css') and 'href="mobile.css"' not in s: problems.append(f'{f}: missing mobile.css link')
+        if '<div class="dropdown">' in s and 'system-ba-kua.html">Ba Kua</a>' in s and 'system-chi-kung.html">Chi-Kung</a>' not in s: problems.append(f'{f}: Systems menu is missing Chi-Kung')
         if os.path.exists('i18n.js') and 'src="i18n.js"' not in s: problems.append(f'{f}: missing i18n.js (translation) script')
         if 'property="og:url"' in s and 'property="og:image"' not in s: problems.append(f'{f}: no og:image (social preview picture)')
         for m in re.findall(r'property="og:image" content="' + re.escape(SITE) + r'/([^"]+)"', s):

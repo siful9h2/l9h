@@ -127,3 +127,6 @@
 ## 2026-10-30 (owner asked for a status update)
 - Live check (homepage fetched from outside): the live site is still the Oct 3-4 version. Old title "Internal Kung-Fu & Tai Chi Classes in Santee, CA", old meta description, no homepage FAQ, no "From the Blog" box. So neither the Oct 25 push (f032a33) nor the Oct 29 push (4c4fe93) has gone live, although both are on main.
 - GitHub shows no deploy status for these commits (Netlify doesn't report back to this repo), so the cause can't be seen from here. Most likely Netlify deploys are still paused or a deploy failed. Owner asked to check the Netlify Deploys tab. Per the rules, main is not pushed again; update-log rows stay "Waiting for weekly publish".
+- Owner approved PR #7 ("Yes to chi gong"): merged into staging. Chi-Kung (Qigong) is now in the Systems menu on every page, in each system page's systems list, as an 11th homepage card, and linked from the homepage FAQ, in all 11 languages. The merge only conflicted in the translation files; resolved by keeping all keys from both sides (no key changed on both).
+- The Oct 29 blog post was released after PR #7 was written, so its menu lacked Chi-Kung; added. tools/blog.py release now adds Chi-Kung to the menu of older drafts, and check flags any page whose Systems menu is missing it.
+- Goes live with the next publish, once Netlify deploys are working again.
