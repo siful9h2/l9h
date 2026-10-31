@@ -12,20 +12,28 @@
       "release": "2026-10-08",
       "status": "on-hold",
       "topic": "Hsing-I body mechanics, seven stars, touch-go-kiss",
-      "hold_reason": "Owner: wait until Hsing-I Part 2 is found, so the series runs in order"
+      "hold_reason": "Part 2 found (Oct 2015). Owner asked to see the full original wording before approving (2026-10-30); dates to follow (planned Nov 12 and Nov 19)."
     },
     {
       "slug": "blog-hsing-i-part-4-five-elements-and-horse-form",
       "release": "2026-10-15",
       "status": "on-hold",
       "topic": "Hsing-I five elements, Horse form",
-      "hold_reason": "Owner: wait until Hsing-I Part 2 is found, so the series runs in order"
+      "hold_reason": "Part 2 found (Oct 2015). Owner asked to see the full original wording before approving (2026-10-30); dates to follow (planned Nov 12 and Nov 19)."
     },
     {
       "slug": "blog-why-internal-arts-are-taught-in-person",
       "release": "2026-10-29",
       "status": "published",
       "topic": "Why the internal arts need in-person correction; private lessons in Santee"
+    },
+    {
+      "slug": "blog-hsing-i-part-2-holdings-sinkings-curves",
+      "release": "2026-11-05",
+      "status": "scheduled",
+      "topic": "Hsing-I Part 2: Eight Fundamentals 5-8 (holdings, sinkings, curves, straightenings)",
+      "source": "L9H newsletter, October 2015 (Vol 8, Issue 10)",
+      "approved": "2026-10-30, owner read the full text and approved; credit Sifu McNeil"
     }
   ]
 }
