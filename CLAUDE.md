@@ -103,8 +103,8 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   (date, and any edits he asked for) in the post's calendar entry.
 - Google Search Console is set up (verified via the meta tag in index.html, which must stay). The
   sitemap was submitted on 2026-10-03.
-- Hsing-I Part 2 was found (October 2015 newsletter) and approved for Nov 5. Parts 3 and 4 stay on hold until the owner
-  approves their full-length versions (planned Nov 12 and 19). The owner wants the whole series credited to Sifu McNeil.
+- Hsing-I series (all credited to Sifu McNeil alone): Part 2 approved for Nov 5, Parts 3 and 4 (full original wording) approved
+  2026-10-31 for Nov 12 and Nov 19.
 - Cadence: one post a week, on Thursdays (the weekly publish day). Don't bunch releases together; a steady cadence matters more than volume.
 
 ## School facts (confirmed by the owner)

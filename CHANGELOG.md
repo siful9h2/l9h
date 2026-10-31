@@ -143,3 +143,4 @@
 
 ## 2026-10-31
 - Hsing-I Parts 3 and 4: owner asked for the full versions, credited to Sifu McNeil alone. Rebuilt both drafts from the November and December 2015 newsletters in original wording (typos fixed; dated plugs for the upcoming Hsing-I book removed). Proposal PR #8 against drafts/blog; full text in the review doc. Not on the calendar until the owner approves. Part 2 approval recorded (Nov 5).
+- Owner approved Hsing-I Parts 3 and 4 (full versions). PR #8 merged into drafts/blog; calendar: Part 3 on 2026-11-12, Part 4 on 2026-11-19 (approval recorded in each entry). Part 3's inline "continues in Part 4" link made plain text, because Part 4 isn't live until a week later (it is still linked from the "From the Blog" box once released). Dry-run releases of Parts 2, 3 and 4 all passed QA.
