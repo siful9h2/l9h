@@ -1,5 +1,6 @@
-# Skip a deploy when a push only changes files that aren't part of the public site
-# (agent notes, changelog, calendar, tools). Each real production deploy uses Netlify credits.
+# Plain static site: no build step, publish the repo root.
+# (An "ignore" rule here used to skip deploys for notes-only pushes, but after the October credit pause
+# it made Netlify cancel the real Oct 25 and Oct 29 deploys as "no content change", so it was removed.
+# Pushes to main happen once a week anyway.)
 [build]
   publish = "."
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)CHANGELOG.md' ':(exclude)CLAUDE.md' ':(exclude)blog-calendar.json' ':(exclude)tools/' ':(exclude)README.md'"

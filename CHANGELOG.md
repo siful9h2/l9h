@@ -130,3 +130,7 @@
 - Owner approved PR #7 ("Yes to chi gong"): merged into staging. Chi-Kung (Qigong) is now in the Systems menu on every page, in each system page's systems list, as an 11th homepage card, and linked from the homepage FAQ, in all 11 languages. The merge only conflicted in the translation files; resolved by keeping all keys from both sides (no key changed on both).
 - The Oct 29 blog post was released after PR #7 was written, so its menu lacked Chi-Kung; added. tools/blog.py release now adds Chi-Kung to the menu of older drafts, and check flags any page whose Systems menu is missing it.
 - Goes live with the next publish, once Netlify deploys are working again.
+
+## 2026-10-30 (evening: why nothing went live)
+- Owner's Netlify screenshot: the Oct 25 (f032a33) and Oct 29 (4c4fe93) deploys both show "Canceled". Credits were fine; the Oct 4 deploys had been "Skipped due to account credit usage exceeded". "Canceled" is what Netlify shows when the netlify.toml ignore command says there's nothing new to build, so that rule stopped both publishes.
+- Removed the ignore rule from netlify.toml (on staging) and updated CLAUDE.md: no ignore rule, and after each publish confirm the live site or ask the owner to check the Deploys tab.

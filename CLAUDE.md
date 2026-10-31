@@ -55,8 +55,10 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   - Never push to main on any other day, and never more than once a week, unless the owner explicitly asks.
   - If a weekly publish doesn't go live within about 10 minutes, deploys are paused: tell the owner and
     don't push again.
-- Netlify skips a deploy (netlify.toml `ignore`) when a push only touches CHANGELOG.md, CLAUDE.md,
-  blog-calendar.json, tools/ or README.md, but still avoid unneeded pushes to main.
+- netlify.toml has NO ignore rule: every push to main is a real production deploy (15 credits). An ignore
+  rule made Netlify cancel the Oct 25 and Oct 29 publishes; don't add one back. Keep main pushes to the weekly publish.
+  After each publish, confirm the live site changed; if the agent can't fetch the site, ask the owner to check
+  Netlify's Deploys tab (a "Canceled" or "Skipped" deploy means it did not go live).
 - In the owner summary, say what's waiting on staging and when it will go live.
 
 ## Blog and release calendar
