@@ -134,3 +134,6 @@
 ## 2026-10-30 (evening: why nothing went live)
 - Owner's Netlify screenshot: the Oct 25 (f032a33) and Oct 29 (4c4fe93) deploys both show "Canceled". Credits were fine; the Oct 4 deploys had been "Skipped due to account credit usage exceeded". "Canceled" is what Netlify shows when the netlify.toml ignore command says there's nothing new to build, so that rule stopped both publishes.
 - Removed the ignore rule from netlify.toml (on staging) and updated CLAUDE.md: no ignore rule, and after each publish confirm the live site or ask the owner to check the Deploys tab.
+- Owner said "do it now": merged staging into main and pushed main once (baed48e, Fri Oct 30, ~19:45 PT). Confirmed live in a browser: new homepage title, FAQ (7 questions), Chi-Kung card and menu item, sitemap with 23 URLs including both blog posts. Everything saved since Oct 4 is now live.
+- IndexNow pinged (empty replies = accepted): /, /blog, both blog posts, /system-chi-kung.
+- update-log.csv: all "Waiting for weekly publish" rows set to Live, Date live 2026-10-30. Next publish: Thursday Nov 5.
