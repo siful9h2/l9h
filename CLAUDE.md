@@ -97,6 +97,10 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   add a card to drafts/blog's blog.html, and add a link to the "From the Blog" box. Propose new posts
   and their dates to the owner as a PR against drafts/blog, and add them to the calendar once approved.
   Posts from Sifu McNeil's writings credit him as author and name the newsletter issue they first appeared in.
+- Owner rule (2026-10-30): before ANY post goes on the calendar, show the owner the exact final text of that post
+  (title, description and full body as it will read) and get his approval for that post individually. Never
+  schedule a post he hasn't read and approved. Send drafts in small batches for review; record each approval
+  (date, and any edits he asked for) in the post's calendar entry.
 - Google Search Console is set up (verified via the meta tag in index.html, which must stay). The
   sitemap was submitted on 2026-10-03.
 - Hsing-I Part 2 is not in the calendar on purpose: the owner is looking for it. Don't add or ask about it until he provides it.
