@@ -65,9 +65,12 @@ def rebuild(c):
         f = p['slug'] + '.html'; s = read(f)
         i = s.index('<div class="teachers-nav-grid">') + len('<div class="teachers-nav-grid">')
         j = s.index('\n      </div>', i)
+        # At most 6 links besides "All posts": this post plus the newest others, oldest first.
+        others = [q for q in pubs if q['slug'] != p['slug']][-5:]
+        shown = sorted(others + [p], key=lambda q: q['release'])
         links = '\n        <a href="blog.html">All posts</a>' + ''.join(
             '\n        <a href="%s.html"%s>%s</a>' % (q['slug'], ' class="current"' if q['slug'] == p['slug'] else '', html.escape(shorts.get(q['slug'], q['slug'])))
-            for q in pubs)
+            for q in shown)
         write(f, s[:i] + links + s[j:])
     # sitemap
     sm = read('sitemap.xml')
