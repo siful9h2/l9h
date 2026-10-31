@@ -137,3 +137,6 @@
 - Owner said "do it now": merged staging into main and pushed main once (baed48e, Fri Oct 30, ~19:45 PT). Confirmed live in a browser: new homepage title, FAQ (7 questions), Chi-Kung card and menu item, sitemap with 23 URLs including both blog posts. Everything saved since Oct 4 is now live.
 - IndexNow pinged (empty replies = accepted): /, /blog, both blog posts, /system-chi-kung.
 - update-log.csv: all "Waiting for weekly publish" rows set to Live, Date live 2026-10-30. Next publish: Thursday Nov 5.
+
+- Search Console (via the owner's signed-in browser): resubmitted sitemap.xml (read Oct 30, 23 pages found, Success). Google shows 12 pages indexed, 12 not. Requested indexing for /, the new blog post, /lineage and /system-little-nine-heaven. Already indexed: Hsing-I Part 1 and /system-chi-kung. Still to request on later days (about 10 a day allowed): Taoist Meditation, Taoist Lovemaking, Splashing Hands, Tzu Men Chuan, Master Chiao and the other pages in the "Discovered - currently not indexed" list.
+- Owner asked for a Netlify credits count after every credit-using task: added the rule to CLAUDE.md and a running log in tools/netlify-credits.md (about 285 left this cycle after tonight's one deploy).

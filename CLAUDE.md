@@ -60,6 +60,11 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   After each publish, confirm the live site changed; if the agent can't fetch the site, ask the owner to check
   Netlify's Deploys tab (a "Canceled" or "Skipped" deploy means it did not go live).
 - In the owner summary, say what's waiting on staging and when it will go live.
+- Credits report (owner request, 2026-10-30): after anything that uses Netlify credits (every push to main), tell the
+  owner how many credits are left until the billing cycle resets on the 25th. Keep the running count in
+  tools/netlify-credits.md: 300 per cycle, minus 15 per production deploy that actually ran (Canceled or Skipped
+  deploys don't count), minus a small amount for bandwidth that only Netlify's Usage page shows, so label it an
+  estimate and ask the owner for the real figure from Netlify (Team > Usage & billing) when it matters.
 
 ## Blog and release calendar
 - The blog is live at /blog. Unreleased drafts live on the `drafts/blog` branch, never on main
