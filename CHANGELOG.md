@@ -140,3 +140,6 @@
 
 - Search Console (via the owner's signed-in browser): resubmitted sitemap.xml (read Oct 30, 23 pages found, Success). Google shows 12 pages indexed, 12 not. Requested indexing for /, the new blog post, /lineage and /system-little-nine-heaven. Already indexed: Hsing-I Part 1 and /system-chi-kung. Still to request on later days (about 10 a day allowed): Taoist Meditation, Taoist Lovemaking, Splashing Hands, Tzu Men Chuan, Master Chiao and the other pages in the "Discovered - currently not indexed" list.
 - Owner asked for a Netlify credits count after every credit-using task: added the rule to CLAUDE.md and a running log in tools/netlify-credits.md (about 285 left this cycle after tonight's one deploy).
+
+## 2026-10-31
+- Hsing-I Parts 3 and 4: owner asked for the full versions, credited to Sifu McNeil alone. Rebuilt both drafts from the November and December 2015 newsletters in original wording (typos fixed; dated plugs for the upcoming Hsing-I book removed). Proposal PR #8 against drafts/blog; full text in the review doc. Not on the calendar until the owner approves. Part 2 approval recorded (Nov 5).
