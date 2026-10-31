@@ -85,6 +85,8 @@ Pushing to `main` publishes the live site automatically. There is no build step.
      The key file 212a9b89e41f158056d6f3102f117957.txt must stay in the site root.
      Google can't be pinged. In the owner summary, list each new URL so the owner can paste it
      into Search Console's URL Inspection and click "Request indexing" (Search Console is verified).
+     Also add each new or substantially changed URL to tools/indexing-queue.md: a daily scheduled task reminds the
+     owner and submits the queue through his signed-in browser (about 10 a day).
   7. About 7 days after a release, web-search `site:l9hkungfu.com <post slug or title>` to see whether
      Google has indexed it, and include that in the owner summary. If a post isn't indexed after
      14 days, check it for problems and tell the owner.
