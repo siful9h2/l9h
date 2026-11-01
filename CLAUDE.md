@@ -111,6 +111,8 @@ Pushing to `main` publishes the live site automatically. There is no build step.
 - Location: Santee, California (San Diego County). No street address is published; do not add one.
 - Classes are private and by appointment only, taught one-on-one or in small groups. There is no public class schedule.
 - The first class is a free introductory class.
+- Little Nine Heaven is NOT the parent of the other arts: Hsing-I, Ba Kua, Chen Tai-Chi, Splashing Hands etc. are separate
+  systems taught in addition to L9H (owner correction 2026-11-01). Don't describe L9H as their root or trunk.
 - Ajay also teaches privately around the world, traveling to students at their locations (confirmed 2026-11-01).
 - PRIVATE, DO NOT PUBLISH: the owner holds a lineage title (confirmed 2026-10-17) but does NOT want it publicly
   advertised. Never add it, or any generation-number reference to him, to the website, blog, structured data,
