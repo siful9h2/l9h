@@ -150,3 +150,4 @@
 ## 2026-11-01
 - Instructor page (owner request): replaced the Taekwondo/Bajiquan background with "He began learning Hsing-I, Tai-Chi and Splashing Hands when he was 16." (fact box and paragraph); old translations removed and new ones added in all 10 languages.
 - SEO (owner request): "Questions About <system>" sections on all 11 system pages, 4 Q&As each, with FAQPage JSON-LD. Plain h3/p markup using existing styles (no CSS change). Content drawn only from each page's existing text and the confirmed school facts (private, by appointment, one-on-one or small groups, Santee, free first class). English only so far; translations still to add before the Nov 5 publish.
+- Instructor page (owner request): added that Ajay teaches privately around the world at students' locations, with translations; recorded as a confirmed school fact in CLAUDE.md.
