@@ -32,6 +32,9 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   Articles drawn from his writings count as history/lineage content: always send them as a proposal PR.
   On 2026-10-17 the owner confirmed he has his teacher's explicit permission to use ALL of Master McNeil's
   material, including in paid offerings (courses, a Skool community, books). Keep crediting McNeil.
+- Guest authors (owner, 2026-11-01): Andrew Jackson, Hank Babcock, James (Jim) Doty and Wenpei Paul Chou gave permission
+  for their newsletter writings to be used. Keep their pieces intact (credit each by name as author), removing only
+  passed dates/events, and send them to the owner for review like every other post.
 
 ## Weekly publishing (important: read first)
 - The site is on Netlify's Free plan: 300 credits a month, 15 per production deploy, plus credits for
