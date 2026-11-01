@@ -153,3 +153,4 @@
 - Instructor page (owner request): added that Ajay teaches privately around the world at students' locations, with translations; recorded as a confirmed school fact in CLAUDE.md.
 - Owner OK: homepage FAQ answer (and its FAQ markup, translations) and the system-page Q&A class answers now mention worldwide private teaching at students' locations.
 - Owner correction: Little Nine Heaven is not the parent of the other systems; they are separate systems taught in addition to it. Reworded the L9H page intro, subtitle ("A Taoist Martial System"), label ("The Systems · Taoist") and the Q&A answer + FAQ markup; translations updated.
+- Owner: Jackson, Babcock, Doty and Chou gave permission for their newsletter writings. Rule added to CLAUDE.md; 8 guest posts slotted into the plan (now 57 weeks, to Dec 23, 2027) in the review doc.
