@@ -118,9 +118,9 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   systems taught in addition to L9H (owner correction 2026-11-01). Don't describe L9H as their root or trunk.
 - Lineage rulings (owner, 2026-11-01), use these when newsletters disagree: Master Hsu died October 1983;
   McNeil met and began training with Chiao, Pan and Chin in 1984; Master Chin died in 2000; Chiao's temple teacher
-  is Lushan Daoren (use that name, not Liu Miao-Yuan); McNeil is the 33rd generation (open question: what that makes
-  Chiao, since the site says Chiao 33rd / McNeil 34th); Marilyn Kumra's Feb 2015 piece: keep it. McNeil trained with Lefiti
-  1968 until Lefiti's death in 1974. Still open: who besides Hsu taught McNeil Taoist lovemaking.
+  is Lushan Daoren (use that name, not Liu Miao-Yuan); Chiao is the 32nd generation and McNeil the 33rd; Marilyn Kumra's Feb 2015 piece: keep it. McNeil trained with Lefiti
+  1968 until Lefiti's death in 1974. Taoist lovemaking: Master Hsu taught McNeil some of it;
+  Master Huang ("Mr. Huang" in Feb 2017) and three women in the mountains also taught him. Ask before naming Huang publicly.
 - Ajay also teaches privately around the world, traveling to students at their locations (confirmed 2026-11-01).
 - PRIVATE, DO NOT PUBLISH: the owner holds a lineage title (confirmed 2026-10-17) but does NOT want it publicly
   advertised. Never add it, or any generation-number reference to him, to the website, blog, structured data,
