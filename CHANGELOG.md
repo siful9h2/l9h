@@ -164,3 +164,9 @@
 - Published 2026-11-01 (main@f6247ce) at owner request instead of Nov 5; confirmed live (Hsing-I Part 2, lineage 32nd/33rd, instructor page, system Q&As). IndexNow pinged (empty replies = accepted): Part 2, /blog, /instructor, /lineage, /system-hsing-i, /system-little-nine-heaven. Credits ~270 left this cycle.
 - Owner photo (uniform, straight sword) saved as images/sifu-ajay.jpg (157 KB); photos tool switched instructor + homepage tags to src; alt text written and translated. Owner asked for it directly, previewed on desktop and mobile.
 - Search Console (owner's browser): 10 indexing requests on 2026-11-01: Hsing-I Part 2, Taoist Meditation, Taoist Lovemaking, Splashing Hands, Tzu Men Chuan, teacher-chiao, teacher-mcneil, teacher-pan (were "Discovered - not indexed"), plus re-crawls of /instructor and /blog. Already indexed: system-hsing-i, ba-kua, chen-tai-chi, iron-hand, shih-shui.
+
+## 2026-11-02 (Monday SEO run, on staging; next publish Thu Nov 12)
+- Translated Hsing-I Part 2 (live since Nov 1 in English only) into all 10 languages: title, headings, all 13 body paragraphs, the closing line, blog card label/summary and newsletter credit, following Part 1's terminology. i18n_missing now shows only names that read the same (social links, system names) and the unused shop placeholders.
+- Hsing-I Part 2 meta/og/JSON-LD description reworded to include "Xing Yi Quan" (156 chars; no new claims).
+- Audit: QA passes (26 pages); no open proposal PRs; no posts due. Titles/descriptions within limits. Live-site fetch blocked from this run's network (curl 000), so nothing checked live; no publish today anyway.
+- Index check: web search for site:l9hkungfu.com returns nothing (this search engine doesn't reflect Google's index); Search Console on Oct 30 showed Hsing-I Part 1 indexed. "Taught in Person" (Oct 29) isn't 7 days old yet; check Thursday.
