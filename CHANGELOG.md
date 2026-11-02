@@ -157,3 +157,4 @@
 - Owner OK: the four optional newsletter pieces are in the plan too (now 61 weeks, to Jan 20, 2028).
 - Owner answered the lineage questions (recorded in CLAUDE.md). Proposal PR #10: 1984 start with Chiao/Pan, Chin died 2000, on the lineage and teacher pages with translations.
 - Owner approved blog batch 2 and the lineage corrections: PR #9 merged into drafts/blog (calendar: Nov 26, Dec 3, Dec 10, approvals recorded) and PR #10 merged into staging (live Nov 5).
+- Owner: removed "so no street address is published" from the homepage FAQ; worldwide-lessons wording made more inviting ("Not near San Diego? ... travels worldwide to teach private lessons wherever you are") on homepage, instructor page and system Q&As; translations updated.

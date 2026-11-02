@@ -111,7 +111,8 @@ Pushing to `main` publishes the live site automatically. There is no build step.
 - Cadence: one post a week, on Thursdays (the weekly publish day). Don't bunch releases together; a steady cadence matters more than volume.
 
 ## School facts (confirmed by the owner)
-- Location: Santee, California (San Diego County). No street address is published; do not add one.
+- Location: Santee, California (San Diego County). No street address is published; do not add one, and don't say
+  "no street address is published" on the site either (owner, 2026-11-01).
 - Classes are private and by appointment only, taught one-on-one or in small groups. There is no public class schedule.
 - The first class is a free introductory class.
 - Little Nine Heaven is NOT the parent of the other arts: Hsing-I, Ba Kua, Chen Tai-Chi, Splashing Hands etc. are separate
