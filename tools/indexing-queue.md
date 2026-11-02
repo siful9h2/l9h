@@ -2,12 +2,10 @@
 
 Pages to submit with Search Console's URL Inspection → "Request indexing" (about 10 a day allowed).
 Inspect each first: if it says "URL is on Google", just tick it off without requesting.
-Done when every box is ticked. Add new pages here after each weekly publish (new blog posts, changed pages).
+Done when every box is ticked. Note: Google's quota is a rolling 24 hours from the last batch, so wait a full day between batches. Add new pages here after each weekly publish (new blog posts, changed pages).
 
 ## To request
-- [ ] https://l9hkungfu.com/teacher-hsu
-- [ ] https://l9hkungfu.com/teacher-lefiti
-- [ ] https://l9hkungfu.com/teacher-chin
+- [ ] https://l9hkungfu.com/teacher-chin (not indexed; 2026-11-02 attempt hit Google's daily quota)
 - [ ] https://l9hkungfu.com/lineage (re-request: changed 2026-11-01)
 - [ ] https://l9hkungfu.com/system-little-nine-heaven (re-request: changed 2026-11-01)
 - [ ] https://l9hkungfu.com/system-hsing-i (re-request: Q&A added 2026-11-01; indexed)
@@ -18,6 +16,8 @@ Done when every box is ticked. Add new pages here after each weekly publish (new
 - [ ] https://l9hkungfu.com/ (re-request: FAQ changed; indexed)
 
 ## Done
+- [x] 2026-11-02 https://l9hkungfu.com/teacher-hsu (already indexed)
+- [x] 2026-11-02 https://l9hkungfu.com/teacher-lefiti (re-crawl requested, dates changed)
 - [x] 2026-11-01 https://l9hkungfu.com/blog-hsing-i-part-2-holdings-sinkings-curves (requested)
 - [x] 2026-11-01 https://l9hkungfu.com/system-taoist-meditation (requested)
 - [x] 2026-11-01 https://l9hkungfu.com/system-taoist-lovemaking (requested)
