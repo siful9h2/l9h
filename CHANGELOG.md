@@ -162,3 +162,4 @@
 - 2026-11-01: owner asked to publish now (Sunday) instead of Thursday Nov 5; Hsing-I Part 2 released early with it. Thursday Nov 5 publish skipped.
 - Lineage photo caption "Thirty-four generations and counting" changed to "Thirty-three generations and counting" to match McNeil = 33rd (the old wording implied a 34th generation after McNeil, close to the owner's private title). Waiting for next publish.
 - Published 2026-11-01 (main@f6247ce) at owner request instead of Nov 5; confirmed live (Hsing-I Part 2, lineage 32nd/33rd, instructor page, system Q&As). IndexNow pinged (empty replies = accepted): Part 2, /blog, /instructor, /lineage, /system-hsing-i, /system-little-nine-heaven. Credits ~270 left this cycle.
+- Owner photo (uniform, straight sword) saved as images/sifu-ajay.jpg (157 KB); photos tool switched instructor + homepage tags to src; alt text written and translated. Owner asked for it directly, previewed on desktop and mobile.
