@@ -158,3 +158,4 @@
 - Owner answered the lineage questions (recorded in CLAUDE.md). Proposal PR #10: 1984 start with Chiao/Pan, Chin died 2000, on the lineage and teacher pages with translations.
 - Owner approved blog batch 2 and the lineage corrections: PR #9 merged into drafts/blog (calendar: Nov 26, Dec 3, Dec 10, approvals recorded) and PR #10 merged into staging (live Nov 5).
 - Owner: removed "so no street address is published" from the homepage FAQ; worldwide-lessons wording made more inviting ("Not near San Diego? ... travels worldwide to teach private lessons wherever you are") on homepage, instructor page and system Q&As; translations updated.
+- Translated all system-page Q&As into the 10 languages (89 strings each); made system-name spellings in earlier instructor translations consistent (zh 泼手, ja 潑手, ru Плещущие руки; th/ar/hi keep Latin names).
