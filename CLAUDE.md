@@ -120,7 +120,8 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   McNeil met and began training with Chiao, Pan and Chin in 1984; Master Chin died in 2000; Chiao's temple teacher
   is Lushan Daoren (use that name, not Liu Miao-Yuan); Chiao is the 32nd generation and McNeil the 33rd; Marilyn Kumra's Feb 2015 piece: keep it. McNeil trained with Lefiti
   1968 until Lefiti's death in 1974. Taoist lovemaking: Master Hsu taught McNeil some of it;
-  Master Huang ("Mr. Huang" in Feb 2017) and three women in the mountains also taught him. Ask before naming Huang publicly.
+  Master Huang ("Mr. Huang" in Feb 2017) and three women in the mountains also taught him. Master Huang may be named publicly
+  (owner, 2026-11-01: McNeil named him himself in a later newsletter).
 - Ajay also teaches privately around the world, traveling to students at their locations (confirmed 2026-11-01).
 - PRIVATE, DO NOT PUBLISH: the owner holds a lineage title (confirmed 2026-10-17) but does NOT want it publicly
   advertised. Never add it, or any generation-number reference to him, to the website, blog, structured data,
