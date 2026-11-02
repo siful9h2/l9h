@@ -55,6 +55,8 @@ Pushing to `main` publishes the live site automatically. There is no build step.
     resume), done by a separate one-time scheduled run, so the fixed sitemap and SEO work reach Google sooner.
     The Thursday 2026-10-29 publish still happens as normal (it releases that day's blog post); that week has
     two deploys (30 of 300 credits). From then on, back to once a week on Thursdays.
+  - Owner request 2026-11-01: that week's publish was done on Sunday 2026-11-01 instead of Thursday 2026-11-05.
+    Do NOT publish on Thursday 2026-11-05 (no posts are due; Hsing-I Part 2 went out Nov 1). Next publish: Thursday 2026-11-12.
   - Never push to main on any other day, and never more than once a week, unless the owner explicitly asks.
   - If a weekly publish doesn't go live within about 10 minutes, deploys are paused: tell the owner and
     don't push again.
@@ -106,7 +108,7 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   (date, and any edits he asked for) in the post's calendar entry.
 - Google Search Console is set up (verified via the meta tag in index.html, which must stay). The
   sitemap was submitted on 2026-10-03.
-- Hsing-I series (all credited to Sifu McNeil alone): Part 2 approved for Nov 5, Parts 3 and 4 (full original wording) approved
+- Hsing-I series (all credited to Sifu McNeil alone): Part 2 published 2026-11-01 (owner moved it up from Nov 5), Parts 3 and 4 (full original wording) approved
   2026-10-31 for Nov 12 and Nov 19.
 - Cadence: one post a week, on Thursdays (the weekly publish day). Don't bunch releases together; a steady cadence matters more than volume.
 
