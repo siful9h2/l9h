@@ -5,6 +5,7 @@ Inspect each first: if it says "URL is on Google", just tick it off without requ
 Done when every box is ticked. Add new pages here after each weekly publish (new blog posts, changed pages).
 
 ## To request
+- [ ] https://l9hkungfu.com/blog-hsing-i-part-2-holdings-sinkings-curves (new post, live 2026-11-01)
 - [ ] https://l9hkungfu.com/system-taoist-meditation
 - [ ] https://l9hkungfu.com/system-taoist-lovemaking
 - [ ] https://l9hkungfu.com/system-splashing-hands
