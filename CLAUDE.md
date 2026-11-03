@@ -112,6 +112,15 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   2026-10-31 for Nov 12 and Nov 19.
 - Cadence: one post a week, on Thursdays (the weekly publish day). Don't bunch releases together; a steady cadence matters more than volume.
 
+## Search research (Semrush)
+- The owner's free Semrush account (project l9hkungfu.com, signed in via Google as siful9h2 in the built-in browser) is checked
+  daily by a scheduled task. Log findings in tools/semrush-log.md and keep tools/keyword-research.md current.
+- Owner's goal (2026-11-02): reach Google's top 3 for the school's main searches. Priority keywords: tai chi san diego (+ tai chi
+  chuan / tai chi in san diego), xing yi quan / hsing i, qigong san diego, kung fu san diego, martial arts santee.
+- From the data, the agent may make text/SEO changes on its own (titles, descriptions, headings, alt text, internal links,
+  structured data, new non-lineage written content) on staging; they go live with the weekly publish. Anything visual,
+  lineage/history, new pages, or blog posts still needs the owner's approval. Never invent facts. Free plan: ~10 lookups/day.
+
 ## School facts (confirmed by the owner)
 - Location: Santee, California (San Diego County). No street address is published; do not add one, and don't say
   "no street address is published" on the site either (owner, 2026-11-01).
