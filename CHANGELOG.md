@@ -171,3 +171,6 @@
 - Audit: QA passes (26 pages); no open proposal PRs; no posts due. Titles/descriptions within limits. Live-site fetch blocked from this run's network (curl 000), so nothing checked live; no publish today anyway.
 - Index check: web search for site:l9hkungfu.com returns nothing (this search engine doesn't reflect Google's index); Search Console on Oct 30 showed Hsing-I Part 1 indexed. "Taught in Person" (Oct 29) isn't 7 days old yet; check Thursday.
 - 2026-11-02 indexing: teacher-hsu already indexed; teacher-lefiti re-crawl requested; teacher-chin hit "Quota Exceeded" (24h since the Nov 1 batch not yet passed). 10 left in the queue.
+
+## 2026-11-02
+- SEO (owner OK): titles on homepage, instructor, blog and the 11 system pages changed to "... in San Diego | Santee, CA"; meta/og descriptions say "in San Diego (Santee, CA)"; homepage areaServed adds San Diego, El Cajon, La Mesa, Lakeside. Body text unchanged. Title translations added for all 10 languages.
