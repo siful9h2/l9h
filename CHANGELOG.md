@@ -174,3 +174,4 @@
 
 ## 2026-11-02
 - SEO (owner OK): titles on homepage, instructor, blog and the 11 system pages changed to "... in San Diego | Santee, CA"; meta/og descriptions say "in San Diego (Santee, CA)"; homepage areaServed adds San Diego, El Cajon, La Mesa, Lakeside. Body text unchanged. Title translations added for all 10 languages.
+- Semrush review (owner's account): keyword volumes saved in tools/keyword-research.md. Fixed site-audit error "23 structured data items are invalid" (Course -> Service with serviceType/areaServed on homepage offer catalog and system pages); added llms.txt.
