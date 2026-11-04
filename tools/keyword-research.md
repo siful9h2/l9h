@@ -11,6 +11,8 @@
 | iron palm training | 210 | 25% (easy) | Nov 3; site calls it "Iron Hand" (owner to confirm same art) |
 | tai chi santee | 0 | n/a | Nov 3; no volume |
 | martial arts santee | 20 | n/a | + "martial arts santee ca" 20 |
+| tai chi classes san diego | 110 | 25% (easy) | Nov 4; commercial. + "tai chi classes san diego ca" 70 (KD 21), "tai chi class san diego ca" 50 (KD 24), "free tai chi classes san diego" 20. Chen Tai-Chi title already matches. |
+| taoist meditation | 480 | 28% (easy) | Nov 4; informational, national. + "tai chi qigong taoist meditation" 90 (KD 3), "what is taoist meditation" 20. Taoist Meditation page title already matches. |
 
 Semrush shows l9hkungfu.com with 0 keywords in Google's US top 100 yet (a few in BE/ES/NL); 343 backlinks.
 Site audit (29 pages): health 95%; 23 invalid structured-data items (Course markup missing fields; fixed 2026-11-02

@@ -180,3 +180,6 @@
 ## 2026-11-03 (daily Semrush run, on staging; next publish Thu Nov 12)
 - Semrush: US top 100 still 0 keywords (BE 2, ES 1, NL 1); 344 backlinks. New keyword data: bagua zhang 590/mo KD 13%, iron palm training 210/mo KD 25%.
 - SEO: Ba Kua page title "Ba Kua (Bagua Zhang) Classes in San Diego | Santee, CA" (54 chars); meta/og/JSON-LD description adds "Bagua Zhang". Title translations updated (es/fr/pt/de use the new spelling; others unchanged). QA passes.
+
+## 2026-11-04 (afternoon Semrush run)
+- Semrush: US top 100 still 0 keywords. New keyword data saved: tai chi classes san diego 110/mo KD 25%, taoist meditation 480/mo KD 28%; both already targeted by existing titles. No site changes.
