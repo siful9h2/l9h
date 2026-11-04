@@ -7,6 +7,9 @@
 | hsing i | 210 | 4% | + "hsing i chuan" 210, "hsing i near me" 70 |
 | qigong san diego | 90 | 19% | + "san diego qigong" 50 |
 | kung fu san diego | 70 | 5% (very easy) | + "kung fu san diego ca" 50, "kung fu classes in san diego" 20 |
+| bagua zhang | 590 | 13% (very easy) | informational; national (Nov 3). + "yin style bagua zhang" 70 |
+| iron palm training | 210 | 25% (easy) | Nov 3; site calls it "Iron Hand" (owner to confirm same art) |
+| tai chi santee | 0 | n/a | Nov 3; no volume |
 | martial arts santee | 20 | n/a | + "martial arts santee ca" 20 |
 
 Semrush shows l9hkungfu.com with 0 keywords in Google's US top 100 yet (a few in BE/ES/NL); 343 backlinks.

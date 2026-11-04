@@ -176,3 +176,7 @@
 - SEO (owner OK): titles on homepage, instructor, blog and the 11 system pages changed to "... in San Diego | Santee, CA"; meta/og descriptions say "in San Diego (Santee, CA)"; homepage areaServed adds San Diego, El Cajon, La Mesa, Lakeside. Body text unchanged. Title translations added for all 10 languages.
 - Semrush review (owner's account): keyword volumes saved in tools/keyword-research.md. Fixed site-audit error "23 structured data items are invalid" (Course -> Service with serviceType/areaServed on homepage offer catalog and system pages); added llms.txt.
 - Owner OK: titles "Tai Chi Classes in San Diego: Chen Style | Santee, CA", "Qigong (Chi-Kung) Classes in San Diego | Santee, CA"; Hsing-I series titles start "Xing Yi (Hsing-I)" (Parts 1-2 on staging, 3-4 on drafts/blog); translations added.
+
+## 2026-11-03 (daily Semrush run, on staging; next publish Thu Nov 12)
+- Semrush: US top 100 still 0 keywords (BE 2, ES 1, NL 1); 344 backlinks. New keyword data: bagua zhang 590/mo KD 13%, iron palm training 210/mo KD 25%.
+- SEO: Ba Kua page title "Ba Kua (Bagua Zhang) Classes in San Diego | Santee, CA" (54 chars); meta/og/JSON-LD description adds "Bagua Zhang". Title translations updated (es/fr/pt/de use the new spelling; others unchanged). QA passes.
