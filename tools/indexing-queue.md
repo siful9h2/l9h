@@ -5,17 +5,18 @@ Inspect each first: if it says "URL is on Google", just tick it off without requ
 Done when every box is ticked. Note: Google's quota is a rolling 24 hours from the last batch, so wait a full day between batches. Add new pages here after each weekly publish (new blog posts, changed pages).
 
 ## To request
-- [ ] https://l9hkungfu.com/teacher-chin (not indexed; 2026-11-02 attempt hit Google's daily quota)
-- [ ] https://l9hkungfu.com/lineage (re-request: changed 2026-11-01)
-- [ ] https://l9hkungfu.com/system-little-nine-heaven (re-request: changed 2026-11-01)
-- [ ] https://l9hkungfu.com/system-hsing-i (re-request: Q&A added 2026-11-01; indexed)
-- [ ] https://l9hkungfu.com/system-ba-kua (re-request: Q&A added; indexed)
-- [ ] https://l9hkungfu.com/system-chen-tai-chi (re-request: Q&A added; indexed)
-- [ ] https://l9hkungfu.com/system-iron-hand (re-request: Q&A added; indexed)
-- [ ] https://l9hkungfu.com/system-shih-shui (re-request: Q&A added; indexed)
-- [ ] https://l9hkungfu.com/ (re-request: FAQ changed; indexed)
+(empty — add pages after the Nov 12 publish: blog post Part 3, /blog, homepage and system pages with new titles)
 
 ## Done
+- [x] 2026-11-03 https://l9hkungfu.com/teacher-chin (not indexed: "Discovered - currently not indexed"; requested)
+- [x] 2026-11-03 https://l9hkungfu.com/lineage (re-crawl requested)
+- [x] 2026-11-03 https://l9hkungfu.com/system-little-nine-heaven (re-crawl requested)
+- [x] 2026-11-03 https://l9hkungfu.com/system-hsing-i (re-crawl requested)
+- [x] 2026-11-03 https://l9hkungfu.com/system-ba-kua (re-crawl requested)
+- [x] 2026-11-03 https://l9hkungfu.com/system-chen-tai-chi (re-crawl requested)
+- [x] 2026-11-03 https://l9hkungfu.com/system-iron-hand (re-crawl requested)
+- [x] 2026-11-03 https://l9hkungfu.com/system-shih-shui (re-crawl requested)
+- [x] 2026-11-03 https://l9hkungfu.com/ (re-crawl requested)
 - [x] 2026-11-02 https://l9hkungfu.com/teacher-hsu (already indexed)
 - [x] 2026-11-02 https://l9hkungfu.com/teacher-lefiti (re-crawl requested, dates changed)
 - [x] 2026-11-01 https://l9hkungfu.com/blog-hsing-i-part-2-holdings-sinkings-curves (requested)
