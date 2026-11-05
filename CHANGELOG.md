@@ -183,3 +183,7 @@
 
 ## 2026-11-04 (afternoon Semrush run)
 - Semrush: US top 100 still 0 keywords. New keyword data saved: tai chi classes san diego 110/mo KD 25%, taoist meditation 480/mo KD 28%; both already targeted by existing titles. No site changes.
+
+## 2026-11-05 (daily Semrush run, on staging; no publish today, next publish Thu Nov 12)
+- Semrush: US top 100 still 0 keywords; 348 backlinks (+1.75%); site health 95%. New keyword data: chen style tai chi 720/mo KD 8%, bone marrow washing 20/mo.
+- SEO headings: "Chen Tai-Chi in Santee", "Hsing-I Chuan in Santee", "Chi-Kung (Qigong) in Santee" h2s changed to "Chen Style Tai Chi in San Diego (Santee)", "Hsing-I (Xing Yi Quan) in San Diego (Santee)", "Qigong (Chi-Kung) in San Diego (Santee)" to match searched wording. Translations replaced in all 10 languages. QA passes.

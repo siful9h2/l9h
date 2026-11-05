@@ -13,6 +13,8 @@
 | martial arts santee | 20 | n/a | + "martial arts santee ca" 20 |
 | tai chi classes san diego | 110 | 25% (easy) | Nov 4; commercial. + "tai chi classes san diego ca" 70 (KD 21), "tai chi class san diego ca" 50 (KD 24), "free tai chi classes san diego" 20. Chen Tai-Chi title already matches. |
 | taoist meditation | 480 | 28% (easy) | Nov 4; informational, national. + "tai chi qigong taoist meditation" 90 (KD 3), "what is taoist meditation" 20. Taoist Meditation page title already matches. |
+| chen style tai chi | 720 | 8% (very easy) | Nov 5; commercial, national (2.4K global). Chen Tai-Chi page h2 now "Chen Style Tai Chi in San Diego (Santee)". |
+| bone marrow washing | 20 | n/a | Nov 5; tiny volume, not worth targeting. |
 
 Semrush shows l9hkungfu.com with 0 keywords in Google's US top 100 yet (a few in BE/ES/NL); 343 backlinks.
 Site audit (29 pages): health 95%; 23 invalid structured-data items (Course markup missing fields; fixed 2026-11-02
