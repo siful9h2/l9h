@@ -21,7 +21,8 @@ Pushing to `main` publishes the live site automatically. There is no build step.
 - Teacher name spellings: Chiao Chang-Hung, Pan Wing-Chow, Hsu Hong-Chi, Haumea Lefiti,
   Chin Cheng-Yen, James McNeil, Ajay Kumra.
   Chinese names: Chiao Chang-Hung = 喬長虹 (simplified 乔长虹; confirmed by owner 2026-11-05); Hsu Hong-Chi = 許鴻基
-  (simplified 许鸿基). Use these in any Chinese-language content.
+  (simplified 许鸿基); James McNeil's Chinese name = 麥克傑模 (simplified 麦克杰模, confirmed by owner 2026-11-05).
+  Use these in any Chinese-language content.
   Background research on Chiao (喬長虹) and Hsu: tools/lineage-research.md (internal notes, not for publishing as-is).
 - When you add or remove a page, update sitemap.xml (thank-you.html stays out: it is noindex).
 - If mobile.css exists in the repo, every page must link it just before </head>:

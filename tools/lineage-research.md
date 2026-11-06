@@ -32,7 +32,8 @@ https://bodyculture.org.tw/wp-content/uploads/2018/06/%E4%BA%BA%E7%89%A9%E8%AA%8
 - Students named: 談清雲 (chief disciple; 軒轅教 34th-generation head; 中華黃帝道丹功五術協會);
   麥克傑模 (American, head of the American branch of 小九天門, founded 中國小九天武道學校 in Los Angeles);
   史瓦滋 (French, 中國功夫館, Paris); 高三倫 (Malaysia, 洗髓功).
-  OPEN QUESTION for owner: is 麥克傑模 Master James McNeil? ("麥克" = Mc, "傑模" = James.)
+  CONFIRMED by owner 2026-11-05: 麥克傑模 (Màikè Jiémó; simplified 麦克杰模) IS Master James McNeil. So this
+  Taiwanese source names McNeil as head of the American branch of 小九天門 and founder of a 小九天 school in Los Angeles.
 - Biography: 《以身證道：中國洗髓功夫之真諦續篇 — 喬長虹傳》 by 談清雲.
 - Generation numbering conflict: a Zhihu article titles him 「道家易筋洗髓經第三十三代掌門宗師」 (33rd).
   The owner ruled 2026-11-01 that Chiao is the 32nd generation and McNeil the 33rd. Keep the owner's ruling;
