@@ -187,3 +187,9 @@
 ## 2026-11-05 (daily Semrush run, on staging; no publish today, next publish Thu Nov 12)
 - Semrush: US top 100 still 0 keywords; 348 backlinks (+1.75%); site health 95%. New keyword data: chen style tai chi 720/mo KD 8%, bone marrow washing 20/mo.
 - SEO headings: "Chen Tai-Chi in Santee", "Hsing-I Chuan in Santee", "Chi-Kung (Qigong) in Santee" h2s changed to "Chen Style Tai Chi in San Diego (Santee)", "Hsing-I (Xing Yi Quan) in San Diego (Santee)", "Qigong (Chi-Kung) in San Diego (Santee)" to match searched wording. Translations replaced in all 10 languages. QA passes.
+
+## 2026-11-09 (Monday SEO run, on staging; next publish Thu Nov 12)
+- Internal links: Chen Tai-Chi and Ba Kua pages now link to the blog post "Why the Internal Arts Must Be Taught in Person" (one line each before the Q&A; it was linked only from the blog and the "From the Blog" boxes). Translated (10 languages).
+- Hsing-I Q&A "What is Hsing-I?" answer (and FAQPage JSON-LD) now lists the spellings Xing Yi Quan, Xingyiquan, Hsing Yi; old translations replaced in all 10 languages.
+- "Taught in Person" post: meta/og description adds Xing Yi, Bagua and San Diego (146 chars). Meta descriptions aren't translated.
+- Audit: QA passes (26 pages); no open proposal PRs; no posts due (Hsing-I Part 3 due Thu Nov 12). Titles/descriptions within limits; no missing alt text outside the noindex shop placeholders. Live-site fetch blocked from this run's network, so nothing checked live. Index check by web search inconclusive again (search engine doesn't reflect Google's index; Search Console is the reliable check).
