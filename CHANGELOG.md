@@ -193,3 +193,8 @@
 - Hsing-I Q&A "What is Hsing-I?" answer (and FAQPage JSON-LD) now lists the spellings Xing Yi Quan, Xingyiquan, Hsing Yi; old translations replaced in all 10 languages.
 - "Taught in Person" post: meta/og description adds Xing Yi, Bagua and San Diego (146 chars). Meta descriptions aren't translated.
 - Audit: QA passes (26 pages); no open proposal PRs; no posts due (Hsing-I Part 3 due Thu Nov 12). Titles/descriptions within limits; no missing alt text outside the noindex shop placeholders. Live-site fetch blocked from this run's network, so nothing checked live. Index check by web search inconclusive again (search engine doesn't reflect Google's index; Search Console is the reliable check).
+
+## 2026-11-12 (Thursday weekly publish)
+- Released Hsing-I Part 3 "The Body, Seven Stars and Touch-Go-Kiss" (owner-approved 2026-10-31, credited to Sifu McNeil) with tools/blog.py; blog list, "From the Blog" boxes and sitemap rebuilt (27 pages). Translated the full post into all 10 languages.
+- French: "touch-go-kiss" now "toucher-aller-embrasser" (the earlier "baiser" usually reads as vulgar in modern French), in Parts 1 and 3.
+- Merged staging into main and pushed main once (weekly publish). Live site can't be reached from this run's network (proxy refuses l9hkungfu.com, WebFetch needs approval nobody was there to give), so the owner was asked to confirm in Netlify's Deploys tab.
