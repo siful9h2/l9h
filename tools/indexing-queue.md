@@ -5,7 +5,16 @@ Inspect each first: if it says "URL is on Google", just tick it off without requ
 Done when every box is ticked. Note: Google's quota is a rolling 24 hours from the last batch, so wait a full day between batches. Add new pages here after each weekly publish (new blog posts, changed pages).
 
 ## To request
-(empty — add pages after the Nov 12 publish: blog post Part 3, /blog, homepage and system pages with new titles)
+- [ ] https://l9hkungfu.com/blog-hsing-i-part-3-body-power-and-touch-go-kiss (new post, Nov 12)
+- [ ] https://l9hkungfu.com/blog (new card)
+- [ ] https://l9hkungfu.com/ (new title)
+- [ ] https://l9hkungfu.com/system-hsing-i (new title, heading, Q&A)
+- [ ] https://l9hkungfu.com/system-chen-tai-chi (new title, heading)
+- [ ] https://l9hkungfu.com/system-chi-kung (new title, heading)
+- [ ] https://l9hkungfu.com/system-ba-kua (new title)
+- [ ] https://l9hkungfu.com/blog-hsing-i-part-2-holdings-sinkings-curves (new title, translations)
+- [ ] https://l9hkungfu.com/instructor (photo, title)
+- [ ] https://l9hkungfu.com/blog-why-internal-arts-are-taught-in-person (new description, new links)
 
 ## Done
 - [x] 2026-11-03 https://l9hkungfu.com/teacher-chin (not indexed: "Discovered - currently not indexed"; requested)
