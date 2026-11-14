@@ -10,6 +10,6 @@ Bandwidth and requests use a little more; only Netlify's Usage page shows the ex
 | 2026-10-29 | main@4c4fe93 | Canceled (ignore rule) | 0 | 300 |
 | 2026-10-30 | main@baed48e | Published | 15 | ~285 |
 | 2026-11-01 | main@f6247ce | Published (owner asked to publish early; Nov 5 skipped) | 15 | ~270 |
-| 2026-11-12 | main@dbcff87 | Pushed; not yet confirmed live (agent can't reach the site) | 15 if it ran | ~255 |
+| 2026-11-12 | main@dbcff87 | Published (confirmed live 2026-11-13: Part 3 on /blog, new titles) | 15 | ~255 |
 
 Planned: weekly publish Nov 19 (15) -> about 240 left at the reset on Nov 25, before bandwidth.

@@ -199,3 +199,6 @@
 - French: "touch-go-kiss" now "toucher-aller-embrasser" (the earlier "baiser" usually reads as vulgar in modern French), in Parts 1 and 3.
 - Merged staging into main and pushed main once (weekly publish). Live site can't be reached from this run's network (proxy refuses l9hkungfu.com, WebFetch needs approval nobody was there to give), so the owner was asked to confirm in Netlify's Deploys tab.
 - After the push: still couldn't reach the live site or IndexNow from this run (no approval available for those URLs). update-log rows marked "Published to main, live check pending"; indexing queue filled with the 10 pages for Search Console; IndexNow pings for Part 3, /blog and the changed pages still to do. Credits ~255 left if the deploy ran.
+
+## 2026-11-13
+- Confirmed the Nov 12 publish (main@dbcff87) is live: Hsing-I Part 3 is on /blog, homepage and Chen Tai Chi pages show the new San Diego titles and headings. update-log rows set Live (2026-11-12). Credits ~255 left this cycle. IndexNow still blocked from this session's network; Search Console queue (10 pages) waits for the owner's computer to be online.
