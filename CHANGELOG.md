@@ -202,3 +202,7 @@
 
 ## 2026-11-13
 - Confirmed the Nov 12 publish (main@dbcff87) is live: Hsing-I Part 3 is on /blog, homepage and Chen Tai Chi pages show the new San Diego titles and headings. update-log rows set Live (2026-11-12). Credits ~255 left this cycle. IndexNow still blocked from this session's network; Search Console queue (10 pages) waits for the owner's computer to be online.
+
+## 2026-11-14 (daily Semrush run, on staging; next publish Thu Nov 19)
+- Semrush: US top 100 still 0 keywords (BE 2, ES 1); 348 backlinks; Position Tracking (Santee) shows none of the 10 tracked keywords in the top 100 yet. Site Audit re-run started (last crawl Nov 3, before the structured-data fix went live). New keyword data: internal martial arts 170/mo KD 17%, kung fu classes near me 2.4K/mo KD 35%.
+- SEO headings (same pattern as the Nov 5 Chen/Hsing-I/Qigong changes): Ba Kua "Ba Kua (Bagua Zhang) in San Diego (Santee)", Little Nine Heaven "Little Nine Heaven Kung Fu in San Diego (Santee)", instructor "Kung Fu and Tai Chi Lessons in San Diego (Santee)". Translated into all 10 languages. QA passes.

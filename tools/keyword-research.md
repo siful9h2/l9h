@@ -15,6 +15,8 @@
 | taoist meditation | 480 | 28% (easy) | Nov 4; informational, national. + "tai chi qigong taoist meditation" 90 (KD 3), "what is taoist meditation" 20. Taoist Meditation page title already matches. |
 | chen style tai chi | 720 | 8% (very easy) | Nov 5; commercial, national (2.4K global). Chen Tai-Chi page h2 now "Chen Style Tai Chi in San Diego (Santee)". |
 | bone marrow washing | 20 | n/a | Nov 5; tiny volume, not worth targeting. |
+| internal martial arts | 170 | 17% (easy) | Nov 14; informational, national (1.2K global). + "what is internal martial arts" 20. Homepage and Hsing-I page already use the phrase. |
+| kung fu classes near me | 2,400 | 35% (possible) | Nov 14; transactional. Local "near me" results come mostly from Google Business Profile, so finishing the profile matters most. + "kung fu classes near me for adults" 90 (KD 50). |
 
 Semrush shows l9hkungfu.com with 0 keywords in Google's US top 100 yet (a few in BE/ES/NL); 343 backlinks.
 Site audit (29 pages): health 95%; 23 invalid structured-data items (Course markup missing fields; fixed 2026-11-02
