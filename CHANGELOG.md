@@ -206,3 +206,8 @@
 ## 2026-11-14 (daily Semrush run, on staging; next publish Thu Nov 19)
 - Semrush: US top 100 still 0 keywords (BE 2, ES 1); 348 backlinks; Position Tracking (Santee) shows none of the 10 tracked keywords in the top 100 yet. Site Audit re-run started (last crawl Nov 3, before the structured-data fix went live). New keyword data: internal martial arts 170/mo KD 17%, kung fu classes near me 2.4K/mo KD 35%.
 - SEO headings (same pattern as the Nov 5 Chen/Hsing-I/Qigong changes): Ba Kua "Ba Kua (Bagua Zhang) in San Diego (Santee)", Little Nine Heaven "Little Nine Heaven Kung Fu in San Diego (Santee)", instructor "Kung Fu and Tai Chi Lessons in San Diego (Santee)". Translated into all 10 languages. QA passes.
+
+## 2026-11-16 (Monday SEO run, on staging; next publish Thu Nov 19)
+- SEO headings: the last six "<system> in Santee" h2s now follow the San Diego pattern: "Iron Hand Training", "Shih Shui (Bone Marrow Washing)", "Splashing Hands Kung Fu", "Taoist Lovemaking", "Taoist Meditation" (480/mo) and "Tzu Men Chuan (Zimenquan)", each "in San Diego (Santee)". Old translations replaced in all 10 languages. QA passes.
+- Update log: rows 60-61 were numbered twice (Nov 2); renumbered the log sequentially (later rows shift by 2, new last row 75).
+- Audit: QA passes (27 pages); no open proposal PRs; no posts due (Hsing-I Part 4 due Thu Nov 19). Index check by web search inconclusive again (Taught in Person, Part 2); Search Console is the reliable check. Live site and IndexNow still not reachable from this run's network (Part 3 IndexNow pings still pending).
