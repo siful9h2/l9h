@@ -18,6 +18,15 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   and add it to every lang/*.json. Names and words that read the same (Little Nine Heaven, Blog) can stay.
   Untranslated text just shows in English, so it's never a blocker, but don't leave real sentences untranslated.
   The chosen language is remembered (localStorage) and carried on links as ?lang=xx. Arabic is right-to-left.
+- Language pages for search engines (owner approved 2026-11-19: rank internationally in all 10 languages):
+  `python3 tools/build_lang_pages.py` renders every page with i18n.js and saves static copies in <lang>/<page>.html
+  (live at https://l9hkungfu.com/<lang>/<page>), adds hreflang tags to every version (English included, between
+  `<!-- hreflang:start/end -->`), and lists them in sitemap.xml (between `<!-- lang-pages:start/end -->`).
+  The <lang>/ folders are GENERATED: never edit them by hand; edit the English page or lang/*.json and rebuild.
+  Rebuild after any English or translation change, and ALWAYS at the weekly publish after releasing that day's posts
+  (it takes about 2 minutes and runs its own QA; commit the result). On static pages i18n.js only shows the picker;
+  on English pages a visitor with another language stored/set goes to that language's page.
+  hreflang uses language codes (zh-Hans for Chinese), which covers every country that reads that language.
 - Teacher name spellings: Chiao Chang-Hung, Pan Wing-Chow, Hsu Hong-Chi, Haumea Lefiti,
   Chin Cheng-Yen, James McNeil, Ajay Kumra.
   Chinese names: Chiao Chang-Hung = 喬長虹 (simplified 乔长虹; confirmed by owner 2026-11-05); Hsu Hong-Chi = 許鴻基
@@ -53,6 +62,7 @@ Pushing to `main` publishes the live site automatically. There is no build step.
     one, it goes live with the next weekly publish.
   - Weekly publish: on Thursday runs only, starting Thursday 2026-10-29. First release any blog posts due
     that day on staging (blog procedure below). Then check the live site reflects the last publish. Then
+    rebuild the language pages (`python3 tools/build_lang_pages.py`, commit), then
     merge staging into main (`git checkout main && git merge --no-edit staging`), run QA, and push main
     once. Confirm the live site updated, then do the IndexNow pings. That is the only push to main all week.
   - One-time exception approved by the owner on 2026-10-16: a publish on Sunday 2026-10-25 (the day deploys
@@ -131,9 +141,11 @@ Pushing to `main` publishes the live site automatically. There is no build step.
 - Classes are private and by appointment only, taught one-on-one or in small groups. There is no public class schedule.
 - The first class is a free introductory class.
 - Classes meet outdoors, the way these arts were traditionally practiced (confirmed by owner 2026-11-19).
-- Google Business Profile: two verified profiles existed (2026-11-19). Owner decided to keep the older one
-  (store code 02709075749835062857; hide street address, service-area only) and remove the newer duplicate
-  (13090909771712720109).
+- Google Business Profile: two verified profiles existed (2026-11-19). Owner decided (option 1) to keep the older one
+  (store code 02709075749835062857) WITH its street address shown on Google, because its "Martial arts school" category
+  requires a visitable location. The address still never goes on the website. The newer duplicate (13090909771712720109,
+  service-area only) is to be removed; "Remove business" only takes it off the account and leaves it on Maps, so ask
+  Google support to remove or merge it as a duplicate instead.
 - Little Nine Heaven is NOT the parent of the other arts: Hsing-I, Ba Kua, Chen Tai-Chi, Splashing Hands etc. are separate
   systems taught in addition to L9H (owner correction 2026-11-01). Don't describe L9H as their root or trunk.
 - Lineage rulings (owner, 2026-11-01), use these when newsletters disagree: Master Hsu died October 1983;

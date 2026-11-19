@@ -129,7 +129,41 @@
 
   window.L9H_I18N = { collect: collect, norm: norm, langs: LANGS };
 
+  /* Static language pages (built by tools/build_lang_pages.py, served at /<lang>/<page>) are already
+     translated: they only need the picker. Each page lists its other versions as hreflang links, so the
+     picker (and visitors arriving on an English page with a stored/browser language) go to the real
+     page for that language instead of translating in place. */
+  function alternates() {
+    var m = {};
+    document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(function (l) {
+      var c = l.getAttribute("hreflang").split("-")[0];
+      if (CODES.indexOf(c) > -1 && !m[c]) {
+        try { var u = new URL(l.getAttribute("href"), location.href); m[c] = location.origin + u.pathname; } catch (e) {}
+      }
+    });
+    return m;
+  }
+  var ALT = alternates();
+  function staticPicker(lang) {
+    var ready2 = function () {
+      picker(lang);
+      var sel = document.getElementById("langSelect"); if (!sel) return;
+      var fresh = sel.cloneNode(true); sel.replaceWith(fresh); fresh.value = lang;
+      fresh.addEventListener("change", function () {
+        store(fresh.value);
+        if (ALT[fresh.value]) { location.href = ALT[fresh.value] + location.hash; return; }
+        var v = withLang(ALT.en || location.href, fresh.value); location.href = v || location.href;
+      });
+    };
+    if (document.readyState !== "loading") ready2(); else document.addEventListener("DOMContentLoaded", ready2);
+  }
+
+  var STATIC = document.documentElement.getAttribute("data-static-lang");
+  if (STATIC) { staticPicker(STATIC); return; }
+
   var lang = pickLang();
+  if (lang !== "en" && ALT[lang]) { location.replace(ALT[lang] + location.hash); return; }
+  if (Object.keys(ALT).length > 1) { staticPicker("en"); if (lang === "en") return; }
   var ready = new Promise(function (r) {
     if (document.readyState !== "loading") r(); else document.addEventListener("DOMContentLoaded", r);
   });
