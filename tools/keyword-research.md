@@ -17,6 +17,8 @@
 | bone marrow washing | 20 | n/a | Nov 5; tiny volume, not worth targeting. |
 | internal martial arts | 170 | 17% (easy) | Nov 14; informational, national (1.2K global). + "what is internal martial arts" 20. Homepage and Hsing-I page already use the phrase. |
 | kung fu classes near me | 2,400 | 35% (possible) | Nov 14; transactional. Local "near me" results come mostly from Google Business Profile, so finishing the profile matters most. + "kung fu classes near me for adults" 90 (KD 50). |
+| qigong classes | 2,900 | 29% (easy) | Nov 19; commercial, national (3.9K global). + "qigong classes near me" 1.6K (KD 13), "qigong class" 880 (KD 20), "qigong class near me" 480 (KD 12), "online qigong classes" 210. Chi-Kung page title already says "Qigong (Chi-Kung) Classes"; Q&A now asks "Where can I take qigong classes in San Diego?" |
+| tai chi el cajon | 10 | n/a | Nov 19; tiny volume, not worth targeting. |
 
 Semrush shows l9hkungfu.com with 0 keywords in Google's US top 100 yet (a few in BE/ES/NL); 343 backlinks.
 Site audit (29 pages): health 95%; 23 invalid structured-data items (Course markup missing fields; fixed 2026-11-02
