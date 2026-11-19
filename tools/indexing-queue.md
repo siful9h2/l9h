@@ -5,7 +5,11 @@ Inspect each first: if it says "URL is on Google", just tick it off without requ
 Done when every box is ticked. Note: Google's quota is a rolling 24 hours from the last batch, so wait a full day between batches. Add new pages here after each weekly publish (new blog posts, changed pages).
 
 ## To request
-(empty: add Part 4 and /blog after the Nov 19 publish)
+- [ ] 2026-11-19 https://l9hkungfu.com/blog-hsing-i-part-4-five-elements-and-horse-form (new post, published Nov 19)
+- [ ] 2026-11-19 https://l9hkungfu.com/blog (re-crawl: Part 4 added)
+- [ ] 2026-11-19 https://l9hkungfu.com/system-little-nine-heaven (heading changed)
+- [ ] 2026-11-19 https://l9hkungfu.com/zh/system-hsing-i (new Chinese page)
+- [ ] 2026-11-19 https://l9hkungfu.com/es/system-chen-tai-chi (new Spanish page)
 
 ## Done
 - [x] 2026-11-19 https://l9hkungfu.com/blog-hsing-i-part-3-body-power-and-touch-go-kiss (requested)

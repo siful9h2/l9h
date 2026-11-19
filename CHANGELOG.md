@@ -220,3 +220,9 @@
 - Built static language pages for all 10 languages (267 pages) with hreflang tags and sitemap entries, so the site can rank in non-English searches (owner request). Translated all 29 meta descriptions. Fixed zh/ja teacher names (Hsu = 许鸿基; Pan/Chin romanized until confirmed). i18n.js now sends visitors to language pages.
 - Google Business Profile (older profile): new description (classes outdoors, removed wrong '34th generation'), website https://l9hkungfu.com/, added 'Tai chi school' category, hours changed from 24 hours to no main hours. Owner chose to keep the address shown. Duplicate profile not removed yet (needs Google support).
 - Requested Google indexing for 10 pages; first Position Tracking data logged.
+
+## 2026-11-19 (Thursday weekly publish)
+- Released Hsing-I Part 4 "The Five Elements and the Horse Form" (owner-approved 2026-10-31, credited to Sifu McNeil, December 2015 newsletter) with tools/blog.py; blog list, "From the Blog" boxes and sitemap rebuilt (28 pages). Translated the full post into all 10 languages (Part 1-3 terminology; zh/ja element terms 劈/钻/崩/炮/横).
+- Part 3's closing "The series continues in Part 4" is a link again now that Part 4 is live; translations updated with the link in all 10 languages.
+- Rebuilt the language pages (277 pages + lang QA passed; es/fr/de shop pages skipped as under-translated). QA passes.
+- Live site still not reachable from this run's network (proxy 403; WebFetch needs approval), so the pre-publish check relies on the Nov 13 confirmation of the Nov 12 publish.
