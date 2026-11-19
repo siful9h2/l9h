@@ -130,6 +130,10 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   "no street address is published" on the site either (owner, 2026-11-01).
 - Classes are private and by appointment only, taught one-on-one or in small groups. There is no public class schedule.
 - The first class is a free introductory class.
+- Classes meet outdoors, the way these arts were traditionally practiced (confirmed by owner 2026-11-19).
+- Google Business Profile: two verified profiles existed (2026-11-19). Owner decided to keep the older one
+  (store code 02709075749835062857; hide street address, service-area only) and remove the newer duplicate
+  (13090909771712720109).
 - Little Nine Heaven is NOT the parent of the other arts: Hsing-I, Ba Kua, Chen Tai-Chi, Splashing Hands etc. are separate
   systems taught in addition to L9H (owner correction 2026-11-01). Don't describe L9H as their root or trunk.
 - Lineage rulings (owner, 2026-11-01), use these when newsletters disagree: Master Hsu died October 1983;
