@@ -215,3 +215,8 @@
 ## 2026-11-19 (daily Semrush run, on staging; goes live with today's Thursday publish)
 - Semrush: US top 100 still 0 keywords (BE 2, ES 1, IT 1); Position Tracking (Santee) visibility 0 for all 10 tracked keywords. Site Audit still shows the Nov 3 crawl (the Nov 14 re-run didn't complete); not re-run today (weekly limit). New keyword data: qigong classes 2.9K/mo KD 29% (qigong classes near me 1.6K KD 13), tai chi el cajon 10.
 - SEO Q&A wording: "How can I learn Chen Tai-Chi / Chi-Kung / Hsing-I in San Diego County?" now "Where can I take tai chi classes in San Diego?", "Where can I take qigong classes in San Diego?", "Where can I learn Xing Yi Quan (Hsing-I) in San Diego?" on the page and in FAQPage JSON-LD. Answers unchanged. Old translations replaced in all 10 languages. QA passes.
+
+## 2026-11-19
+- Built static language pages for all 10 languages (267 pages) with hreflang tags and sitemap entries, so the site can rank in non-English searches (owner request). Translated all 29 meta descriptions. Fixed zh/ja teacher names (Hsu = 许鸿基; Pan/Chin romanized until confirmed). i18n.js now sends visitors to language pages.
+- Google Business Profile (older profile): new description (classes outdoors, removed wrong '34th generation'), website https://l9hkungfu.com/, added 'Tai chi school' category, hours changed from 24 hours to no main hours. Owner chose to keep the address shown. Duplicate profile not removed yet (needs Google support).
+- Requested Google indexing for 10 pages; first Position Tracking data logged.
