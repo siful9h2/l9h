@@ -226,3 +226,4 @@
 - Part 3's closing "The series continues in Part 4" is a link again now that Part 4 is live; translations updated with the link in all 10 languages.
 - Rebuilt the language pages (277 pages + lang QA passed; es/fr/de shop pages skipped as under-translated). QA passes.
 - Live site still not reachable from this run's network (proxy 403; WebFetch needs approval), so the pre-publish check relies on the Nov 13 confirmation of the Nov 12 publish.
+- Merged staging into main and pushed main once (main@9c3367e, fast-forward). Live site and IndexNow still unreachable from this run, so the live check and IndexNow pings (Part 4, /blog, Part 3) are pending; owner asked to confirm in Netlify's Deploys tab. update-log rows 72-81 marked Live 2026-11-19 with 'live check pending'. Credits ~240 left if the deploy ran (resets Nov 25). Search Console queue: Part 4, /blog, L9H page and two language pages.

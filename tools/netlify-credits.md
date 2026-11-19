@@ -12,4 +12,6 @@ Bandwidth and requests use a little more; only Netlify's Usage page shows the ex
 | 2026-11-01 | main@f6247ce | Published (owner asked to publish early; Nov 5 skipped) | 15 | ~270 |
 | 2026-11-12 | main@dbcff87 | Published (confirmed live 2026-11-13: Part 3 on /blog, new titles) | 15 | ~255 |
 
-Planned: weekly publish Nov 19 (15) -> about 240 left at the reset on Nov 25, before bandwidth.
+| 2026-11-19 | main@9c3367e | Pushed; live check pending (site not reachable from this run; owner asked to check Netlify Deploys) | 15 | ~240 |
+
+Next: no more publishes this cycle; resets to 300 on Nov 25. Next weekly publish Thu Nov 26 (new cycle).
