@@ -230,3 +230,4 @@
 
 ## 2026-11-20 (Pacific 11-19)
 - Owner: contact by form or email only, no phone. Added 'Prefer email? Write to info@l9hkungfu.com' under the homepage form (10 languages) and email in MartialArtsSchool JSON-LD. Language pages rebuilt.
+- 2026-11-19 evening PT: extra publish at the owner's request ("publish now").

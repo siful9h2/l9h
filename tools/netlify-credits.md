@@ -14,4 +14,6 @@ Bandwidth and requests use a little more; only Netlify's Usage page shows the ex
 
 | 2026-11-19 | main@9c3367e | Pushed; live check pending (site not reachable from this run; owner asked to check Netlify Deploys) | 15 | ~240 |
 
-Next: no more publishes this cycle; resets to 300 on Nov 25. Next weekly publish Thu Nov 26 (new cycle).
+| 2026-11-19 (evening PT) | (extra publish) | Owner asked "publish now": email contact line + no-phone rule | 15 | ~225 |
+
+Next: resets to 300 on Nov 25. Next weekly publish Thu Nov 26 (new cycle).
