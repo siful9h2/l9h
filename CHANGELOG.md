@@ -227,3 +227,6 @@
 - Rebuilt the language pages (277 pages + lang QA passed; es/fr/de shop pages skipped as under-translated). QA passes.
 - Live site still not reachable from this run's network (proxy 403; WebFetch needs approval), so the pre-publish check relies on the Nov 13 confirmation of the Nov 12 publish.
 - Merged staging into main and pushed main once (main@9c3367e, fast-forward). Live site and IndexNow still unreachable from this run, so the live check and IndexNow pings (Part 4, /blog, Part 3) are pending; owner asked to confirm in Netlify's Deploys tab. update-log rows 72-81 marked Live 2026-11-19 with 'live check pending'. Credits ~240 left if the deploy ran (resets Nov 25). Search Console queue: Part 4, /blog, L9H page and two language pages.
+
+## 2026-11-20 (Pacific 11-19)
+- Owner: contact by form or email only, no phone. Added 'Prefer email? Write to info@l9hkungfu.com' under the homepage form (10 languages) and email in MartialArtsSchool JSON-LD. Language pages rebuilt.
