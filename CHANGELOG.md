@@ -234,3 +234,7 @@
 
 ## 2026-11-19 (evening Semrush run, fired Nov 20 UTC)
 - Semrush: 362 backlinks (+5.85%), 4 keywords, visibility 0%; Site Audit still shows the Nov 3 crawl (re-run next on Monday Nov 23). New keyword data: tai chi lessons 390/mo KD 47%, martial arts el cajon 30/mo. No site changes (today's SEO changes just went live).
+
+## 2026-11-20
+- Added Italian and Greek (owner request: rank in Italy and Greece). Every non-blog page is translated (lang/it.json, lang/el.json); i18n.js picker now has 12 languages; static pages built at /it/ and /el/ (22 each, listed in sitemap.xml with hreflang on every version). Blog posts and the shop stay English-only in it/el for now (not built until translated).
+- Agent rules: owner travels to students anywhere; marketing focuses mostly on Shih Shui (marrow washing) and Taoist lovemaking; in-person teaching only, no video.

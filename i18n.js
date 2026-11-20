@@ -10,7 +10,7 @@
 (function () {
   var LANGS = [
     ["en", "English"], ["zh", "中文"], ["es", "Español"], ["fr", "Français"], ["de", "Deutsch"],
-    ["pt", "Português"], ["ru", "Русский"], ["ja", "日本語"], ["th", "ไทย"], ["ar", "العربية"], ["hi", "हिन्दी"]
+    ["pt", "Português"], ["ru", "Русский"], ["ja", "日本語"], ["th", "ไทย"], ["ar", "العربية"], ["hi", "हिन्दी"], ["it", "Italiano"], ["el", "Ελληνικά"]
   ];
   var CODES = LANGS.map(function (l) { return l[0]; });
   var RTL = ["ar"];

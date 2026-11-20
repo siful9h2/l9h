@@ -20,10 +20,10 @@ from bs4 import BeautifulSoup
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 SITE = 'https://l9hkungfu.com'
-LANGS = ['zh', 'es', 'fr', 'de', 'pt', 'ru', 'ja', 'th', 'ar', 'hi']
+LANGS = ['zh', 'es', 'fr', 'de', 'pt', 'ru', 'ja', 'th', 'ar', 'hi', 'it', 'el']
 HREFLANG = {'zh': 'zh-Hans'}  # simplified Chinese; others are plain language codes (all countries)
 LOCALE = {'en': 'en_US', 'zh': 'zh_CN', 'es': 'es_ES', 'fr': 'fr_FR', 'de': 'de_DE', 'pt': 'pt_BR',
-          'ru': 'ru_RU', 'ja': 'ja_JP', 'th': 'th_TH', 'ar': 'ar_AR', 'hi': 'hi_IN'}
+          'ru': 'ru_RU', 'ja': 'ja_JP', 'th': 'th_TH', 'ar': 'ar_AR', 'hi': 'hi_IN', 'it': 'it_IT', 'el': 'el_GR'}
 MIN_TRANSLATED = 0.6
 MARK_A, MARK_B = '<!-- hreflang:start -->', '<!-- hreflang:end -->'
 SM_A, SM_B = '  <!-- lang-pages:start -->', '  <!-- lang-pages:end -->'

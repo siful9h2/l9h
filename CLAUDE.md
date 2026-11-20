@@ -7,14 +7,14 @@ Pushing to `main` publishes the live site automatically. There is no build step.
 - Live URLs use the bare domain with no `.html`: `https://l9hkungfu.com/system-hsing-i`.
   Canonical tags, og:url, schema URLs and sitemap.xml must use this form. Never use `www.`.
 - Internal links in the HTML stay as relative `page.html` links (the host rewrites them).
-- The whole site is translated into 10 languages (zh, es, fr, de, pt, ru, ja, th, ar, hi) by i18n.js,
+- The whole site is translated into 12 languages (zh, es, fr, de, pt, ru, ja, th, ar, hi, it, el) by i18n.js,
   which every page loads before </head> (`<script src="i18n.js"></script>`; tools/blog.py check enforces it).
   Translations live in lang/<code>.json: "strings" (plain text, titles, placeholders, alt text) and "html"
   (text blocks containing links/em/strong, keyed by their innerHTML; a translation must keep the same tags in
   the same order). Keys are the exact English text with whitespace collapsed, so changing English text breaks
   its translation until the new text is translated.
   After changing or adding English text (including a newly released blog post), run
-  `python3 tools/i18n_missing.py --out /tmp/missing.json`, translate everything listed into all 10 languages,
+  `python3 tools/i18n_missing.py --out /tmp/missing.json`, translate everything listed into all 12 languages,
   and add it to every lang/*.json. Names and words that read the same (Little Nine Heaven, Blog) can stay.
   Untranslated text just shows in English, so it's never a blocker, but don't leave real sentences untranslated.
   The chosen language is remembered (localStorage) and carried on links as ?lang=xx. Arabic is right-to-left.
@@ -159,6 +159,12 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   (owner, 2026-11-05: four, correcting the earlier "three"). Master Huang may be named publicly
   (owner, 2026-11-01: McNeil named him himself in a later newsletter).
 - Ajay also teaches privately around the world, traveling to students at their locations (confirmed 2026-11-01).
+  He will travel to ANY country, not just the ones he has taught in (owner, 2026-11-20); never imply a fixed list.
+- Marketing focus (owner, 2026-11-20): although he teaches many systems, focus marketing MOSTLY on Shih Shui
+  (marrow washing, Xi Sui Gong 洗髓功) and Taoist lovemaking (fang chung shu). Lead international/country pages,
+  ads, keywords and new content with these two; the other systems are secondary.
+- In person only: no video or online lessons (owner, 2026-11-20). Travel/visit arrangements are discussed with the
+  student by email (and phone once they're in touch); still no phone number on the site.
 - PRIVATE, DO NOT PUBLISH: the owner holds a lineage title (confirmed 2026-10-17) but does NOT want it publicly
   advertised. Never add it, or any generation-number reference to him, to the website, blog, structured data,
   social posts, Skool or any other public content, and don't suggest adding it. Only the owner can lift this.
