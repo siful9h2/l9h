@@ -10,6 +10,18 @@ Done when every box is ticked. Note: Google's quota is a rolling 24 hours from t
 - [ ] 2026-11-19 https://l9hkungfu.com/system-little-nine-heaven (heading changed)
 - [ ] 2026-11-19 https://l9hkungfu.com/zh/system-hsing-i (new Chinese page)
 - [ ] 2026-11-19 https://l9hkungfu.com/es/system-chen-tai-chi (new Spanish page)
+- [ ] 2026-11-20 https://l9hkungfu.com/zh/system-shih-shui (focus page, Chinese; submit after the Nov 26 publish)
+- [ ] 2026-11-20 https://l9hkungfu.com/zh/system-taoist-lovemaking (focus page, Chinese; submit after the Nov 26 publish)
+- [ ] 2026-11-20 https://l9hkungfu.com/th/system-shih-shui (focus page, Thai; submit after the Nov 26 publish)
+- [ ] 2026-11-20 https://l9hkungfu.com/th/system-taoist-lovemaking (focus page, Thai; submit after the Nov 26 publish)
+- [ ] 2026-11-20 https://l9hkungfu.com/es/system-shih-shui (focus page, Spanish; submit after the Nov 26 publish)
+- [ ] 2026-11-20 https://l9hkungfu.com/es/system-taoist-lovemaking (focus page, Spanish; submit after the Nov 26 publish)
+- [ ] 2026-11-20 https://l9hkungfu.com/it/system-shih-shui (new Italian page; submit after the Nov 26 publish)
+- [ ] 2026-11-20 https://l9hkungfu.com/it/system-taoist-lovemaking (new Italian page; submit after the Nov 26 publish)
+- [ ] 2026-11-20 https://l9hkungfu.com/it/ (new Italian home; submit after the Nov 26 publish)
+- [ ] 2026-11-20 https://l9hkungfu.com/el/system-shih-shui (new Greek page; submit after the Nov 26 publish)
+- [ ] 2026-11-20 https://l9hkungfu.com/el/system-taoist-lovemaking (new Greek page; submit after the Nov 26 publish)
+- [ ] 2026-11-20 https://l9hkungfu.com/el/ (new Greek home; submit after the Nov 26 publish)
 
 ## Done
 - [x] 2026-11-19 https://l9hkungfu.com/blog-hsing-i-part-3-body-power-and-touch-go-kiss (requested)
