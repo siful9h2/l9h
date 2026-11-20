@@ -19,8 +19,10 @@
 | kung fu classes near me | 2,400 | 35% (possible) | Nov 14; transactional. Local "near me" results come mostly from Google Business Profile, so finishing the profile matters most. + "kung fu classes near me for adults" 90 (KD 50). |
 | qigong classes | 2,900 | 29% (easy) | Nov 19; commercial, national (3.9K global). + "qigong classes near me" 1.6K (KD 13), "qigong class" 880 (KD 20), "qigong class near me" 480 (KD 12), "online qigong classes" 210. Chi-Kung page title already says "Qigong (Chi-Kung) Classes"; Q&A now asks "Where can I take qigong classes in San Diego?" |
 | tai chi el cajon | 10 | n/a | Nov 19; tiny volume, not worth targeting. |
+| tai chi lessons | 390 | 47% (possible) | Nov 19 (evening); transactional, national (1.7K global). Instructor page h2 already says "Kung Fu and Tai Chi Lessons in San Diego (Santee)". |
+| martial arts el cajon | 30 | n/a | Nov 19 (evening); small; El Cajon is already in the homepage areaServed. |
 
-Semrush shows l9hkungfu.com with 0 keywords in Google's US top 100 yet (a few in BE/ES/NL); 343 backlinks.
+Semrush shows l9hkungfu.com with 0 keywords in Google's US top 100 yet (a few in BE/ES/NL); 362 backlinks (Nov 19).
 Site audit (29 pages): health 95%; 23 invalid structured-data items (Course markup missing fields; fixed 2026-11-02
 by switching to Service markup); llms.txt missing (added 2026-11-02); 72 unminified JS/CSS warnings (inline code, low priority);
 1 page blocked from crawling (expected: noindex pages).

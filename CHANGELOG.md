@@ -231,3 +231,6 @@
 ## 2026-11-20 (Pacific 11-19)
 - Owner: contact by form or email only, no phone. Added 'Prefer email? Write to info@l9hkungfu.com' under the homepage form (10 languages) and email in MartialArtsSchool JSON-LD. Language pages rebuilt.
 - 2026-11-19 evening PT: extra publish at the owner's request ("publish now").
+
+## 2026-11-19 (evening Semrush run, fired Nov 20 UTC)
+- Semrush: 362 backlinks (+5.85%), 4 keywords, visibility 0%; Site Audit still shows the Nov 3 crawl (re-run next on Monday Nov 23). New keyword data: tai chi lessons 390/mo KD 47%, martial arts el cajon 30/mo. No site changes (today's SEO changes just went live).
