@@ -140,6 +140,7 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   "no street address is published" on the site either (owner, 2026-11-01).
 - Classes are private and by appointment only, taught one-on-one or in small groups. There is no public class schedule.
 - The first class is a free introductory class.
+- Contact: by the website's contact form only. No phone number on the site, Google profile or listings (owner, 2026-11-20).
 - Classes meet outdoors, the way these arts were traditionally practiced (confirmed by owner 2026-11-19).
 - Google Business Profile: two verified profiles existed (2026-11-19). Owner decided (option 1) to keep the older one
   (store code 02709075749835062857) WITH its street address shown on Google, because its "Martial arts school" category

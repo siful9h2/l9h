@@ -10,7 +10,8 @@ in order of impact for a private-lesson school with no public schedule:
   description (done), website (done).
 - Weekly Google post (offer: free first class; new blog post; a photo). AGENT drafts, owner approves the first few.
 - Photos: 10+ real photos (training outdoors, forms, sword, teacher). OWNER supplies.
-- A phone number on the profile raises calls/conversions. OWNER decides (none published yet).
+- No phone number (owner, 2026-11-20): all inquiries go through the website contact form, so every listing links to
+  the site and every post ends with a link to the form.
 
 ## 2. Reviews (rating, steady volume, recency, detail; reply to every review; never gate or fake)
 - Ask every current and past student for a Google review; mention the art and Santee/San Diego. OWNER sends the link.
