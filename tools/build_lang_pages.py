@@ -146,6 +146,8 @@ def set_meta(soup, attr, key, val):
     else:
         m = soup.new_tag('meta'); m[attr] = key; m['content'] = val; soup.head.append(m)
 
+LD_TEXT_KEYS = {'name', 'text', 'description', 'headline', 'alternativeHeadline', 'serviceType', 'jobTitle'}
+
 def finish_lang_page(f, L, tr, pack, block):
     soup = BeautifulSoup(tr, 'html.parser')
     S = pack.get('strings', {})
@@ -157,8 +159,27 @@ def finish_lang_page(f, L, tr, pack, block):
                       ('name', 'twitter:title'), ('name', 'twitter:description'), ('property', 'og:image:alt')):
         m = soup.head.find('meta', attrs={attr: key})
         if m and S.get(norm(m.get('content'))): m['content'] = S[norm(m['content'])]
+    # Structured data: translate its text (FAQ questions/answers, names, descriptions) so it matches the page
+    plain = dict(S)
+    for k, v in pack.get('html', {}).items():
+        plain.setdefault(norm(re.sub(r'<[^>]+>', '', k)), re.sub(r'<[^>]+>', '', v))
+    def tr_ld(o):
+        if isinstance(o, dict):
+            for k, v in o.items():
+                if k == 'inLanguage' and v == 'en': o[k] = L
+                elif k in ('url', 'item', '@id') and isinstance(v, str) and v == slug_url(f): o[k] = slug_url(f, L)
+                elif isinstance(v, str) and k in LD_TEXT_KEYS and plain.get(norm(v)): o[k] = plain[norm(v)]
+                else: tr_ld(v)
+        elif isinstance(o, list):
+            for x in o: tr_ld(x)
     for sc in soup.find_all('script', type='application/ld+json'):
-        sc.string = sc.string.replace('"inLanguage": "en"', f'"inLanguage": "{L}"') if sc.string else sc.string
+        if not sc.string: continue
+        try:
+            data = json.loads(sc.string)
+        except ValueError:
+            sc.string = sc.string.replace('"inLanguage": "en"', f'"inLanguage": "{L}"'); continue
+        tr_ld(data)
+        sc.string = '\n' + json.dumps(data, ensure_ascii=False, indent=2).replace('</', '<\\/') + '\n  '
     fix_assets(soup)
     s = str(soup)
     s = re.sub(re.escape(MARK_A) + r'.*?' + re.escape(MARK_B), '', s, flags=re.S)
