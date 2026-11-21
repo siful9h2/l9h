@@ -28,6 +28,12 @@ MIN_TRANSLATED = 0.6
 MARK_A, MARK_B = '<!-- hreflang:start -->', '<!-- hreflang:end -->'
 SM_A, SM_B = '  <!-- lang-pages:start -->', '  <!-- lang-pages:end -->'
 SKIP_FILES = set()  # pages never translated
+# Pages built only for some languages (travel pages: each country page in its own language only)
+try:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from build_country_pages import PAGE_LANGS
+except Exception:
+    PAGE_LANGS = {}
 
 def read(f): return open(f, encoding='utf-8').read()
 def write(f, s): open(f, 'w', encoding='utf-8').write(s)
@@ -218,6 +224,7 @@ def main(args):
     cov = {}
     for (f, L), tr in out.items():
         c = coverage(read(f), tr); cov[(f, L)] = c
+        if f in PAGE_LANGS and L not in PAGE_LANGS[f]: built.discard((f, L)); continue
         if c >= MIN_TRANSLATED: built.add((f, L))
         else: built.discard((f, L)); print(f'  - skip {L}/{f}: only {c:.0%} translated')
     for L in langs:
