@@ -242,3 +242,10 @@
 - Owner merged PR #11 (travel pages) into staging.
 - build_lang_pages.py now translates JSON-LD text (FAQ questions/answers, names, descriptions) and points page URLs in it to the language URL, so structured data matches each language page. Rebuilt all language pages.
 - Extra publish at owner request ("Update it now"): main@1f5f8be with the Italian/Greek site, travel pages and translated structured data. Confirmed live (system-shih-shui shows the worldwide link). Credits ~210 until the Nov 25 reset.
+
+## 2026-11-23 (Monday SEO run, on staging; next publish Thu Nov 26)
+- Translation gap fixed: the worldwide travel page (Marrow Washing & Taoist Lovemaking Worldwide) was live in Arabic, German, French, Hindi, Japanese, Portuguese and Russian with almost all its text still in English (only zh/th/el/it/es had been translated). Translated all 45 text units plus its meta description into those 7 languages; also the "Outside San Diego? ... anywhere in the world" line on the Shih Shui and Taoist Lovemaking pages.
+- SEO (owner's two focus arts): Shih Shui Q&A answer, FAQ JSON-LD and meta/og description now give the searched names "Xi Sui Gong (洗髓功)", "bone marrow washing" and "marrow washing qigong"; Taoist Lovemaking Q&A, JSON-LD and meta/og description now include "fangzhong shu", "Taoist sexual practices" and "Taoist sexual cultivation" (the common search wording). No new claims. Old translations replaced in all 12 languages.
+- Housekeeping: stopped tracking a Python cache file (tools/__pycache__); added .gitignore.
+- Rebuilt language pages (339 pages; lang QA passed). QA passes (35 pages).
+- Audit: no open proposal PRs; no posts due (Tao: Cycle of Life due Thu Nov 26). Live site still not reachable from this run's network. Index check by web search inconclusive again (this search engine doesn't reflect Google's index; Search Console is the reliable check).
