@@ -16,5 +16,6 @@ Bandwidth and requests use a little more; only Netlify's Usage page shows the ex
 
 | 2026-11-19 (evening PT) | main@ced625c | Published, confirmed live (owner asked "publish now": email contact line) | 15 | ~225 |
 | 2026-11-20 (evening PT) | main@1f5f8be | Published, confirmed live (owner asked "Update it now": Italian/Greek site + travel pages) | 15 | ~210 |
+| 2026-11-24 | main@665cb42 | Published, confirmed live (owner chose "Publish now": worldwide translations, Shih Shui/Taoist Lovemaking wording) | 15 | ~195 |
 
 Next: resets to 300 on Nov 25. Next weekly publish Thu Nov 26 (new cycle).

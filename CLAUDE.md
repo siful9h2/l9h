@@ -76,6 +76,7 @@ Pushing to `main` publishes the live site automatically. There is no build step.
     Do NOT publish on Thursday 2026-11-05 (no posts are due; Hsing-I Part 2 went out Nov 1). Next publish: Thursday 2026-11-12.
   - Owner request 2026-11-19 (evening PT): an extra publish the same day for the email contact line. Next publish Thu 2026-11-26.
   - Owner request 2026-11-20 (PT): another extra publish ("Update it now") for the Italian/Greek site and travel pages.
+  - Owner request 2026-11-24: extra publish ("Publish now") of the Nov 23 staging work. The Thu 2026-11-26 publish still happens (Tao post).
   - Never push to main on any other day, and never more than once a week, unless the owner explicitly asks.
   - If a weekly publish doesn't go live within about 10 minutes, deploys are paused: tell the owner and
     don't push again.

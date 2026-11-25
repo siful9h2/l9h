@@ -249,3 +249,6 @@
 - Housekeeping: stopped tracking a Python cache file (tools/__pycache__); added .gitignore.
 - Rebuilt language pages (339 pages; lang QA passed). QA passes (35 pages).
 - Audit: no open proposal PRs; no posts due (Tao: Cycle of Life due Thu Nov 26). Live site still not reachable from this run's network. Index check by web search inconclusive again (this search engine doesn't reflect Google's index; Search Console is the reliable check).
+
+## 2026-11-24 (extra publish, owner chose "Publish now")
+- Merged staging into main and pushed main once (main@665cb42, fast-forward) with the Nov 23 work. Confirmed live: /system-shih-shui shows the Xi Sui Gong answer, /de/worldwide is in German. IndexNow accepted (200) for system-shih-shui, system-taoist-lovemaking, worldwide. Search Console queue: 3 URLs added. Credits ~195 until the Nov 25 reset. Thu Nov 26 publish still happens (Tao post).
