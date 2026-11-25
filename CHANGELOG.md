@@ -262,3 +262,4 @@
 ## 2026-11-25
 - Google indexing quota still used up (resets ~5:30 pm PT; reminder set for 6 pm). Resubmitted sitemap.xml in Search Console instead: read successfully, 353 pages discovered (was 286 on Nov 19), so Google now knows about the travel, Italian and Greek pages.
 - Search Console, last 3 months: 10 clicks, 179 impressions, CTR 5.6%, avg position 9.9; top query "shih shui" 14 impressions at position 10.9.
+- Owner clarified marketing focus (2026-11-25): international students matter more; international = Shih Shui and Taoist lovemaking, domestic (San Diego) = the martial systems. Rules in CLAUDE.md and the daily keyword task updated.

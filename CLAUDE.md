@@ -165,9 +165,13 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   (owner, 2026-11-01: McNeil named him himself in a later newsletter).
 - Ajay also teaches privately around the world, traveling to students at their locations (confirmed 2026-11-01).
   He will travel to ANY country, not just the ones he has taught in (owner, 2026-11-20); never imply a fixed list.
-- Marketing focus (owner, 2026-11-20): although he teaches many systems, focus marketing MOSTLY on Shih Shui
-  (marrow washing, Xi Sui Gong 洗髓功) and Taoist lovemaking (fang chung shu). Lead international/country pages,
-  ads, keywords and new content with these two; the other systems are secondary.
+- Marketing focus (owner, 2026-11-25; replaces the 2026-11-20 wording): INTERNATIONAL students matter more overall.
+  - International focus (priority): Shih Shui (marrow washing, Xi Sui Gong 洗髓功) and Taoist lovemaking (fang chung shu),
+    taught in person wherever the student is. Lead the worldwide/country travel pages, the 12 language versions,
+    international keywords and new content with these two.
+  - Domestic focus (US / San Diego / Santee): the martial systems (tai chi / Chen Tai-Chi, Hsing-I / Xing Yi, Ba Kua,
+    kung fu, Little Nine Heaven, Splashing Hands, Tzu Men Chuan, Iron Hand). Local keywords, the Google Business Profile
+    and local listings lead with these.
 - In person only: no video or online lessons (owner, 2026-11-20). Travel/visit arrangements are discussed with the
   student by email (and phone once they're in touch); still no phone number on the site.
 - PRIVATE, DO NOT PUBLISH: the owner holds a lineage title (confirmed 2026-10-17) but does NOT want it publicly
