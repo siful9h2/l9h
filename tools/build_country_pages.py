@@ -7,25 +7,27 @@ template (head styles, nav, footer) unchanged. Edit the text here, then run:
 
     python3 tools/build_country_pages.py && python3 tools/build_lang_pages.py
 
-Each country page is translated only into its own language (PAGE_LANGS in build_lang_pages.py reads COUNTRIES
-below); the hub is translated into every language.
+Countries live in tools/countries.json and their sentences, per language, in tools/country_templates.json.
+`--check` validates the data. A run writes the pages, the country sentences into lang/*.json and any missing
+sitemap entries. Each country page is translated only into its own language (PAGE_LANGS, read by
+build_lang_pages.py; English-only countries get no language versions); the hub is translated into every language.
 """
 import json, os, re, sys
 
 BASE = 'https://l9hkungfu.com'
 TEMPLATE = 'system-shih-shui.html'
 
-# slug, English name, language of the country's own page
-COUNTRIES = [
-    ('thailand', 'Thailand', 'th'),
-    ('china', 'China', 'zh'),
-    ('greece', 'Greece', 'el'),
-    ('italy', 'Italy', 'it'),
-    ('spain', 'Spain', 'es'),
-    ('mexico', 'Mexico', 'es'),
-]
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+LANGS = ['zh', 'es', 'fr', 'de', 'pt', 'ru', 'ja', 'th', 'ar', 'hi', 'it', 'el']
+DATA = json.load(open(os.path.join(HERE, 'countries.json'), encoding='utf-8'))['countries']
+TPL = json.load(open(os.path.join(HERE, 'country_templates.json'), encoding='utf-8'))
+# slug, English name, language of the country's own page ('en' = English only)
+COUNTRIES = [(c['slug'], c['name'], c['lang']) for c in DATA]
+# English wording inside sentences ('the United Kingdom'); defaults to the name
+def en_in(c): return c.get('en_in', c['name'])
 def page_name(slug): return f'marrow-washing-{slug}.html'
-PAGE_LANGS = {page_name(s): [L] for s, _, L in COUNTRIES}
+PAGE_LANGS = {page_name(s): ([] if L == 'en' else [L]) for s, _, L in COUNTRIES}
 
 # ---- shared text (same keys on every page, so each is translated once per language) ----
 INTRO_2 = ("The two practices belong together. Shih Shui is nei-kung: specific breathing methods, strengthening of "
@@ -63,7 +65,8 @@ FAQ_SHARED = [
      "By email, individually. Write through the contact form or to info@l9hkungfu.com with where you are and what you would like to learn."),
 ]
 
-def country_text(C):
+def country_text(C, label=None):
+    label = label or C
     return {
         'title': f'Marrow Washing & Taoist Lovemaking in {C}',
         'desc': (f'Private, in-person Shih Shui (marrow washing, Xi Sui Gong) and Taoist lovemaking with Sifu Ajay '
@@ -83,9 +86,13 @@ def country_text(C):
              f'Yes, privately, to adults who approach it as cultivation. It is usually taught together with Shih Shui, because the two overlap directly.'),
         ] + FAQ_SHARED,
         'cta_h': f'Learn in {C}',
-        'crumb': C,
-        'area': {"@type": "Country", "name": C},
+        'crumb': label,
+        'area': {"@type": "Country", "name": label},
     }
+
+HUB_SENTENCE = 'Sifu Ajay travels to students in any country. He also teaches in Santee, California (San Diego County).'
+ELSEWHERE = ('Sifu Ajay travels to students <a href="worldwide.html">anywhere in the world</a>. He also teaches in '
+             'Santee, California (San Diego County).')
 
 HUB = {
     'title': 'Marrow Washing & Taoist Lovemaking Worldwide',
@@ -168,7 +175,7 @@ def body(t, others):
         <p>{CONTACT}</p>
 
         <h3>{t.get('elsewhere_h', 'Where Sifu Ajay Teaches')}</h3>
-        <p>{others}</p>
+        {others}
 
         <h3>Questions</h3>
 {faq}
@@ -218,16 +225,97 @@ def build(fname, t, others, area):
     open(fname, 'w', encoding='utf-8').write(html)
     print('wrote', fname)
 
+# English keys whose translations come from country_templates.json, in the order of its 'country' lists
+def country_keys(C, label=None):
+    t = country_text(C, label)
+    return [('strings', t['eyebrow']), ('strings', t['h1']), ('strings', t['where']), ('strings', t['elsewhere_h']),
+            ('strings', t['faq'][0][0]), ('strings', t['faq'][0][1]), ('strings', t['faq'][1][0]),
+            ('strings', t['cta_h']), ('strings', t['desc']), ('html', t['intro'])]
+
+def norm(x): return re.sub(r'\s+', ' ', x).strip()
+def tags(x): return re.findall(r'</?([a-z]+)', x)
+
+def forms(c, L):
+    """{name}, {in}, {In}, {to} for country c in language L (its own language)."""
+    loc = c.get('local', {})
+    name = loc.get('name') or c['names'][L]
+    rule = TPL['rules'][L]
+    if 'in' in loc: inn = loc['in']
+    elif rule['in'] == 'required': raise ValueError(f"{c['slug']}: countries.json needs local.in for language {L}")
+    else: inn = rule['in'].format(name=name)
+    to = loc.get('to') or rule['to'].format(name=name, **{'in': inn})
+    return {'name': name, 'in': inn, 'In': inn[:1].upper() + inn[1:], 'to': to}
+
+def problems():
+    out = []
+    slugs = [c['slug'] for c in DATA]
+    if len(set(slugs)) != len(slugs): out.append('duplicate slugs in countries.json')
+    for c in DATA:
+        for k in ('slug', 'name', 'lang', 'names'):
+            if k not in c: out.append(f"{c.get('slug')}: missing '{k}'")
+        if not re.fullmatch(r'[a-z0-9-]+', c.get('slug', '')): out.append(f"{c.get('slug')}: slug must be lowercase a-z, 0-9, -")
+        L = c.get('lang')
+        if L != 'en' and L not in LANGS: out.append(f"{c['slug']}: lang '{L}' is not a site language (use one of {LANGS} or en)")
+        miss = [x for x in LANGS if x not in c.get('names', {})]
+        if miss: out.append(f"{c['slug']}: names missing for {miss}")
+        if L in LANGS:
+            if L not in TPL['country']: out.append(f"{c['slug']}: no sentence templates for {L} in country_templates.json")
+            else:
+                try: forms(c, L)
+                except ValueError as e: out.append(str(e))
+    return out
+
+def write_translations():
+    """Fill lang/<L>.json with the generated country-page sentences, the hub sentence and the country names."""
+    packs = {L: json.load(open(os.path.join(ROOT, 'lang', f'{L}.json'), encoding='utf-8')) for L in LANGS}
+    n = 0
+    for L in LANGS:
+        P = packs[L]
+        P['strings'][norm(HUB_SENTENCE)] = TPL['shared']['hub'][L]
+        if L in TPL['shared']['elsewhere']: P['html'].setdefault(norm(ELSEWHERE), TPL['shared']['elsewhere'][L])
+        for c in DATA:
+            P['strings'][c['name']] = c['names'][L]
+    for c in DATA:
+        L = c['lang']
+        if L == 'en': continue
+        f = forms(c, L)
+        for (sec, key), tpl in zip(country_keys(en_in(c), c['name']), TPL['country'][L]):
+            val = tpl.replace('{In}', f['In']).replace('{in}', f['in']).replace('{to}', f['to']).replace('{name}', f['name'])
+            if sec == 'html' and tags(val) != tags(key): raise ValueError(f'{c["slug"]}/{L}: tag mismatch in template')
+            if '{' in val: raise ValueError(f'{c["slug"]}/{L}: unfilled placeholder in {val!r}')
+            packs[L][sec][norm(key)] = val; n += 1
+    for L, P in packs.items():
+        open(os.path.join(ROOT, 'lang', f'{L}.json'), 'w', encoding='utf-8').write(
+            json.dumps(P, ensure_ascii=False, separators=(',', ':')))
+    print(f'translations: {n} country sentences written')
+
+def update_sitemap():
+    p = os.path.join(ROOT, 'sitemap.xml'); s = open(p, encoding='utf-8').read()
+    add = ''
+    for fname in ['worldwide.html'] + [page_name(c['slug']) for c in DATA]:
+        loc = f'{BASE}/{fname[:-5]}'
+        if f'<loc>{loc}</loc>' not in s:
+            add += f'  <url><loc>{loc}</loc><lastmod>{__import__("datetime").date.today()}</lastmod></url>\n'
+    if add:
+        s = s.replace('  <!-- lang-pages:start -->', add + '  <!-- lang-pages:start -->', 1)
+        open(p, 'w', encoding='utf-8').write(s); print('sitemap: added', add.count('<url>'))
+
 def main():
-    links = ' · '.join(f'<a href="{page_name(s)}">{C}</a>' for s, C, _ in COUNTRIES)
+    errs = problems()
+    if errs or '--check' in sys.argv:
+        print('\n'.join(errs) if errs else 'countries.json OK: ' + ', '.join(c['name'] for c in DATA))
+        sys.exit(1 if errs else 0)
+    os.chdir(ROOT)
+    links = '\n'.join(f'          <li><a href="{page_name(s)}">{C}</a></li>' for s, C, _ in sorted(COUNTRIES, key=lambda x: x[1]))
     build('worldwide.html', HUB,
-          f'Sifu Ajay travels to students in any country, including {links}. He also teaches in Santee, California (San Diego County).',
+          f'<p>{HUB_SENTENCE}</p>\n        <ul class="country-list">\n{links}\n        </ul>',
           HUB['area'])
-    for s, C, _ in COUNTRIES:
-        t = country_text(C)
-        build(page_name(s), t,
-              'Sifu Ajay travels to students <a href="worldwide.html">anywhere in the world</a>. He also teaches in Santee, California (San Diego County).',
-              t['area'])
+    for c in DATA:
+        t = country_text(en_in(c), c['name'])
+        build(page_name(c['slug']), t, f'<p>{ELSEWHERE}</p>', t['area'])
+    write_translations()
+    update_sitemap()
+    print('next: python3 tools/build_lang_pages.py')
 
 if __name__ == '__main__':
     main()

@@ -1,0 +1,23 @@
+{
+  "_help": "Travel pages, one entry per country. To add a country: copy an entry, set slug (URL: /marrow-washing-<slug>), name (English), lang (the language its own page is in: one of zh es fr de pt ru ja th ar hi it el, or en for English-speaking countries), local (the country's name in that language, plus 'in' = 'in <country>' when that language needs articles/cases: required for el, fr, pt, ru; optional elsewhere; see tools/country_templates.json 'rules'), and names (the country's name in all 12 languages, used in the list on the worldwide page), and optionally en_in for the English wording inside sentences when it differs from the name (e.g. name 'United Kingdom', en_in 'the United Kingdom'). Then run: python3 tools/build_country_pages.py --check && python3 tools/build_country_pages.py && python3 tools/build_lang_pages.py. A new country page is a new page: send it to the owner as a proposal PR.",
+  "countries": [
+    {"slug": "thailand", "name": "Thailand", "lang": "th",
+     "local": {"name": "ประเทศไทย", "in": "ในประเทศไทย"},
+     "names": {"zh": "泰国", "es": "Tailandia", "fr": "Thaïlande", "de": "Thailand", "pt": "Tailândia", "ru": "Таиланд", "ja": "タイ", "th": "ประเทศไทย", "ar": "تايلاند", "hi": "थाईलैंड", "it": "Thailandia", "el": "Ταϊλάνδη"}},
+    {"slug": "china", "name": "China", "lang": "zh",
+     "local": {"name": "中国"},
+     "names": {"zh": "中国", "es": "China", "fr": "Chine", "de": "China", "pt": "China", "ru": "Китай", "ja": "中国", "th": "จีน", "ar": "الصين", "hi": "चीन", "it": "Cina", "el": "Κίνα"}},
+    {"slug": "greece", "name": "Greece", "lang": "el",
+     "local": {"name": "Ελλάδα", "in": "στην Ελλάδα"},
+     "names": {"zh": "希腊", "es": "Grecia", "fr": "Grèce", "de": "Griechenland", "pt": "Grécia", "ru": "Греция", "ja": "ギリシャ", "th": "กรีซ", "ar": "اليونان", "hi": "ग्रीस", "it": "Grecia", "el": "Ελλάδα"}},
+    {"slug": "italy", "name": "Italy", "lang": "it",
+     "local": {"name": "Italia"},
+     "names": {"zh": "意大利", "es": "Italia", "fr": "Italie", "de": "Italien", "pt": "Itália", "ru": "Италия", "ja": "イタリア", "th": "อิตาลี", "ar": "إيطاليا", "hi": "इटली", "it": "Italia", "el": "Ιταλία"}},
+    {"slug": "spain", "name": "Spain", "lang": "es",
+     "local": {"name": "España"},
+     "names": {"zh": "西班牙", "es": "España", "fr": "Espagne", "de": "Spanien", "pt": "Espanha", "ru": "Испания", "ja": "スペイン", "th": "สเปน", "ar": "إسبانيا", "hi": "स्पेन", "it": "Spagna", "el": "Ισπανία"}},
+    {"slug": "mexico", "name": "Mexico", "lang": "es",
+     "local": {"name": "México"},
+     "names": {"zh": "墨西哥", "es": "México", "fr": "Mexique", "de": "Mexiko", "pt": "México", "ru": "Мексика", "ja": "メキシコ", "th": "เม็กซิโก", "ar": "المكسيك", "hi": "मेक्सिको", "it": "Messico", "el": "Μεξικό"}}
+  ]
+}
