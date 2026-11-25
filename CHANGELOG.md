@@ -252,3 +252,5 @@
 
 ## 2026-11-24 (extra publish, owner chose "Publish now")
 - Merged staging into main and pushed main once (main@665cb42, fast-forward) with the Nov 23 work. Confirmed live: /system-shih-shui shows the Xi Sui Gong answer, /de/worldwide is in German. IndexNow accepted (200) for system-shih-shui, system-taoist-lovemaking, worldwide. Search Console queue: 3 URLs added. Credits ~195 until the Nov 25 reset. Thu Nov 26 publish still happens (Tao post).
+## 2026-11-24
+- IndexNow pinged for the travel pages, the new Italian/Greek pages, the focus pages and the sitemap (all returned 200 live). Google "Request indexing" done for 9 URLs (all 7 travel pages, zh and th Shih Shui) until the daily quota ran out; the rest stay queued.
