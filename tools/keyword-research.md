@@ -21,8 +21,10 @@
 | tai chi el cajon | 10 | n/a | Nov 19; tiny volume, not worth targeting. |
 | tai chi lessons | 390 | 47% (possible) | Nov 19 (evening); transactional, national (1.7K global). Instructor page h2 already says "Kung Fu and Tai Chi Lessons in San Diego (Santee)". |
 | martial arts el cajon | 30 | n/a | Nov 19 (evening); small; El Cajon is already in the homepage areaServed. |
+| taoist sexual practices | 320 | 32% (possible) | Nov 24; informational, national (900 global, India 170). + 'taoist sexual energy practices' 20, 'taoist sexual practices exercises' 20. Taoist Lovemaking title now leads with it. |
+| marrow washing | 20 | n/a | Nov 24; 80 global; + 'bone marrow washing qigong' 20. Small, but already covered by the Shih Shui page. |
 
-Semrush shows l9hkungfu.com with 0 keywords in Google's US top 100 yet (a few in BE/ES/NL); 362 backlinks (Nov 19).
+First US ranking (Nov 23-25): hsing-i #46 / hsing i #48 (system-hsing-i); 375 backlinks (Nov 24).
 Site audit (29 pages): health 95%; 23 invalid structured-data items (Course markup missing fields; fixed 2026-11-02
 by switching to Service markup); llms.txt missing (added 2026-11-02); 72 unminified JS/CSS warnings (inline code, low priority);
 1 page blocked from crawling (expected: noindex pages).
