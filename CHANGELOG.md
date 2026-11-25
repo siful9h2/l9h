@@ -258,3 +258,7 @@
 ## 2026-11-24 (daily Semrush run, fired Nov 25 UTC; on staging, live Thu Nov 26)
 - Semrush: first Google US ranking: 'hsing i' #48 / 'hsing-i' #46 (Hsing-I page); visibility 0.15% (was 0); 375 backlinks. Site Audit rerun refused (free plan monthly crawl limit).
 - SEO: Hsing-I h1 now 'Hsing-I Chuan (Xing Yi Quan)'; Taoist Lovemaking title/og:title now 'Taoist Lovemaking & Sexual Practices | San Diego, CA' (taoist sexual practices: 320/mo US, KD 32). Translated into 12 languages; language pages rebuilt (339; lang QA passed). QA passes.
+
+## 2026-11-25
+- Google indexing quota still used up (resets ~5:30 pm PT; reminder set for 6 pm). Resubmitted sitemap.xml in Search Console instead: read successfully, 353 pages discovered (was 286 on Nov 19), so Google now knows about the travel, Italian and Greek pages.
+- Search Console, last 3 months: 10 clicks, 179 impressions, CTR 5.6%, avg position 9.9; top query "shih shui" 14 impressions at position 10.9.
