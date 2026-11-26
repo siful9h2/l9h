@@ -18,4 +18,6 @@ Bandwidth and requests use a little more; only Netlify's Usage page shows the ex
 | 2026-11-20 (evening PT) | main@1f5f8be | Published, confirmed live (owner asked "Update it now": Italian/Greek site + travel pages) | 15 | ~210 |
 | 2026-11-24 | main@665cb42 | Published, confirmed live (owner chose "Publish now": worldwide translations, Shih Shui/Taoist Lovemaking wording) | 15 | ~195 |
 
-Next: resets to 300 on Nov 25. Next weekly publish Thu Nov 26 (new cycle).
+| 2026-11-26 | main@12f5473 | Pushed (weekly publish, Tao post); live check pending (site not reachable from this run) | 15 | ~285 (new cycle from Nov 25) |
+
+Cycle Nov 25 - Dec 24: ~285 left if the Nov 26 deploy ran. Next weekly publish Thu Dec 3.
