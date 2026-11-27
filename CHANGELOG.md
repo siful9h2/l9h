@@ -273,3 +273,7 @@
 ## 2026-11-27
 - Google indexing: requested 10 (en Shih Shui + Taoist Lovemaking re-crawl, zh lovemaking, it/el Shih Shui + lovemaking, el home, new Tao post, /blog); th lovemaking, es Shih Shui, es lovemaking and the Italian home are already indexed.
 - Search Console countries (3 months): US 129 impressions/8 clicks; then Spain 8/1, Vietnam 5, UK 5, France 4/1, Italy 4, Netherlands 4, Canada 3, Denmark, Malaysia, Australia, Taiwan, Mexico, Belgium, Philippines 2 each; Colombia, Argentina, Finland, Switzerland 1.
+
+## 2026-11-27 (daily Semrush run for Thu Nov 26, fired Nov 27 UTC; on staging, live Thu Dec 3)
+- Semrush: 382 backlinks (+11.7%), 5 keywords, visibility 0.14%; Position Tracking (Santee) 'hsing i' #51 (was #48), the other 9 tracked keywords still outside the top 100. New keyword data: xi sui gong 20/mo US (50 global, Italy 20), taoist sexual cultivation 0, xing yi 390/mo KD 13%.
+- SEO h1s: Shih Shui -> 'Shih Shui (Xi Sui Gong): Bone Marrow Washing'; Taoist Lovemaking -> 'Taoist Lovemaking (Fang Chung Shu)'; Chen Tai-Chi -> 'Chen Tai-Chi (Chen Style Tai Chi)'. No new claims. Translated into all 12 languages; language pages rebuilt (349; lang QA passed). QA passes.

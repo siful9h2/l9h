@@ -23,6 +23,9 @@
 | martial arts el cajon | 30 | n/a | Nov 19 (evening); small; El Cajon is already in the homepage areaServed. |
 | taoist sexual practices | 320 | 32% (possible) | Nov 24; informational, national (900 global, India 170). + 'taoist sexual energy practices' 20, 'taoist sexual practices exercises' 20. Taoist Lovemaking title now leads with it. |
 | marrow washing | 20 | n/a | Nov 24; 80 global; + 'bone marrow washing qigong' 20. Small, but already covered by the Shih Shui page. |
+| xi sui gong | 20 | n/a | Nov 27; 50 global, Italy 20, Australia 10. Shih Shui h1 now 'Shih Shui (Xi Sui Gong): Bone Marrow Washing'. |
+| taoist sexual cultivation | 0 | n/a | Nov 27; no data. 'taoist sexual practices' (320) is the wording people search. |
+| xing yi | 390 | 13% (very easy) | Nov 27; informational; 2.3K global (Chile 590, Malaysia/Singapore 140, UK 110). Hsing-I title/h1 already contain 'Xing Yi'. |
 
 First US ranking (Nov 23-25): hsing-i #46 / hsing i #48 (system-hsing-i); 375 backlinks (Nov 24).
 Site audit (29 pages): health 95%; 23 invalid structured-data items (Course markup missing fields; fixed 2026-11-02
