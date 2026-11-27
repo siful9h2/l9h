@@ -273,3 +273,4 @@
 ## 2026-11-27
 - Google indexing: requested 10 (en Shih Shui + Taoist Lovemaking re-crawl, zh lovemaking, it/el Shih Shui + lovemaking, el home, new Tao post, /blog); th lovemaking, es Shih Shui, es lovemaking and the Italian home are already indexed.
 - Search Console countries (3 months): US 129 impressions/8 clicks; then Spain 8/1, Vietnam 5, UK 5, France 4/1, Italy 4, Netherlands 4, Canada 3, Denmark, Malaysia, Australia, Taiwan, Mexico, Belgium, Philippines 2 each; Colombia, Argentina, Finland, Switzerland 1.
+- Proposal: 6 more country pages (UK, Canada, Australia, Netherlands in English; France in French; Germany in German), picked from Search Console countries (UK, France, Netherlands, Canada, Australia show impressions) and market demand (Germany).
