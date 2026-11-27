@@ -269,3 +269,7 @@
 - Released "The Tao: Cycle of Life and the Five Elements" (owner-approved 2026-11-01, credited to Sifu McNeil, February 2012 newsletter) with tools/blog.py; blog list, "From the Blog" boxes and sitemap rebuilt (36 pages, 6 posts). Translated the full post, its titles and meta description into the 10 blog languages (zh, es, fr, de, pt, ru, ja, th, ar, hi; Hsu Hong-Chi = 许鸿基/許鴻基). it/el stay English and noindex like the other posts.
 - Rebuilt the language pages (349 pages; lang QA passed). QA passes.
 - Live site still not reachable from this run (proxy 403; WebFetch needs approval); pre-publish check relied on the Nov 24 confirmation. Merged staging into main and pushed main once (main@12f5473, fast-forward). Live check and IndexNow pings (Tao post, /blog) pending; owner asked to confirm in Netlify's Deploys tab. update-log rows 89-92 marked Live 2026-11-26 with 'live check pending'. Credits ~285 of the new cycle if the deploy ran. Search Console queue: Tao post and /blog added.
+
+## 2026-11-27
+- Google indexing: requested 10 (en Shih Shui + Taoist Lovemaking re-crawl, zh lovemaking, it/el Shih Shui + lovemaking, el home, new Tao post, /blog); th lovemaking, es Shih Shui, es lovemaking and the Italian home are already indexed.
+- Search Console countries (3 months): US 129 impressions/8 clicks; then Spain 8/1, Vietnam 5, UK 5, France 4/1, Italy 4, Netherlands 4, Canada 3, Denmark, Malaysia, Australia, Taiwan, Mexico, Belgium, Philippines 2 each; Colombia, Argentina, Finland, Switzerland 1.

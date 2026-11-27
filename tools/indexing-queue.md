@@ -5,10 +5,10 @@ Inspect each first: if it says "URL is on Google", just tick it off without requ
 Done when every box is ticked. Note: Google's quota is a rolling 24 hours from the last batch, so wait a full day between batches. Add new pages here after each weekly publish (new blog posts, changed pages).
 
 ## To request
-- [ ] 2026-11-26 https://l9hkungfu.com/blog-tao-cycle-of-life-and-five-elements (new post, published Nov 26)
-- [ ] 2026-11-26 https://l9hkungfu.com/blog (re-crawl: Tao post added)
-- [ ] 2026-11-24 https://l9hkungfu.com/system-shih-shui (re-crawl: Xi Sui Gong wording)
-- [ ] 2026-11-24 https://l9hkungfu.com/system-taoist-lovemaking (re-crawl: Taoist sexual practices wording)
+- [x] 2026-11-26 https://l9hkungfu.com/blog-tao-cycle-of-life-and-five-elements (new post, published Nov 26) [2026-11-27: requested]
+- [x] 2026-11-26 https://l9hkungfu.com/blog (re-crawl: Tao post added) [2026-11-27: requested (re-crawl)]
+- [x] 2026-11-24 https://l9hkungfu.com/system-shih-shui (re-crawl: Xi Sui Gong wording) [2026-11-27: requested (re-crawl)]
+- [x] 2026-11-24 https://l9hkungfu.com/system-taoist-lovemaking (re-crawl: Taoist sexual practices wording) [2026-11-27: requested (re-crawl)]
 - [ ] 2026-11-24 https://l9hkungfu.com/de/worldwide (now fully translated; same for ar/fr/hi/ja/pt/ru)
 - [x] 2026-11-20 https://l9hkungfu.com/th/marrow-washing-thailand (travel page; requested 2026-11-24 PT, IndexNow pinged)
 - [x] 2026-11-20 https://l9hkungfu.com/zh/marrow-washing-china (travel page; requested 2026-11-24 PT, IndexNow pinged)
@@ -18,22 +18,22 @@ Done when every box is ticked. Note: Google's quota is a rolling 24 hours from t
 - [x] 2026-11-20 https://l9hkungfu.com/es/marrow-washing-mexico (travel page; requested 2026-11-24 PT, IndexNow pinged)
 - [x] 2026-11-20 https://l9hkungfu.com/worldwide (travel page; requested 2026-11-24 PT, IndexNow pinged)
 - [ ] 2026-11-19 https://l9hkungfu.com/blog-hsing-i-part-4-five-elements-and-horse-form (new post, published Nov 19)
-- [ ] 2026-11-19 https://l9hkungfu.com/blog (re-crawl: Part 4 added)
+- [x] 2026-11-19 https://l9hkungfu.com/blog (re-crawl: Part 4 added) [2026-11-27: requested (re-crawl)]
 - [ ] 2026-11-19 https://l9hkungfu.com/system-little-nine-heaven (heading changed)
 - [ ] 2026-11-19 https://l9hkungfu.com/zh/system-hsing-i (new Chinese page)
 - [ ] 2026-11-19 https://l9hkungfu.com/es/system-chen-tai-chi (new Spanish page)
 - [x] 2026-11-20 https://l9hkungfu.com/zh/system-shih-shui (focus page, Chinese; already live, submit first)
-- [ ] 2026-11-20 https://l9hkungfu.com/zh/system-taoist-lovemaking (focus page, Chinese; already live, submit first)
+- [x] 2026-11-20 https://l9hkungfu.com/zh/system-taoist-lovemaking (focus page, Chinese; already live, submit first) [2026-11-27: requested]
 - [x] 2026-11-20 https://l9hkungfu.com/th/system-shih-shui (focus page, Thai; already live, submit first)
-- [ ] 2026-11-20 https://l9hkungfu.com/th/system-taoist-lovemaking (focus page, Thai; already live, submit first)
-- [ ] 2026-11-20 https://l9hkungfu.com/es/system-shih-shui (focus page, Spanish; already live, submit first)
-- [ ] 2026-11-20 https://l9hkungfu.com/es/system-taoist-lovemaking (focus page, Spanish; already live, submit first)
-- [ ] 2026-11-20 https://l9hkungfu.com/it/system-shih-shui (new Italian page; live since Nov 20)
-- [ ] 2026-11-20 https://l9hkungfu.com/it/system-taoist-lovemaking (new Italian page; live since Nov 20)
-- [ ] 2026-11-20 https://l9hkungfu.com/it/ (new Italian home; live since Nov 20)
-- [ ] 2026-11-20 https://l9hkungfu.com/el/system-shih-shui (new Greek page; live since Nov 20)
-- [ ] 2026-11-20 https://l9hkungfu.com/el/system-taoist-lovemaking (new Greek page; live since Nov 20)
-- [ ] 2026-11-20 https://l9hkungfu.com/el/ (new Greek home; live since Nov 20)
+- [x] 2026-11-20 https://l9hkungfu.com/th/system-taoist-lovemaking (focus page, Thai; already live, submit first) [2026-11-27: already indexed]
+- [x] 2026-11-20 https://l9hkungfu.com/es/system-shih-shui (focus page, Spanish; already live, submit first) [2026-11-27: already indexed]
+- [x] 2026-11-20 https://l9hkungfu.com/es/system-taoist-lovemaking (focus page, Spanish; already live, submit first) [2026-11-27: already indexed]
+- [x] 2026-11-20 https://l9hkungfu.com/it/system-shih-shui (new Italian page; live since Nov 20) [2026-11-27: requested]
+- [x] 2026-11-20 https://l9hkungfu.com/it/system-taoist-lovemaking (new Italian page; live since Nov 20) [2026-11-27: requested]
+- [x] 2026-11-20 https://l9hkungfu.com/it/ (new Italian home; live since Nov 20) [2026-11-27: already indexed]
+- [x] 2026-11-20 https://l9hkungfu.com/el/system-shih-shui (new Greek page; live since Nov 20) [2026-11-27: requested]
+- [x] 2026-11-20 https://l9hkungfu.com/el/system-taoist-lovemaking (new Greek page; live since Nov 20) [2026-11-27: requested]
+- [x] 2026-11-20 https://l9hkungfu.com/el/ (new Greek home; live since Nov 20) [2026-11-27: requested]
 
 ## Done
 - [x] 2026-11-19 https://l9hkungfu.com/blog-hsing-i-part-3-body-power-and-touch-go-kiss (requested)
