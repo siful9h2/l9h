@@ -27,6 +27,9 @@
 | taoist sexual cultivation | 0 | n/a | Nov 27; no data. 'taoist sexual practices' (320) is the wording people search. |
 | xing yi | 390 | 13% (very easy) | Nov 27; informational; 2.3K global (Chile 590, Malaysia/Singapore 140, UK 110). Hsing-I title/h1 already contain 'Xing Yi'. |
 
+| shih shui (Spain / Italy) | ES 12,100; IT 3,600-4,400 | 36% (ES), 34% (IT) | Nov 27 (Fri); 57K global (Brazil 22.2K, Spain 12.1K, Germany 9.9K, France 4.4K, Italy 3.6K, Belgium 2.4K). Site ranks #14 in Spain and #10 in Italy (/system-shih-shui). Much of this volume may be people misspelling 'shih tzu' (the dog), so traffic may be small, but the page owns the name. Title now 'Shih Shui Bone Marrow Washing \| Private Lessons Worldwide'. |
+| taoist lovemaking | 90 | 15% (easy) | Nov 27 (Fri); US only. Page h1 already uses it. |
+| taoist sex | 320 | 25% (easy) | Nov 27 (Fri); 1.8K global (India 170, Vietnam 110, Argentina 50, France 40, UK 40). + 'taoist sex practices' 90 (KD 5), 'sex taoist' 90. Added to the Taoist Lovemaking description and Q&A. |
 First US ranking (Nov 23-25): hsing-i #46 / hsing i #48 (system-hsing-i); 375 backlinks (Nov 24).
 Site audit (29 pages): health 95%; 23 invalid structured-data items (Course markup missing fields; fixed 2026-11-02
 by switching to Service markup); llms.txt missing (added 2026-11-02); 72 unminified JS/CSS warnings (inline code, low priority);
