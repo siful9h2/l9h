@@ -57,22 +57,25 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   for their newsletter writings to be used. Keep their pieces intact (credit each by name as author), removing only
   passed dates/events, and send them to the owner for review like every other post.
 
-## Weekly publishing (important: read first)
+## Publishing (important: read first)
 - The site is on Netlify's Free plan: 300 credits a month, 15 per production deploy, plus credits for
   bandwidth. If credits run out completely, Netlify takes the whole site offline until the billing
   cycle resets. In October 2026 deploys were paused after about 23 deploys; the billing cycle runs from
   the 25th to the 24th, and deploys resume on Oct 25.
-- The owner chose to save up changes and publish ONCE A WEEK. Every push to `main` is a production deploy,
-  so treat `main` as "what's live" and do all work on the `staging` branch:
+- PUBLISHING SCHEDULE (owner, 2026-11-27; replaces "once a week"): publish THREE TIMES A WEEK, on Monday, Thursday
+  and Saturday runs, at most once per day, and only if staging has changes that main doesn't (no empty deploys).
+  ~13 deploys a month x 15 = ~195 of the 300 credits, leaving room for bandwidth and the odd extra publish the owner asks for.
+  Every push to `main` is a production deploy, so treat `main` as "what's live" and do all work on the `staging` branch:
   - Every run: `git checkout staging` (create it from origin/staging), make changes there, run QA,
     commit and push `staging`. Pushing `staging` does not deploy.
   - Proposal PRs (visual or history/lineage changes) target `staging`, not main. When the owner merges
     one, it goes live with the next weekly publish.
-  - Weekly publish: on Thursday runs only, starting Thursday 2026-10-29. First release any blog posts due
-    that day on staging (blog procedure below). Then check the live site reflects the last publish. Then
+  - Publish (Monday, Thursday and Saturday runs): first release any blog posts due that day on staging (blog
+    procedure below; posts are still released on Thursdays). Then check the live site reflects the last publish. Then
     rebuild the language pages (`python3 tools/build_lang_pages.py`, commit), then
     merge staging into main (`git checkout main && git merge --no-edit staging`), run QA, and push main
-    once. Confirm the live site updated, then do the IndexNow pings. That is the only push to main all week.
+    once. Confirm the live site updated, then do the IndexNow pings. Skip the publish if main already matches staging.
+    Wherever these rules say "weekly publish" or "the next weekly publish", read "the next publish (Mon/Thu/Sat)".
   - One-time exception approved by the owner on 2026-10-16: a publish on Sunday 2026-10-25 (the day deploys
     resume), done by a separate one-time scheduled run, so the fixed sitemap and SEO work reach Google sooner.
     The Thursday 2026-10-29 publish still happens as normal (it releases that day's blog post); that week has
@@ -82,11 +85,11 @@ Pushing to `main` publishes the live site automatically. There is no build step.
   - Owner request 2026-11-19 (evening PT): an extra publish the same day for the email contact line. Next publish Thu 2026-11-26.
   - Owner request 2026-11-20 (PT): another extra publish ("Update it now") for the Italian/Greek site and travel pages.
   - Owner request 2026-11-24: extra publish ("Publish now") of the Nov 23 staging work. The Thu 2026-11-26 publish still happens (Tao post).
-  - Never push to main on any other day, and never more than once a week, unless the owner explicitly asks.
-  - If a weekly publish doesn't go live within about 10 minutes, deploys are paused: tell the owner and
+  - Never push to main on any other day, and never more than once a day, unless the owner explicitly asks.
+  - If a publish doesn't go live within about 10 minutes, deploys are paused: tell the owner and
     don't push again.
 - netlify.toml has NO ignore rule: every push to main is a real production deploy (15 credits). An ignore
-  rule made Netlify cancel the Oct 25 and Oct 29 publishes; don't add one back. Keep main pushes to the weekly publish.
+  rule made Netlify cancel the Oct 25 and Oct 29 publishes; don't add one back. Keep main pushes to the Mon/Thu/Sat publishes.
   After each publish, confirm the live site changed; if the agent can't fetch the site, ask the owner to check
   Netlify's Deploys tab (a "Canceled" or "Skipped" deploy means it did not go live).
 - In the owner summary, say what's waiting on staging and when it will go live.
