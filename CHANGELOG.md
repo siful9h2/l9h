@@ -284,3 +284,6 @@
 - SEO (international): Shih Shui title -> 'Shih Shui Bone Marrow Washing | Private Lessons Worldwide' and description now says it is taught in person in San Diego or anywhere in the world (fact from the page/CLAUDE.md). Taoist Lovemaking description and 'What is it?' answer add 'Taoist sex' and the worldwide teaching.
 - SEO (domestic): Ba Kua h1 -> 'Ba Kua Chang (Pa Kua Chang, Bagua Zhang)' (tracked keyword 'pakua chan', 720/mo).
 - Translated into all 12 languages; language pages rebuilt (349; lang QA passed). QA passes.
+
+## 2026-11-28
+- Proposal (photos batch 1): owner-supplied photos on Iron Hand (McNeil with Ralph Shun, letterboxed to 3:4), Tzu Men Chuan (Grandmaster Hsiung Chien-Hsun 1895-1977, owner confirmed), Little Nine Heaven (Huang Ti painting, owner owns it, from a Huang Ti temple in Taiwan; "Haung Di" label cropped off), Taoist Lovemaking (McNeil, confirmed by owner, at the 2024 China International Seminar on Female Sexual Dysfunction; cropped to the seated row). Alt text and captions in 12 languages; all images under 100KB.
