@@ -20,4 +20,6 @@ Bandwidth and requests use a little more; only Netlify's Usage page shows the ex
 
 | 2026-11-26 | main@12f5473 | Pushed (weekly publish, Tao post); live check pending (site not reachable from this run) | 15 | ~285 (new cycle from Nov 25) |
 
-Cycle Nov 25 - Dec 24: ~285 left if the Nov 26 deploy ran. Next weekly publish Thu Dec 3.
+| 2026-11-28 | main@7147eac | Pushed (Sat publish: Shih Shui/Taoist Lovemaking/Ba Kua/Chen/Qigong SEO); live check pending (site not reachable from this run) | 15 | ~270 |
+
+Cycle Nov 25 - Dec 24: ~270 left if the Nov 26 and Nov 28 deploys ran. Publishing Mon/Thu/Sat now (~195 a cycle). Next publish Mon Nov 30 (if staging has changes).
