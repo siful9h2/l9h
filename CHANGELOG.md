@@ -284,3 +284,8 @@
 - SEO (international): Shih Shui title -> 'Shih Shui Bone Marrow Washing | Private Lessons Worldwide' and description now says it is taught in person in San Diego or anywhere in the world (fact from the page/CLAUDE.md). Taoist Lovemaking description and 'What is it?' answer add 'Taoist sex' and the worldwide teaching.
 - SEO (domestic): Ba Kua h1 -> 'Ba Kua Chang (Pa Kua Chang, Bagua Zhang)' (tracked keyword 'pakua chan', 720/mo).
 - Translated into all 12 languages; language pages rebuilt (349; lang QA passed). QA passes.
+
+## 2026-11-28 (Saturday run; publish day)
+- SEO (domestic): Chi-Kung h1 'Chi & Chi-Kung' -> 'Chi-Kung (Qigong)' and photo alt text 'Qigong (Chi-Kung) practice' (priority keyword 'qigong san diego'; h1 text was already translated).
+- SEO (international): Taoist Lovemaking meta/og/JSON-LD description trimmed from 167 to 158 characters (was over the 160 limit), same keywords and facts. Both translated into all 12 languages.
+- Audit: QA passes; all other titles/descriptions within limits. Open proposals: PR #12 (seven more country pages), PR #13 (photos). Next blog post: Kung Fu Etiquette, Thu Dec 3.
