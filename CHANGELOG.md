@@ -273,4 +273,15 @@
 ## 2026-11-27
 - Google indexing: requested 10 (en Shih Shui + Taoist Lovemaking re-crawl, zh lovemaking, it/el Shih Shui + lovemaking, el home, new Tao post, /blog); th lovemaking, es Shih Shui, es lovemaking and the Italian home are already indexed.
 - Search Console countries (3 months): US 129 impressions/8 clicks; then Spain 8/1, Vietnam 5, UK 5, France 4/1, Italy 4, Netherlands 4, Canada 3, Denmark, Malaysia, Australia, Taiwan, Mexico, Belgium, Philippines 2 each; Colombia, Argentina, Finland, Switzerland 1.
+
+## 2026-11-27 (daily Semrush run for Thu Nov 26, fired Nov 27 UTC; on staging, live Thu Dec 3)
+- Semrush: 382 backlinks (+11.7%), 5 keywords, visibility 0.14%; Position Tracking (Santee) 'hsing i' #51 (was #48), the other 9 tracked keywords still outside the top 100. New keyword data: xi sui gong 20/mo US (50 global, Italy 20), taoist sexual cultivation 0, xing yi 390/mo KD 13%.
+- SEO h1s: Shih Shui -> 'Shih Shui (Xi Sui Gong): Bone Marrow Washing'; Taoist Lovemaking -> 'Taoist Lovemaking (Fang Chung Shu)'; Chen Tai-Chi -> 'Chen Tai-Chi (Chen Style Tai Chi)'. No new claims. Translated into all 12 languages; language pages rebuilt (349; lang QA passed). QA passes.
+- Owner request 2026-11-27: publish 3x weekly (Mon, Thu, Sat) instead of once a week; rules and scheduled tasks updated.
+
+## 2026-11-27 (daily Semrush run, Fri; on staging, live with the Sat Nov 28 publish)
+- Semrush: unchanged card (5 keywords, 382 backlinks, visibility 0.14%); Position Tracking 'hsing i' #50 (was #51). 'shih shui' ranks #14 in Spain (12.1K/mo) and #10 in Italy; 57K searches/mo worldwide. Keyword data: taoist sex 320/mo US (1.8K global, KD 25), taoist lovemaking 90 (KD 15).
+- SEO (international): Shih Shui title -> 'Shih Shui Bone Marrow Washing | Private Lessons Worldwide' and description now says it is taught in person in San Diego or anywhere in the world (fact from the page/CLAUDE.md). Taoist Lovemaking description and 'What is it?' answer add 'Taoist sex' and the worldwide teaching.
+- SEO (domestic): Ba Kua h1 -> 'Ba Kua Chang (Pa Kua Chang, Bagua Zhang)' (tracked keyword 'pakua chan', 720/mo).
+- Translated into all 12 languages; language pages rebuilt (349; lang QA passed). QA passes.
 - Proposal: 6 more country pages (UK, Canada, Australia, Netherlands in English; France in French; Germany in German), picked from Search Console countries (UK, France, Netherlands, Canada, Australia show impressions) and market demand (Germany).
