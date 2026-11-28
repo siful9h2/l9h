@@ -284,3 +284,5 @@
 - SEO (international): Shih Shui title -> 'Shih Shui Bone Marrow Washing | Private Lessons Worldwide' and description now says it is taught in person in San Diego or anywhere in the world (fact from the page/CLAUDE.md). Taoist Lovemaking description and 'What is it?' answer add 'Taoist sex' and the worldwide teaching.
 - SEO (domestic): Ba Kua h1 -> 'Ba Kua Chang (Pa Kua Chang, Bagua Zhang)' (tracked keyword 'pakua chan', 720/mo).
 - Translated into all 12 languages; language pages rebuilt (349; lang QA passed). QA passes.
+- Proposal: 6 more country pages (UK, Canada, Australia, Netherlands in English; France in French; Germany in German), picked from Search Console countries (UK, France, Netherlands, Canada, Australia show impressions) and market demand (Germany).
+- Country-pages proposal (PR #12): merged in the latest staging (fixes the conflict that hid the merge button) and added Brazil (Portuguese): Semrush shows ~22K monthly searches for "shih shui" in Brazil.
