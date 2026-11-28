@@ -121,6 +121,8 @@ def strip_tags(s): return re.sub(r'<[^>]+>', '', s)
 
 def jsonld(obj): return '  <script type="application/ld+json">\n' + json.dumps(obj, ensure_ascii=False, indent=2) + '\n  </script>\n'
 
+PHOTO_ATTR = 'src' if os.path.exists(os.path.join(ROOT, 'images', 'system-shih-shui.jpg')) else 'data-pending-src'
+
 def body(t, others):
     facts = [('Teaches', 'Shih Shui (Xi Sui Gong) and Taoist lovemaking'), ('Where', t['where']),
              ('Format', 'Private and in person only'), ('Arrangements', 'Made individually by email')]
@@ -129,7 +131,7 @@ def body(t, others):
     how = '\n'.join(f'          <li>{x}</li>' for x in HOW)
     return f'''  <div class="page-hero">
     <div class="page-hero-bg"></div>
-    <img class="page-hero-photo" data-pending-src="images/system-shih-shui.jpg" alt="Shih Shui internal training" onerror="this.style.display='none'"/>
+    <img class="page-hero-photo" {PHOTO_ATTR}="images/system-shih-shui.jpg" alt="Grandmaster Chiao Chang-Hung's book on Shih Shui (marrow washing)" onerror="this.style.display='none'"/>
     <div class="page-hero-content">
       <p class="eyebrow">{t['eyebrow']}</p>
       <h1>{t['h1'].replace('&', '&amp;')}</h1>
@@ -142,7 +144,7 @@ def body(t, others):
     <div class="bio-grid">
       <div class="reveal">
         <div class="portrait-frame">
-          <img data-pending-src="images/system-shih-shui.jpg" alt="Shih Shui internal training" onerror="this.style.display='none'"/>
+          <img {PHOTO_ATTR}="images/system-shih-shui.jpg" alt="Grandmaster Chiao Chang-Hung's book on Shih Shui (marrow washing)" onerror="this.style.display='none'"/>
           <div class="portrait-placeholder">☯</div>
           <p class="portrait-placeholder-text">Photo</p>
         </div>
