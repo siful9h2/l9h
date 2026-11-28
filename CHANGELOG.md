@@ -285,3 +285,4 @@
 - SEO (domestic): Ba Kua h1 -> 'Ba Kua Chang (Pa Kua Chang, Bagua Zhang)' (tracked keyword 'pakua chan', 720/mo).
 - Translated into all 12 languages; language pages rebuilt (349; lang QA passed). QA passes.
 - Proposal: 6 more country pages (UK, Canada, Australia, Netherlands in English; France in French; Germany in German), picked from Search Console countries (UK, France, Netherlands, Canada, Australia show impressions) and market demand (Germany).
+- Country-pages proposal (PR #12): merged in the latest staging (fixes the conflict that hid the merge button) and added Brazil (Portuguese): Semrush shows ~22K monthly searches for "shih shui" in Brazil.
